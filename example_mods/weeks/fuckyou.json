@@ -1,14 +1,7 @@
 {
 	"songs": [
-		[
-			"Backrooms",
-			"brendon",
-			[
-				246,
-				182,
-				4
-			]
-		]
+		["Backrooms","brendon",[246,182,4]],
+		["Ohio-Mayor","brendon",[246,182,4]]
 		
 	],
 	"hideFreeplay": false,
