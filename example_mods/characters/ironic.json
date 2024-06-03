@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "i",
+			"indices": []
+		},
+		{
+			"offsets": [
+				9,
+				2
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "l"
+		},
+		{
+			"offsets": [
+				7,
+				-2
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "d"
+		},
+		{
+			"offsets": [
+				-1,
+				11
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "u"
+		},
+		{
+			"offsets": [
+				-1,
+				-1
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "r"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/hoodironyFunk",
+	"position": [
+		-200,
+		-210
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		-250,
+		150
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 0.8
+}
