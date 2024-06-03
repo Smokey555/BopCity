@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="square.png">
+<SubTexture name="i0000" x="0" y="0" width="46" height="52" frameX="-1" frameY="-1" frameWidth="46" frameHeight="52" />
+<SubTexture name="u0000" x="46" y="0" width="46" height="52" frameX="-1" frameY="-1" frameWidth="46" frameHeight="52" />
+<SubTexture name="u0001" x="92" y="0" width="46" height="52" frameX="-1" frameY="-1" frameWidth="46" frameHeight="52" />
+<SubTexture name="d0000" x="0" y="52" width="46" height="52" frameX="-1" frameY="-1" frameWidth="46" frameHeight="52" />
+<SubTexture name="d0001" x="46" y="52" width="46" height="52" frameX="-1" frameY="-1" frameWidth="46" frameHeight="52" />
+<SubTexture name="r0000" x="92" y="52" width="46" height="52" frameX="-1" frameY="-1" frameWidth="46" frameHeight="52" />
+<SubTexture name="r0001" x="138" y="0" width="46" height="52" frameX="-1" frameY="-1" frameWidth="46" frameHeight="52" />
+</TextureAtlas>

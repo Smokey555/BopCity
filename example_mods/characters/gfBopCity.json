@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-242,
+				313
+			],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "GF_swag",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-225,
+				313
+			],
+			"anim": "sad",
+			"fps": 24,
+			"name": "GF_Miss",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-233,
+				313
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "Idle",
+			"loop": false,
+			"name": "GF_Chill"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/BC GF",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

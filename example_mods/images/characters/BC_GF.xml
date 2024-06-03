@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BC GF.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF_Chill0000" x="0" y="0" width="591" height="1074"/>
+	<SubTexture name="GF_Miss0000" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0001" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0002" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0003" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0004" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0005" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0006" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0007" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0008" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0009" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0010" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0011" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0012" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0013" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_Miss0014" x="593" y="0" width="607" height="1066"/>
+	<SubTexture name="GF_swag0000" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0001" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0002" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0003" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0004" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0005" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0006" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0007" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0008" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0009" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0010" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0011" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0012" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0013" x="1202" y="0" width="564" height="1082"/>
+	<SubTexture name="GF_swag0014" x="1202" y="0" width="564" height="1082"/>
+</TextureAtlas>

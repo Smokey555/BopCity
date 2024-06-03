@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kai pibby.png">
+	<!-- Created with Adobe Animate version 22.0.4.185 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kai down0000" x="0" y="0" width="461" height="755"/>
+	<SubTexture name="kai down0001" x="0" y="0" width="461" height="755"/>
+	<SubTexture name="kai down0002" x="461" y="0" width="461" height="755"/>
+	<SubTexture name="kai down0003" x="461" y="0" width="461" height="755"/>
+	<SubTexture name="kai idle0000" x="922" y="0" width="648" height="820"/>
+	<SubTexture name="kai idle0001" x="922" y="0" width="648" height="820"/>
+	<SubTexture name="kai idle0002" x="1570" y="0" width="648" height="820"/>
+	<SubTexture name="kai idle0003" x="1570" y="0" width="648" height="820"/>
+	<SubTexture name="kai idle0004" x="2218" y="0" width="648" height="820"/>
+	<SubTexture name="kai idle0005" x="2218" y="0" width="648" height="820"/>
+	<SubTexture name="kai left0000" x="2866" y="0" width="722" height="642"/>
+	<SubTexture name="kai left0001" x="2866" y="0" width="722" height="642"/>
+	<SubTexture name="kai left0002" x="0" y="820" width="722" height="642"/>
+	<SubTexture name="kai left0003" x="0" y="820" width="722" height="642"/>
+	<SubTexture name="kai right0000" x="722" y="820" width="744" height="910"/>
+	<SubTexture name="kai right0001" x="722" y="820" width="744" height="910"/>
+	<SubTexture name="kai right0002" x="1466" y="820" width="744" height="910"/>
+	<SubTexture name="kai right0003" x="1466" y="820" width="744" height="910"/>
+	<SubTexture name="kai up0000" x="2210" y="820" width="684" height="898"/>
+	<SubTexture name="kai up0001" x="2210" y="820" width="684" height="898"/>
+	<SubTexture name="kai up0002" x="2894" y="820" width="684" height="898"/>
+	<SubTexture name="kai up0003" x="2894" y="820" width="684" height="898"/>
+</TextureAtlas>
