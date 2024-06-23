@@ -1,0 +1,36 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "soulsgrab",
+			"fps": 24,
+			"name": "soulsgrab",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/soulkai",
+	"position": [
+		60,
+		230
+	],
+	"healthicon": "kai",
+	"flip_x": false,
+	"healthbar_colors": [
+		126,
+		64,
+		64
+	],
+	"camera_position": [
+		170,
+		70
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

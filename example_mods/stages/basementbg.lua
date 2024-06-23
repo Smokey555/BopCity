@@ -1,5 +1,5 @@
 function onCreate()
-    makeLuaSprite('basement','basementbg/basement',0, 0)
+    makeLuaSprite('basement','bg/mayor/basement',0, 0)
     addLuaSprite('basement',false)
 end
 

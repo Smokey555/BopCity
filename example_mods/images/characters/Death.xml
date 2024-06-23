@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="Death.png">
+<TextureAtlas imagePath="death.png">
 	<!-- Created with Adobe Animate version 20.5.1.31044 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="BF dies0000" x="0" y="0" width="695" height="697" frameX="0" frameY="0" frameWidth="695" frameHeight="823"/>

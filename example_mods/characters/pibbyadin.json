@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				8,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "adin idle"
+		},
+		{
+			"offsets": [
+				50,
+				-37
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "adin left"
+		},
+		{
+			"offsets": [
+				145,
+				-353
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "adin down"
+		},
+		{
+			"offsets": [
+				127,
+				23
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "adin up"
+		},
+		{
+			"offsets": [
+				193,
+				-43
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "adin right"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/adin_pibby",
+	"position": [
+		0,
+		100
+	],
+	"healthicon": "face",
+	"flip_x": true,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		10,
+		150
+	],
+	"sing_duration": 4,
+	"scale": 0.6,
+	"_editor_isPlayer": false
+}

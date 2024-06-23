@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				8,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "kai idle"
+		},
+		{
+			"offsets": [
+				-60,
+				-108
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "kai left"
+		},
+		{
+			"offsets": [
+				-15,
+				-53
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "kai down"
+		},
+		{
+			"offsets": [
+				7,
+				63
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "kai up"
+		},
+		{
+			"offsets": [
+				83,
+				57
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "kai right"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/kai_pibby",
+	"position": [
+		0,
+		100
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		10,
+		150
+	],
+	"sing_duration": 4,
+	"scale": 0.6,
+	"_editor_isPlayer": true
+}

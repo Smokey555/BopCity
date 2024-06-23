@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				4,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "rioIdle"
+		},
+		{
+			"offsets": [
+				59,
+				12
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "rioLEFT"
+		},
+		{
+			"offsets": [
+				-2,
+				-28
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "rioDOwn"
+		},
+		{
+			"offsets": [
+				-26,
+				7
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "rioRIGHT"
+		},
+		{
+			"offsets": [
+				9,
+				51
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "rioUP"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/rdjsprites",
+	"position": [
+		0,
+		130
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 0.8,
+	"_editor_isPlayer": false
+}

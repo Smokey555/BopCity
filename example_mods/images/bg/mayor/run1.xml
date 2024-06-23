@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="irony.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="run0000" x="1" y="1" width="136" height="280" frameX="0" frameY="0" frameWidth="136" frameHeight="288"/>
+	<SubTexture name="run0001" x="138" y="1" width="92" height="287" frameX="-23" frameY="-1" frameWidth="136" frameHeight="288"/>
+</TextureAtlas>

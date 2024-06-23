@@ -1,0 +1,45 @@
+{
+	"songs": [
+		["bop-city","bf",[246,182,4]]
+		["crashout","bf",[246,182,4]],
+		["mayor-of-ohio","bf",[246,182,4]],
+		["backrooms","bf",[246,182,4]],
+		["camera-man","bf",[246,182,4]],
+		["irony","irony",[246,182,4]],
+		["pibby-adin-ross","bf",[246,182,4]],
+		["square-dance","bf",[246,182,4]],
+		["sigma","bf",[246,182,4]],
+		["tiktok-voice","bf",[246,182,4]],
+		["rio-de-janeiro","bf",[246,182,4]],
+		["fanum-tax","bf",[246,182,4]],
+		["hollup","bf",[246,182,4]],
+		["skibidi-toilet","bf",[246,182,4]],
+		["chicken-nugget","bf",[246,182,4]],
+		["vexbolts","bf",[246,182,4]],
+		//["werewolf","bf",[246,182,4]],
+		["tiktok-rizz-party","bf",[246,182,4]],
+		["bloogy","bf",[246,182,4]],
+		//["opium","bf",[246,182,4]],
+		["kai-vs-duke","bf",[246,182,4]],
+		//["caseoh","bf",[246,182,4]],
+		//["sunshine","bf",[246,182,4]],
+		["finale","bf",[246,182,4]],
+	],
+	"hideFreeplay": false,
+	"weekBackground": "tank",
+	"weekCharacters": [
+		"tankman",
+		"bf",
+		"gf"
+	],
+	"storyName": "Bop City",
+	"weekName": "Bop City",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "week7",
+	"startUnlocked": true
+}

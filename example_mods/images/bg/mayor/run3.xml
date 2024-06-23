@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="my dick hurts.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="run0000" x="1" y="1" width="82" height="102" frameX="-5" frameY="-1" frameWidth="102" frameHeight="103"/>
+	<SubTexture name="run0001" x="84" y="1" width="102" height="101" frameX="0" frameY="0" frameWidth="102" frameHeight="103"/>
+</TextureAtlas>

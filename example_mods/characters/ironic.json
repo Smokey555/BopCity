@@ -1,78 +1,80 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "i",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "i"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				9,
 				2
 			],
-			"loop": false,
-			"fps": 12,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "l"
+			"fps": 12,
+			"name": "l",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				7,
 				-2
 			],
-			"loop": false,
-			"fps": 12,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "d"
+			"fps": 12,
+			"name": "d",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-1,
 				11
 			],
-			"loop": false,
-			"fps": 12,
 			"anim": "singUP",
-			"indices": [],
-			"name": "u"
+			"fps": 12,
+			"name": "u",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-1,
 				-1
 			],
-			"loop": false,
-			"fps": 12,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "r"
+			"fps": 12,
+			"name": "r",
+			"indices": []
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/hoodironyFunk",
 	"position": [
 		-200,
 		-210
 	],
-	"healthicon": "face",
+	"healthicon": "irony",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		0,
+		0,
+		0
 	],
 	"camera_position": [
 		-250,
 		150
 	],
 	"sing_duration": 4.00000000000001,
-	"scale": 0.8
+	"scale": 0.8,
+	"_editor_isPlayer": false
 }

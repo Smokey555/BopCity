@@ -1,6 +1,6 @@
 {
-	"name": "Name",
-	"description": "Description",
+	"name": "Bop City",
+	"description": "Made By: Daniel H",
 	"restart":false,
 	"runsGlobally": false,
 	"color": [170, 0, 255],

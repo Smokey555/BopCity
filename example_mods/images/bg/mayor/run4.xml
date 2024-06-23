@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pepe.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="run0000" x="1" y="1" width="184" height="172" frameX="-2" frameY="-12" frameWidth="186" frameHeight="187"/>
+	<SubTexture name="run0001" x="186" y="1" width="171" height="187" frameX="0" frameY="0" frameWidth="186" frameHeight="187"/>
+</TextureAtlas>

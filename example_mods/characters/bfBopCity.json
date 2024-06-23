@@ -115,10 +115,10 @@
 	"no_antialiasing": false,
 	"image": "characters/BC_BF",
 	"position": [
-		0,
-		350
+		100,
+		510
 	],
-	"healthicon": "test",
+	"healthicon": "bf",
 	"flip_x": true,
 	"healthbar_colors": [
 		49,
@@ -126,8 +126,8 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		180,
+		-140
 	],
 	"sing_duration": 4,
 	"scale": 1,

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="knuckles.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="run0000" x="1" y="1" width="150" height="167" frameX="0" frameY="0" frameWidth="150" frameHeight="180"/>
+	<SubTexture name="run0001" x="152" y="1" width="139" height="180" frameX="-11" frameY="0" frameWidth="150" frameHeight="180"/>
+</TextureAtlas>
