@@ -1,42 +1,42 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				-242,
+				-246,
 				313
 			],
-			"anim": "cheer",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_swag",
-			"indices": []
+			"anim": "cheer",
+			"indices": [],
+			"name": "GF_swag"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-225,
 				313
 			],
-			"anim": "sad",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_Miss",
-			"indices": []
+			"anim": "sad",
+			"indices": [],
+			"name": "GF_Miss"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-233,
 				313
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "Idle",
-			"loop": false,
-			"name": "GF_Chill"
+			"fps": 24,
+			"name": "GF_Chill",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/BC GF",
+	"image": "characters/BC_GF",
 	"position": [
 		0,
 		0
