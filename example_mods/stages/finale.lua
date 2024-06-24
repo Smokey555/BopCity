@@ -31,7 +31,6 @@ function onCreate()
 end
 
 function onCreatePost()
-    doTweenY('hefloats', 'dad', 400, 1, 'quadInOut')
     doTweenAngle('memespin', 'memes', 50000, 1000, 'linear')
     setProperty('scoreTxt.visible', false)
 
@@ -41,8 +40,16 @@ function onCreatePost()
 
 end
 
+function onStepHit()
+    if curStep == 48 then  
+    doTweenY('hefloats', 'dad', 900, 1, 'quadInOut')
+
+    elseif curStep == 60 then  
+        doTweenY('fart', 'dad', 400, 0.1, '')
+    end
+end
 function onTweenCompleted(tag)
-	if tag == 'hefloats' then
+	if tag == 'fart' then
     doTweenY('hefloats2', 'dad', 500, 1, 'quadInOut')
     end
 
