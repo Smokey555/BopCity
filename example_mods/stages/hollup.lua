@@ -32,7 +32,10 @@ function onCreate()
 end
 
 function onCreatePost()
-    setObjectOrder('gfGroup', getObjectOrder('dadGroup')+1)
+    runHaxeCode([[
+        game.dad.cameras = [game.camHUD];
+        ]]) 
+    end 
 end
 function onSectionHit()
 
