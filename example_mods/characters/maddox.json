@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				2
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				57,
 				44
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "l",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "l"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-3,
 				-57
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "d",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "d"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-5,
 				82
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "u",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "u"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-2,
 				46
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "r",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "r"
 		}
 	],
 	"vocals_file": "",
@@ -63,12 +63,12 @@
 		0,
 		50
 	],
-	"healthicon": "face",
+	"healthicon": "maddox",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		229,
+		136,
+		90
 	],
 	"camera_position": [
 		230,

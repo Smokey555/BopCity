@@ -1654,7 +1654,7 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "gf",
+		"gfVersion": "invisible",
 		"splashSkin": "noteSplashes",
 		"song": "tiktok-voice",
 		"validScore": true,

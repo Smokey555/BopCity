@@ -1,125 +1,125 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "squid-idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "squid-idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-31,
 				0
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "squid-left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "squid-left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-30,
 				-30
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "squid-down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "squid-down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-6,
 				51
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "squid-up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "squid-up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-24,
 				0
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "squid-right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "squid-right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "squid-idle",
-			"indices": []
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "squid-idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-5,
 				226
 			],
-			"anim": "singUP-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "sigmasquid-up",
-			"indices": []
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "sigmasquid-up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-29,
 				195
 			],
-			"anim": "singDOWN-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "sigmasquid-down",
-			"indices": []
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "sigmasquid-down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-24,
 				220
 			],
-			"anim": "singRIGHT-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "sigmasquid-right",
-			"indices": []
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "sigmasquid-right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-30,
 				175
 			],
-			"anim": "singLEFT-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "sigmasquid-left",
-			"indices": []
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "sigmasquid-left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-13,
 				183
 			],
-			"anim": "wts",
+			"loop": false,
 			"fps": 24,
-			"name": "squid-wts",
-			"indices": []
+			"anim": "wts",
+			"indices": [],
+			"name": "squid-wts"
 		}
 	],
 	"vocals_file": "",
@@ -129,12 +129,12 @@
 		0,
 		0
 	],
-	"healthicon": "face",
+	"healthicon": "squid",
 	"flip_x": true,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		109,
+		198,
+		229
 	],
 	"camera_position": [
 		-250,

@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				8,
 				4
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "kai idle"
+			"fps": 24,
+			"name": "kai idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-60,
 				-108
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "kai left"
+			"fps": 24,
+			"name": "kai left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-15,
 				-53
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "kai down"
+			"fps": 24,
+			"name": "kai down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				7,
 				63
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
-			"name": "kai up"
+			"fps": 24,
+			"name": "kai up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				83,
 				57
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "kai right"
+			"fps": 24,
+			"name": "kai right",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -63,12 +63,12 @@
 		0,
 		100
 	],
-	"healthicon": "face",
+	"healthicon": "kai",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		126,
+		64,
+		64
 	],
 	"camera_position": [
 		10,

@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "bf",
-		"gfVersion": "gf",
+		"gfVersion": "invisible",
 		"notes": [
 			{
 				"sectionBeats": 4,

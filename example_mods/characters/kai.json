@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				17,
 				-32
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "left"
+			"fps": 24,
+			"name": "left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				-99
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "down"
+			"fps": 24,
+			"name": "down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-16,
 				-23
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "right"
+			"fps": 24,
+			"name": "right",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				-13
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				364,
 				-12
 			],
-			"anim": "hey",
+			"loop": false,
 			"fps": 24,
-			"name": "hey",
-			"indices": []
+			"anim": "hey",
+			"indices": [],
+			"name": "hey"
 		}
 	],
 	"vocals_file": "",
@@ -74,12 +74,12 @@
 		100,
 		210
 	],
-	"healthicon": "icon",
+	"healthicon": "kai",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		126,
+		64,
+		64
 	],
 	"camera_position": [
 		90,

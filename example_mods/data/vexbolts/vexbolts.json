@@ -1639,11 +1639,11 @@
 				"bpm": 128
 			}
 		],
-		"gfVersion": "gf",
+		"gfVersion": "invisible",
 		"splashSkin": "noteSplashes",
 		"song": "vexbolts",
 		"validScore": true,
-		"stage": "wenamechainsama_bg",
+		"stage": "bop city",
 		"arrowSkin": "",
 		"needsVoices": true,
 		"speed": 2.9,

@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-4,
 				1
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "i"
+			"fps": 24,
+			"name": "i",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				109,
 				2
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 12,
-			"name": "l",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "l"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				7,
 				-82
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 12,
-			"name": "d",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "d"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				201
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 12,
-			"name": "u",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "u"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-81,
 				29
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 12,
-			"name": "r",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "r"
 		}
 	],
 	"vocals_file": "",
@@ -63,12 +63,12 @@
 		70,
 		302
 	],
-	"healthicon": "face",
+	"healthicon": "tiktok",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		255,
+		255,
+		255
 	],
 	"camera_position": [
 		0,

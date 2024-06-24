@@ -4921,7 +4921,7 @@
 				"bpm": 188
 			}
 		],
-		"gfVersion": "bf",
+		"gfVersion": "invisible",
 		"splashSkin": "noteSplashes",
 		"song": "fanum-tax",
 		"validScore": true,

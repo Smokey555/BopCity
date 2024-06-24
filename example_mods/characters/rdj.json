@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				4,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "rioIdle"
+			"fps": 24,
+			"name": "rioIdle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				59,
 				12
 			],
-			"indices": [],
-			"fps": 12,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "rioLEFT"
+			"fps": 12,
+			"name": "rioLEFT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				-28
 			],
-			"indices": [],
-			"fps": 12,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "rioDOwn"
+			"fps": 12,
+			"name": "rioDOwn",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-26,
 				7
 			],
-			"indices": [],
-			"fps": 12,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "rioRIGHT"
+			"fps": 12,
+			"name": "rioRIGHT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				9,
 				51
 			],
-			"indices": [],
-			"fps": 12,
 			"anim": "singUP",
-			"loop": false,
-			"name": "rioUP"
+			"fps": 12,
+			"name": "rioUP",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -63,12 +63,12 @@
 		0,
 		130
 	],
-	"healthicon": "face",
+	"healthicon": "rdj",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		143,
+		56,
+		57
 	],
 	"camera_position": [
 		0,

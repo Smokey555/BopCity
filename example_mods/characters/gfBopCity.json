@@ -1,36 +1,47 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				-246,
-				313
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "cheer",
-			"indices": [],
-			"name": "GF_swag"
-		},
-		{
-			"offsets": [
-				-225,
-				313
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "sad",
-			"indices": [],
-			"name": "GF_Miss"
-		},
-		{
 			"loop": false,
 			"offsets": [
-				-233,
-				313
+				0,
+				0
 			],
-			"anim": "Idle",
+			"anim": "danceLeft",
 			"fps": 24,
 			"name": "GF_Chill",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "GF_Chill",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				1
+			],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "GF_swag",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				0
+			],
+			"anim": "sad",
+			"fps": 24,
+			"name": "GF_Miss",
 			"indices": []
 		}
 	],
@@ -38,8 +49,8 @@
 	"no_antialiasing": false,
 	"image": "characters/BC_GF",
 	"position": [
-		0,
-		0
+		110,
+		-240
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -49,7 +60,7 @@
 		77
 	],
 	"camera_position": [
-		0,
+		30,
 		0
 	],
 	"sing_duration": 4,

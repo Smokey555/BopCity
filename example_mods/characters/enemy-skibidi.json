@@ -1,25 +1,36 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-3,
-				2
+				-30
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "left",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
 		},
 		{
 			"loop": false,
 			"offsets": [
 				-3,
-				-30
+				71
 			],
-			"anim": "singDOWN",
+			"anim": "singUP",
 			"fps": 24,
-			"name": "down",
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
 			"indices": []
 		},
 		{
@@ -28,32 +39,21 @@
 				-3,
 				-3
 			],
-			"anim": "singRIGHT",
+			"anim": "singLEFT",
 			"fps": 24,
 			"name": "right",
 			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-3,
-				71
+				2
 			],
-			"loop": false,
+			"anim": "singRIGHT",
 			"fps": 24,
-			"anim": "singUP",
-			"indices": [],
-			"name": "up"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"name": "left",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -61,17 +61,17 @@
 	"image": "characters/skibdi",
 	"position": [
 		170,
-		680
+		390
 	],
-	"healthicon": "icon",
+	"healthicon": "skibidi",
 	"flip_x": true,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		168,
+		162,
+		152
 	],
 	"camera_position": [
-		180,
+		70,
 		70
 	],
 	"sing_duration": 6.1,
