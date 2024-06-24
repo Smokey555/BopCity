@@ -1,8 +1,29 @@
 {
 	"song": {
 		"player1": "speed",
-		"player2": "bf",
-		"events": [],
+		"player2": "nathanielb",
+		"events": [
+			[
+				53795.2586206897,
+				[
+					[
+						"Change Character",
+						"gf",
+						"ben"
+					]
+				]
+			],
+			[
+				53797.4137931035,
+				[
+					[
+						"Play Animation",
+						"slidein",
+						"gf"
+					]
+				]
+			]
+		],
 		"notes": [
 			{
 				"typeOfSection": 0,
@@ -1954,7 +1975,8 @@
 					[
 						54827.5862068966,
 						0,
-						261
+						261,
+						"GF Sing"
 					]
 				],
 				"typeOfSection": 0,
@@ -2009,7 +2031,7 @@
 					]
 				],
 				"typeOfSection": 0,
-				"gfSection": false,
+				"gfSection": true,
 				"altAnim": false,
 				"mustHitSection": false,
 				"changeBPM": false,
@@ -2051,7 +2073,7 @@
 				],
 				"sectionBeats": 4,
 				"altAnim": false,
-				"gfSection": false,
+				"gfSection": true,
 				"bpm": 102,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -2194,7 +2216,7 @@
 				],
 				"sectionBeats": 4,
 				"altAnim": false,
-				"gfSection": false,
+				"gfSection": true,
 				"bpm": 102,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -2235,7 +2257,7 @@
 				],
 				"sectionBeats": 4,
 				"altAnim": false,
-				"gfSection": false,
+				"gfSection": true,
 				"bpm": 102,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -2311,7 +2333,7 @@
 					]
 				],
 				"typeOfSection": 0,
-				"gfSection": false,
+				"gfSection": true,
 				"altAnim": false,
 				"mustHitSection": false,
 				"changeBPM": false,
@@ -2363,7 +2385,7 @@
 				],
 				"sectionBeats": 4,
 				"altAnim": false,
-				"gfSection": false,
+				"gfSection": true,
 				"bpm": 102,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -2403,7 +2425,7 @@
 					]
 				],
 				"typeOfSection": 0,
-				"gfSection": false,
+				"gfSection": true,
 				"altAnim": false,
 				"mustHitSection": false,
 				"changeBPM": false,
@@ -2455,22 +2477,26 @@
 					[
 						69137.9310344828,
 						7,
-						0
+						0,
+						"GF Sing"
 					],
 					[
 						69482.7586206897,
 						7,
-						0
+						0,
+						"GF Sing"
 					],
 					[
 						69827.5862068966,
 						7,
-						0
+						0,
+						"GF Sing"
 					],
 					[
 						70172.4137931035,
 						7,
-						0
+						0,
+						"GF Sing"
 					]
 				],
 				"sectionBeats": 4,
@@ -2516,22 +2542,26 @@
 					[
 						70517.2413793103,
 						4,
-						0
+						0,
+						"GF Sing"
 					],
 					[
 						70862.0689655172,
 						4,
-						0
+						0,
+						"GF Sing"
 					],
 					[
 						71206.8965517241,
 						4,
-						87
+						87,
+						"GF Sing"
 					],
 					[
 						71379.3103448276,
 						6,
-						175
+						174,
+						"GF Sing"
 					]
 				],
 				"sectionBeats": 4,
@@ -2607,7 +2637,7 @@
 				],
 				"sectionBeats": 4,
 				"altAnim": false,
-				"gfSection": false,
+				"gfSection": true,
 				"bpm": 102,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -2668,7 +2698,7 @@
 				],
 				"sectionBeats": 4,
 				"altAnim": false,
-				"gfSection": false,
+				"gfSection": true,
 				"bpm": 102,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -3991,7 +4021,7 @@
 		"splashSkin": "noteSplashes",
 		"song": "hollup",
 		"validScore": true,
-		"stage": "17buck",
+		"stage": "hollup",
 		"arrowSkin": "",
 		"needsVoices": true,
 		"speed": 2.7,
