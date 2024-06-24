@@ -3,13 +3,13 @@
 	"defaultZoom": 0.58,
 	"stageUI": "",
 
-	"boyfriend": [900, 200],
+	"boyfriend": [1300, 700],
 	"girlfriend": [880, 430],
-	"opponent": [100, 200],
+	"opponent": [180, 200],
 	"hide_girlfriend": true,
 
-	"camera_boyfriend": [-150, 100],
+	"camera_boyfriend": [-150, -60],
 	"camera_opponent": [200, 100],
 	"camera_girlfriend": [500, 400],
-	"camera_speed": 1
+	"camera_speed": 5
 }
