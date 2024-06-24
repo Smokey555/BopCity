@@ -20,8 +20,6 @@ function onCreate()
     addLuaSprite("grass")
     scaleObject('grass', 1.2, 1);
 
-
-
     makeLuaSprite("cloud 1",'bg/bop/cloud 1',1000, -230)
     addLuaSprite("cloud 1")
     setScrollFactor('cloud 1', 1.21, 1);
@@ -29,11 +27,9 @@ function onCreate()
     makeLuaSprite("cloud 2",'bg/bop/cloud 2', -450, 30)
     addLuaSprite("cloud 2")
     setScrollFactor('cloud 2', 1.2, 1);
-
-
-
-
 end
+
+
 function onSectionHit()
 
     if getRandomBool(500) then

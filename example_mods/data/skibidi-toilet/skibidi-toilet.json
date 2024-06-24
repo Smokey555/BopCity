@@ -3200,9 +3200,9 @@
 			}
 		],
 		"events": [],
-		"player2": "skibidi3",
+		"player2": "enemy-skibidi",
 		"splashSkin": "noteSplashes",
-		"song": "skibid",
+		"song": "skibidi-toilet",
 		"needsVoices": true,
 		"arrowSkin": "",
 		"stage": "stage_clone",

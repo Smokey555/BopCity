@@ -1,78 +1,78 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				8,
 				4
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				30,
 				12
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "l"
+			"fps": 24,
+			"name": "l",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				-13
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "d"
+			"fps": 24,
+			"name": "d",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				7,
 				53
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "u"
+			"fps": 24,
+			"name": "u",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				3,
 				4
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "r"
+			"fps": 24,
+			"name": "r",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/impooping",
 	"position": [
-		0,
-		100
+		-140,
+		0
 	],
-	"healthicon": "face",
+	"healthicon": "duke",
 	"flip_x": true,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		64,
+		66,
+		126
 	],
 	"camera_position": [
-		10,
-		150
+		70,
+		140
 	],
 	"sing_duration": 4,
 	"scale": 0.6,

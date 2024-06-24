@@ -4,12 +4,12 @@
 	"stageUI": "",
 
 	"boyfriend": [900, 200],
-	"girlfriend": [880, 430],
+	"girlfriend": [480, -70],
 	"opponent": [100, 200],
-	"hide_girlfriend": true,
+	"hide_girlfriend": false,
 
 	"camera_boyfriend": [-150, 100],
 	"camera_opponent": [200, 100],
-	"camera_girlfriend": [500, 400],
+	"camera_girlfriend": [80, -200],
 	"camera_speed": 1
 }
