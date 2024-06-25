@@ -35,7 +35,7 @@
 		},
 		{
 			"offsets": [
-				65,
+				66,
 				196
 			],
 			"loop": false,
@@ -46,7 +46,7 @@
 		},
 		{
 			"offsets": [
-				65,
+				66,
 				196
 			],
 			"loop": false,
@@ -54,24 +54,13 @@
 			"anim": "singUP",
 			"indices": [],
 			"name": "up"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				65,
-				196
-			],
-			"anim": "slidein",
-			"fps": 24,
-			"name": "slidein",
-			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/ben",
 	"position": [
-		0,
+		-1500,
 		430
 	],
 	"healthicon": "icon",
@@ -86,6 +75,6 @@
 		-150
 	],
 	"sing_duration": 4,
-	"scale": 1,
+	"scale": 0.7,
 	"_editor_isPlayer": false
 }

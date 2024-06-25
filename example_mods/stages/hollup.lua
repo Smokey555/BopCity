@@ -31,12 +31,7 @@ function onCreate()
     setScrollFactor('cloud 2', 1.2, 1);
 end
 
-function onCreatePost()
-    runHaxeCode([[
-        game.dad.cameras = [game.camHUD];
-        ]]) 
-    end 
-end
+
 function onSectionHit()
 
     if getRandomBool(500) then
@@ -49,7 +44,14 @@ function plane()
 end
 
 function onBeatHit()
-    if curBeat == 224 then  
-        doTweenX('ben', 'gf', 2220, 2, 'sineOut')
+    if curBeat == 157 then  
+    runHaxeCode([[
+        game.gf.cameras = [game.camOther];
+        ]]) 
+    elseif curBeat == 158 then  
+        doTweenX('ben', 'gf', 5, 1.4, 'sineOut')
+
+    elseif curBeat == 224 then  
+        doTweenX('ben', 'gf', -420, 2, 'sineOut')
     end 
 end 
