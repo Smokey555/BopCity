@@ -216,6 +216,8 @@ class PlayState extends MusicBeatState
 	var timeTxt:FlxText;
 	var scoreTxtTween:FlxTween;
 
+	var cenatShooter:CenatShooter;
+
 	public static var campaignScore:Int = 0;
 	public static var campaignMisses:Int = 0;
 	public static var seenCutscene:Bool = false;
@@ -1422,6 +1424,17 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
+			switch (event.event)
+			{
+				case "Cenat Shooter":
+					//technically behind notesplashes but who cares
+					cenatShooter = new CenatShooter(camHUD);
+					add(cenatShooter);
+
+
+			}
+
+		
 		stagesFunc(function(stage:BaseStage) stage.eventPushed(event));
 		eventsPushed.push(event.event);
 	}
@@ -2174,6 +2187,30 @@ class PlayState extends MusicBeatState
 							}
 						});
 				}
+
+				case 'Cenat Shooter':
+					{
+						var amount = Std.parseInt(value1);
+						var time = Std.parseFloat(value2);
+
+						if (Math.isNaN(amount) || Math.isNaN(time)) return;
+						cenatShooter.finishCallback = function()
+							{
+								cpuControlled = false;
+							}
+						cenatShooter.failCallback = function()
+							{
+								cpuControlled = false;
+								health = 0;
+								doDeathCheck();	
+							}
+						cenatShooter.start(amount,time);
+						cpuControlled = true;
+				
+
+
+					}
+					
 
 			case 'Set Property':
 				try
