@@ -153,8 +153,8 @@ class CenatShooter extends FlxSpriteGroup
 
 			if (FlxG.mouse.justPressed)
 			{
-				FlxG.camera.flash(FlxColor.WHITE, 0.1);
-				FlxG.sound.play(cenatShootSounds[FlxG.random.int(0, cenatShootSounds.length - 1)]);
+				cam.flash(FlxColor.WHITE, 0.1);
+				playedSounds.push(FlxG.sound.play(cenatShootSounds[FlxG.random.int(0, cenatShootSounds.length - 1)]));
 
 				var sprs = cenatsToShoot.members.copy();
 				sprs.reverse();
