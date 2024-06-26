@@ -15,7 +15,8 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	var optionShit:Array<String> = [
-		'story_mode',
+		//'story_mode',
+		'bopcity',
 		'freeplay',
 		//#if MODS_ALLOWED 'mods', #end
 		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
@@ -157,8 +158,11 @@ class MainMenuState extends MusicBeatState
 					{
 						switch (optionShit[curSelected])
 						{
-							case 'story_mode':
-								MusicBeatState.switchState(new StoryMenuState());
+							//case 'story_mode':
+							//	MusicBeatState.switchState(new StoryMenuState());
+							case 'bopcity':
+								PlayState.SONG = backend.Song.loadFromJson("bop-city", "bop-city");
+								MusicBeatState.switchState(new PlayState());
 							case 'freeplay':
 								MusicBeatState.switchState(new FreeplayState());
 

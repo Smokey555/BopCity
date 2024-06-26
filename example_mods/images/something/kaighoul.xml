@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kaighoul.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="die0000" x="100" y="100" width="401" height="371" pivotX="44" pivotY="54.8" frameX="0" frameY="-30" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0001" x="601" y="100" width="425" height="395" frameX="-7" frameY="-24" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0002" x="1126" y="100" width="396" height="394" frameX="-41" frameY="-9" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0003" x="1622" y="100" width="372" height="395" frameX="-49" frameY="0" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0004" x="2094" y="100" width="271" height="331" frameX="-119" frameY="-42" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0005" x="2465" y="100" width="235" height="286" frameX="-149" frameY="-90" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0006" x="2800" y="100" width="235" height="251" frameX="-149" frameY="-122" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0007" x="3135" y="100" width="193" height="209" frameX="-184" frameY="-161" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0008" x="3428" y="100" width="166" height="157" frameX="-200" frameY="-178" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0009" x="3694" y="100" width="102" height="94" frameX="-231" frameY="-214" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0010" x="3896" y="100" width="62" height="58" frameX="-251" frameY="-232" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0011" x="100" y="595" width="11" height="13" frameX="-278" frameY="-255" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0012" x="211" y="595" width="13" height="13" frameX="-277" frameY="-255" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0013" x="324" y="595" width="0" height="0" frameX="-44" frameY="-54" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="die0014" x="324" y="595" width="0" height="0" frameX="-44" frameY="-54" frameWidth="437" frameHeight="419"/>
+	<SubTexture name="drag0000" x="424" y="595" width="431" height="325" pivotX="79.35" pivotY="1.9" frameX="-5" frameY="0" frameWidth="436" frameHeight="325"/>
+	<SubTexture name="drag0001" x="424" y="595" width="431" height="325" frameX="-5" frameY="0" frameWidth="436" frameHeight="325"/>
+	<SubTexture name="drag0002" x="955" y="595" width="425" height="311" frameX="0" frameY="-14" frameWidth="436" frameHeight="325"/>
+	<SubTexture name="drag0003" x="955" y="595" width="425" height="311" frameX="0" frameY="-14" frameWidth="436" frameHeight="325"/>
+	<SubTexture name="grab0000" x="1480" y="595" width="329" height="296" pivotX="79.8" pivotY="2.9" frameX="-82" frameY="-2" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="grab0001" x="1480" y="595" width="329" height="296" frameX="-82" frameY="-2" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="grab0002" x="1909" y="595" width="329" height="307" frameX="-67" frameY="0" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="grab0003" x="1909" y="595" width="329" height="307" frameX="-67" frameY="0" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="grab0004" x="2338" y="595" width="416" height="313" frameX="0" frameY="-6" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="grab0005" x="2338" y="595" width="416" height="313" frameX="0" frameY="-6" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="grab0006" x="2854" y="595" width="425" height="311" frameX="0" frameY="-15" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="grab0007" x="2854" y="595" width="425" height="311" frameX="0" frameY="-15" frameWidth="425" frameHeight="326"/>
+	<SubTexture name="spawn0000" x="3379" y="595" width="11" height="11" pivotX="26.3" pivotY="0" frameX="-152" frameY="-209" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0001" x="3490" y="595" width="23" height="23" frameX="-149" frameY="-208" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0002" x="3613" y="595" width="41" height="45" frameX="-143" frameY="-201" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0003" x="3754" y="595" width="61" height="66" frameX="-136" frameY="-195" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0004" x="100" y="1020" width="84" height="94" frameX="-129" frameY="-187" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0005" x="284" y="1020" width="107" height="106" frameX="-118" frameY="-186" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0006" x="491" y="1020" width="111" height="114" frameX="-104" frameY="-175" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0007" x="702" y="1020" width="155" height="143" frameX="-71" frameY="-153" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0008" x="957" y="1020" width="200" height="167" frameX="-42" frameY="-133" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0009" x="1257" y="1020" width="230" height="219" frameX="-20" frameY="-102" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0010" x="1587" y="1020" width="251" height="276" frameX="0" frameY="-81" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0011" x="1938" y="1020" width="259" height="253" frameX="-2" frameY="-81" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0012" x="2297" y="1020" width="261" height="247" frameX="-6" frameY="-85" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0013" x="2658" y="1020" width="255" height="275" frameX="-14" frameY="-55" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0014" x="3013" y="1020" width="248" height="292" frameX="-26" frameY="-31" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0015" x="3361" y="1020" width="283" height="299" frameX="-26" frameY="-12" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0016" x="100" y="1419" width="329" height="296" frameX="-29" frameY="0" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0017" x="100" y="1419" width="329" height="296" frameX="-29" frameY="0" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0018" x="529" y="1419" width="316" height="296" frameX="-26" frameY="0" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0019" x="529" y="1419" width="316" height="296" frameX="-26" frameY="0" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0020" x="945" y="1419" width="328" height="296" frameX="-15" frameY="0" frameWidth="358" frameHeight="357"/>
+	<SubTexture name="spawn0021" x="945" y="1419" width="328" height="296" frameX="-15" frameY="0" frameWidth="358" frameHeight="357"/>
+</TextureAtlas>
