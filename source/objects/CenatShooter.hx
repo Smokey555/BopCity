@@ -60,6 +60,8 @@ class CenatShooter extends FlxSpriteGroup
 		add(cenatsToShoot);
 		var text = new FlxSprite().loadGraphic(Paths.image("something/text"));
 		add(text);
+		text.scale.set(1.2,1.2);
+		text.updateHitbox();
 		text.setPosition(FlxG.width - text.width, FlxG.height - text.height);
 
 		crosshair = new FlxSprite().loadGraphic(Paths.image("something/c"));
@@ -76,8 +78,7 @@ class CenatShooter extends FlxSpriteGroup
 		for (i in 0...amount)
 		{
 			var cenatSprite = new FlxSprite().loadGraphic(cenatImages[FlxG.random.int(0, cenatImages.length - 1)]);
-			var randomScale = FlxG.random.float(0.4, 0.7);
-			cenatSprite.scale.set(randomScale, randomScale);
+			cenatSprite.scale.y = FlxG.random.float(0.4,1);
 			cenatSprite.updateHitbox();
 			cenatsToShoot.add(cenatSprite);
 			cenatSprite.setPosition(FlxG.random.float(100, 1280 - cenatSprite.width), FlxG.random.float(0, 600 - cenatSprite.height));
