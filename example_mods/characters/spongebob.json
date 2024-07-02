@@ -1,81 +1,81 @@
 {
 	"animations": [
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				1
 			],
+			"loop": true,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "sponge-idle",
-			"indices": []
+			"indices": [],
+			"name": "sponge-idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "sponge-down",
-			"indices": []
+			"indices": [],
+			"name": "sponge-down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "sponge-left",
-			"indices": []
+			"indices": [],
+			"name": "sponge-left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "sponge-up",
-			"indices": []
+			"indices": [],
+			"name": "sponge-up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "sponge-right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "sponge-right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				11,
 				14
 			],
-			"anim": "sponge-wts",
+			"loop": false,
 			"fps": 24,
-			"name": "sponge-wts",
-			"indices": []
+			"anim": "sponge-wts",
+			"indices": [],
+			"name": "sponge-wts"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				653,
 				74
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "sponge-intro",
-			"loop": false,
-			"name": "sponge-intro"
+			"fps": 24,
+			"name": "sponge-intro",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -88,9 +88,9 @@
 	"healthicon": "sponge",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		227,
+		233,
+		107
 	],
 	"camera_position": [
 		0,
