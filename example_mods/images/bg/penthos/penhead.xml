@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="penhead.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="look10000" x="0" y="0" width="346" height="432"/>
+	<SubTexture name="look10001" x="0" y="0" width="346" height="432"/>
+	<SubTexture name="look10002" x="366" y="0" width="346" height="432"/>
+	<SubTexture name="look10003" x="366" y="0" width="346" height="432"/>
+	<SubTexture name="look10004" x="732" y="0" width="346" height="432"/>
+	<SubTexture name="look10005" x="732" y="0" width="346" height="432"/>
+	<SubTexture name="look10006" x="1098" y="0" width="346" height="432"/>
+	<SubTexture name="look10007" x="1098" y="0" width="346" height="432"/>
+	<SubTexture name="look20000" x="1464" y="0" width="346" height="432"/>
+	<SubTexture name="look20001" x="1464" y="0" width="346" height="432"/>
+	<SubTexture name="look20002" x="0" y="452" width="346" height="432"/>
+	<SubTexture name="look20003" x="0" y="452" width="346" height="432"/>
+	<SubTexture name="look20004" x="366" y="452" width="346" height="432"/>
+	<SubTexture name="look20005" x="366" y="452" width="346" height="432"/>
+	<SubTexture name="look20006" x="732" y="452" width="346" height="432"/>
+	<SubTexture name="look20007" x="732" y="452" width="346" height="432"/>
+</TextureAtlas>
