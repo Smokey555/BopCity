@@ -116,8 +116,41 @@ function onCreate()
 	setBlendMode('fireparticles6', 'screen')
 
 
+
+	initLuaShader('chromatic')
+	makeLuaSprite('shaderChrom')
+	setSpriteShader('shaderChrom','chromatic')
+
+	initLuaShader('tvStatic')
+	makeLuaSprite('shaderStatic')
+	setSpriteShader('shaderStatic','tvStatic')
+
+	runHaxeCode([[
+		var shader = game.getLuaObject("shaderChrom").shader;
+		shader.setFloat('offset',0.0025);
+
+		var staticShader = game.getLuaObject("shaderStatic").shader;
+		staticShader.setFloat('strengthMulti',0.5);
+		staticShader.setFloat('imtoolazytonamethis',0);
+
+		FlxG.camera.setFilters([new ShaderFilter(shader),new ShaderFilter(staticShader)]);
+	]])
+	
+
 end
 
+
+function onUpdatePost(elapsed)
+	setProperty('shaderStatic.x', getProperty('shaderStatic.x') + elapsed)
+
+	runHaxeCode([[
+		var shader = game.getLuaObject("shaderChrom").shader;
+		shader.setFloat('offset',FlxG.random.float(0.0015,0.0035));
+
+		var shader = game.getLuaObject("shaderStatic").shader;
+		shader.setFloat('iTime',game.getLuaObject("shaderStatic").x);
+	]])
+end
 function onStepHit()
     if curStep == 1 then
         setProperty('cameraSpeed', 0.8)
