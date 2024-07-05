@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 16,
-			"name": "idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				181,
 				49
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "left"
+			"fps": 24,
+			"name": "left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-11
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "left"
+			"fps": 24,
+			"name": "left",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				130
 			],
-			"anim": "singUP",
+			"indices": [],
 			"fps": 24,
-			"name": "left",
-			"indices": []
+			"anim": "singUP",
+			"loop": false,
+			"name": "left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-190,
 				100
 			],
-			"anim": "singRIGHT",
+			"indices": [],
 			"fps": 24,
-			"name": "left",
-			"indices": []
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "left"
 		}
 	],
 	"vocals_file": "",
@@ -61,7 +61,7 @@
 	"image": "characters/kaiegg",
 	"position": [
 		-40,
-		360
+		240
 	],
 	"healthicon": "face",
 	"flip_x": false,

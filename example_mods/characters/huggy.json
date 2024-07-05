@@ -3,67 +3,67 @@
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				0
+				-123,
+				-54
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-87,
+				-142
 			],
 			"anim": "idle",
-			"fps": 16,
+			"fps": 24,
 			"name": "idle",
 			"indices": []
 		},
 		{
-			"offsets": [
-				181,
-				49
-			],
 			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "left"
-		},
-		{
 			"offsets": [
-				0,
-				-11
+				96,
+				-404
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "left"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				130
-			],
-			"anim": "singUP",
 			"fps": 24,
-			"name": "left",
+			"name": "down",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-190,
-				100
+				-174,
+				-44
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "left",
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-129,
+				16
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
 			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/kaiegg",
+	"image": "characters/huggy",
 	"position": [
-		-40,
-		360
+		30,
+		120
 	],
-	"healthicon": "face",
+	"healthicon": "icon",
 	"flip_x": false,
 	"healthbar_colors": [
 		161,
@@ -71,10 +71,10 @@
 		161
 	],
 	"camera_position": [
-		130,
-		50
+		60,
+		-50
 	],
 	"sing_duration": 4,
-	"scale": 0.8,
+	"scale": 1.6,
 	"_editor_isPlayer": false
 }
