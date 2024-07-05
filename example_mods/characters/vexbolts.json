@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				98,
+				-115
+			],
+			"indices": [],
+			"fps": 16,
+			"anim": "idle",
+			"loop": false,
+			"name": "vexboltsIdle"
+		},
+		{
+			"offsets": [
+				100,
+				-188
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "vexboltsDown"
+		},
+		{
+			"offsets": [
+				71,
+				-116
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "vexboltsLeft"
+		},
+		{
+			"offsets": [
+				135,
+				-126
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "vexboltsRight "
+		},
+		{
+			"offsets": [
+				83,
+				66
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "vexboltsUp "
+		},
+		{
+			"offsets": [
+				110,
+				-30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "dancing",
+			"loop": true,
+			"name": "Vexbolts Danceing"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/vexbolts",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "vexbolts",
+	"flip_x": false,
+	"healthbar_colors": [
+		102,
+		215,
+		113
+	],
+	"camera_position": [
+		120,
+		260
+	],
+	"sing_duration": 4,
+	"scale": 0.6,
+	"_editor_isPlayer": false
+}

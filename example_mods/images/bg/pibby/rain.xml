@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rain.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rain0000" x="0" y="0" width="500" height="381"/>
+	<SubTexture name="rain0001" x="520" y="0" width="500" height="381"/>
+	<SubTexture name="rain0002" x="0" y="401" width="500" height="381"/>
+	<SubTexture name="rain0003" x="520" y="401" width="500" height="381"/>
+</TextureAtlas>

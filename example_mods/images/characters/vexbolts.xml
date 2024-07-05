@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vexbolts.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Vexbolts Danceing instance 10000" x="1" y="1" width="473" height="881" frameX="-84" frameY="-94" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10001" x="475" y="1" width="446" height="902" frameX="-123" frameY="-63" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10002" x="922" y="1" width="342" height="893" frameX="-221" frameY="-53" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10003" x="1265" y="1" width="439" height="856" frameX="-222" frameY="-70" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10004" x="1705" y="1" width="477" height="895" frameX="-238" frameY="-70" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10005" x="2183" y="1" width="399" height="875" frameX="-245" frameY="-72" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10006" x="2583" y="1" width="303" height="886" frameX="-236" frameY="-55" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10007" x="2887" y="1" width="303" height="879" frameX="-236" frameY="-49" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10008" x="3191" y="1" width="303" height="923" frameX="-240" frameY="-49" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10009" x="3495" y="1" width="375" height="960" frameX="-172" frameY="-55" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10010" x="3871" y="1" width="327" height="961" frameX="-218" frameY="-55" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10011" x="4199" y="1" width="372" height="976" frameX="-220" frameY="-20" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10012" x="4572" y="1" width="496" height="947" frameX="-178" frameY="-37" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10013" x="5069" y="1" width="627" height="879" frameX="-91" frameY="-97" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10014" x="5697" y="1" width="615" height="909" frameX="-98" frameY="-93" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10015" x="6313" y="1" width="616" height="927" frameX="-106" frameY="-76" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10016" x="6930" y="1" width="519" height="967" frameX="-197" frameY="-24" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10017" x="7450" y="1" width="369" height="957" frameX="-184" frameY="-18" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10018" x="7820" y="1" width="367" height="963" frameX="-188" frameY="-8" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10019" x="1" y="978" width="416" height="958" frameX="-133" frameY="0" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10020" x="418" y="978" width="622" height="935" frameX="-27" frameY="-45" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10021" x="1041" y="978" width="651" height="910" frameX="0" frameY="-80" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10022" x="1041" y="978" width="651" height="910" frameX="0" frameY="-80" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10023" x="418" y="978" width="622" height="935" frameX="-27" frameY="-45" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10024" x="1" y="978" width="416" height="958" frameX="-133" frameY="0" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10025" x="7820" y="1" width="367" height="963" frameX="-188" frameY="-8" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10026" x="7450" y="1" width="369" height="957" frameX="-184" frameY="-18" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10027" x="6930" y="1" width="519" height="967" frameX="-197" frameY="-24" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10028" x="6313" y="1" width="616" height="927" frameX="-106" frameY="-76" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10029" x="5697" y="1" width="615" height="909" frameX="-98" frameY="-93" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10030" x="5069" y="1" width="627" height="879" frameX="-91" frameY="-97" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10031" x="4572" y="1" width="496" height="947" frameX="-178" frameY="-37" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10032" x="4199" y="1" width="372" height="976" frameX="-220" frameY="-20" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10033" x="3871" y="1" width="327" height="961" frameX="-218" frameY="-55" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10034" x="3495" y="1" width="375" height="960" frameX="-172" frameY="-55" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10035" x="3191" y="1" width="303" height="923" frameX="-240" frameY="-49" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10036" x="2887" y="1" width="303" height="879" frameX="-236" frameY="-49" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10037" x="2583" y="1" width="303" height="886" frameX="-236" frameY="-55" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10038" x="2183" y="1" width="399" height="875" frameX="-245" frameY="-72" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10039" x="1705" y="1" width="477" height="895" frameX="-238" frameY="-70" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10040" x="1265" y="1" width="439" height="856" frameX="-222" frameY="-70" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10041" x="922" y="1" width="342" height="893" frameX="-221" frameY="-53" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10042" x="475" y="1" width="446" height="902" frameX="-123" frameY="-63" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="Vexbolts Danceing instance 10043" x="1" y="1" width="473" height="881" frameX="-84" frameY="-94" frameWidth="722" frameHeight="1016"/>
+	<SubTexture name="vexboltsDown instance 10000" x="1693" y="978" width="610" height="709" frameX="0" frameY="-4" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10001" x="1693" y="978" width="610" height="709" frameX="0" frameY="-4" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10002" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10003" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10004" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10005" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10006" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10007" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10008" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10009" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10010" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10011" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10012" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsDown instance 10013" x="2304" y="978" width="582" height="713" frameX="-12" frameY="0" frameWidth="610" frameHeight="713"/>
+	<SubTexture name="vexboltsIdle instance 10000" x="2887" y="978" width="615" height="862" frameX="0" frameY="-28" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10001" x="2887" y="978" width="615" height="862" frameX="0" frameY="-28" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10002" x="3503" y="978" width="541" height="833" frameX="-37" frameY="-30" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10003" x="3503" y="978" width="541" height="833" frameX="-37" frameY="-30" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10004" x="4045" y="978" width="514" height="839" frameX="-50" frameY="-17" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10005" x="4045" y="978" width="514" height="839" frameX="-50" frameY="-17" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10006" x="4560" y="978" width="484" height="840" frameX="-65" frameY="-3" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10007" x="4560" y="978" width="484" height="840" frameX="-65" frameY="-3" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10008" x="5045" y="978" width="468" height="834" frameX="-71" frameY="0" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10009" x="5045" y="978" width="468" height="834" frameX="-71" frameY="0" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10010" x="5045" y="978" width="468" height="834" frameX="-71" frameY="0" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10011" x="5045" y="978" width="468" height="834" frameX="-71" frameY="0" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10012" x="5045" y="978" width="468" height="834" frameX="-71" frameY="0" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10013" x="5045" y="978" width="468" height="834" frameX="-71" frameY="0" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsIdle instance 10014" x="5045" y="978" width="468" height="834" frameX="-71" frameY="0" frameWidth="615" frameHeight="890"/>
+	<SubTexture name="vexboltsLeft instance 10000" x="5514" y="978" width="590" height="821" frameX="0" frameY="-10" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10001" x="5514" y="978" width="590" height="821" frameX="0" frameY="-10" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10002" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10003" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10004" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10005" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10006" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10007" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10008" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10009" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10010" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10011" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10012" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10013" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsLeft instance 10014" x="6105" y="978" width="599" height="831" frameX="-9" frameY="0" frameWidth="608" frameHeight="831"/>
+	<SubTexture name="vexboltsRight instance 10000" x="6705" y="978" width="653" height="803" frameX="-28" frameY="-12" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10001" x="6705" y="978" width="653" height="803" frameX="-28" frameY="-12" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10002" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10003" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10004" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10005" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10006" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10007" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10008" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10009" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10010" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10011" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10012" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10013" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsRight instance 10014" x="7359" y="978" width="635" height="815" frameX="0" frameY="0" frameWidth="681" frameHeight="815"/>
+	<SubTexture name="vexboltsUp instance 10000" x="1" y="1937" width="489" height="1134" frameX="-24" frameY="0" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10001" x="1" y="1937" width="489" height="1134" frameX="-24" frameY="0" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10002" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10003" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10004" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10005" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10006" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10007" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10008" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10009" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10010" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10011" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10012" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+	<SubTexture name="vexboltsUp instance 10013" x="491" y="1937" width="519" height="1081" frameX="0" frameY="-54" frameWidth="519" frameHeight="1135"/>
+</TextureAtlas>

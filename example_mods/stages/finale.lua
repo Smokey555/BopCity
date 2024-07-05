@@ -1,3 +1,10 @@
+
+local stopTweens = false
+local startUpdate = false
+
+
+
+
 function onCreate()
     makeLuaSprite("bg",'bg/finale/galaxy', -500,-250)
     addLuaSprite("bg")
@@ -41,19 +48,50 @@ function onCreatePost()
 end
 
 function onStepHit()
-    if curStep == 48 then  
-    doTweenY('hefloats', 'dad', 900, 1, 'quadInOut')
+    if curStep >= 591 and curStep <= 719 then
+        stopTweens = true
+    else
+        stopTweens = false
+    end
 
+    if curStep == 48 then  
+        doTweenY('hefloats', 'dad', 900, 1, 'quadInOut')
     elseif curStep == 60 then  
         doTweenY('fart', 'dad', 400, 0.1, '')
-    end
+
+    elseif curStep >= 719 then
+            startUpdate = true
+    end 
 end
+
+function onUpdate(elapsed)
+    if not startUpdate then
+        return
+    end
+
+    songPos = getSongPosition()
+    local currentBeat = (songPos / 1000) * (bpm / 80)
+
+    local radius = 110
+    local angle = currentBeat * math.pi * 0.5
+    local xOffset = radius * math.sin(angle)
+    local yOffset = radius * math.sin(angle) * math.cos(angle)
+
+    doTweenY('dadTweenY', 'dad', 300 + yOffset, 0.001)
+
+    doTweenX('dadTweenX', 'dad', 400 + xOffset, 0.001)
+end
+
 function onTweenCompleted(tag)
-	if tag == 'fart' then
-    doTweenY('hefloats2', 'dad', 500, 1, 'quadInOut')
+    if stopTweens then
+        return
+    end
+
+    if tag == 'hefloats' then
+        doTweenY('hefloats2', 'dad', 500, 2, 'quadInOut')
     end
 
     if tag == 'hefloats2' then
-    doTweenY('hefloats', 'dad', 400, 1, 'quadInOut')
+        doTweenY('hefloats', 'dad', 400, 2, 'quadInOut')
     end
 end
