@@ -155,7 +155,6 @@ function onStepHit()
     if curStep == 1 then
         setProperty('cameraSpeed', 0.8)
         doTweenZoom('f', 'camGame', 0.8, 2.5, 'backout')
-    doTweenAlpha('ohmygodblack','bleck',0.01,3,'quartInOut')
     triggerEvent('Camera Follow Pos', '900', '75')
 
 elseif curStep == 64 then
