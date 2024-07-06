@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-56,
+				-243
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-71,
+				-272
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-103,
+				-212
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-86,
+				-242
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-87,
+				-235
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/daniel",
+	"position": [
+		290,
+		160
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		159,
+		220,
+		255
+	],
+	"camera_position": [
+		100,
+		340
+	],
+	"sing_duration": 4,
+	"scale": 0.7,
+	"_editor_isPlayer": true
+}
