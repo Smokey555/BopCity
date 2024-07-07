@@ -5,11 +5,25 @@ local offsetX = (screenWidth-newWidth)/2
 local offsetY = (screenHeight-newHeight)/2
 local FILE_DIR = "bg/penthos/"
 
+function setupVideoSprite(videoPath, spriteName)
+    makeLuaSprite(spriteName, '', 0, 0)
+    addLuaSprite(spriteName, true)
+    setObjectCamera(spriteName, 'camother')
 
+    addHaxeLibrary('MP4Handler', 'vlc')
+    addHaxeLibrary('Event', 'openfl.events')
+
+    runHaxeCode([[
+        var filepath = Paths.video(']] .. videoPath .. [[');
+        var video = new MP4Handler();
+        video.playVideo(filepath);
+        video.visible = false;
+        setVar('video', video);
+        FlxG.stage.removeEventListener('enterFrame', video.update);
+    ]])
+end
 
 function onCreatePost()
-	
-
 	doTweenAlpha('GUItween1', 'camHUD', 0, 0.01, 'linear');
     setGlobalFromScript('scripts/neocam', 'freeze', true)
     setProperty('cameraSpeed', 200)
@@ -19,9 +33,25 @@ function onCreatePost()
 	setProperty("camHUD.alpha", 0.0001)
 end
 
+function onResume()
+	runHaxeCode([[
+		var video = getVar('video');
+		video.resume();
+	]])
 
+end
+
+function onUpdatePost()
+    runHaxeCode([[
+        var video = getVar('video');
+        game.getLuaObject('videoSprite').loadGraphic(video.bitmapData);
+        video.volume = FlxG.sound.volume + 0.4;
+        if(game.paused) video.pause();
+    ]])
+end
 
 function onCreate()
+
 	setProperty("skipCountdown", true)
 
     runHaxeCode([[
@@ -33,7 +63,6 @@ function onCreate()
 	makeLuaSprite('red','red', -900,-1550)
 	addLuaSprite('red',false)
 	scaleObject("red", 0.7, 0.7)
-
 
 	makeAnimatedLuaSprite('fireparticles', 'bg/penthos/fireparticles', -300,50)
 	addAnimationByPrefix('fireparticles', 'burn', 'burn', 20, true)
@@ -88,8 +117,6 @@ function onCreate()
 	scaleObject("fireparticles6", 4, 4)
 	setProperty('fireparticles6.alpha', tonumber(0.7))
 
-
-
 	makeAnimatedLuaSprite('statid2', 'bg/penthos/statid', -800,-750)
 	addAnimationByPrefix('statid2', 'idle', 'idle', 22, true)
 	addLuaSprite('statid2', true)
@@ -107,15 +134,10 @@ function onCreate()
     setObjectCamera("bar_lower", "hud")
     addLuaSprite("bar_lower", false)
         
-
-	
-
 	setBlendMode('statid2', 'difference')
 	setBlendMode('fireparticles4', 'screen')
 	setBlendMode('fireparticles5', 'screen')
 	setBlendMode('fireparticles6', 'screen')
-
-
 
 	initLuaShader('chromatic')
 	makeLuaSprite('shaderChrom')
@@ -138,7 +160,6 @@ function onCreate()
 	
 
 end
-
 
 function onUpdatePost(elapsed)
 	setProperty('shaderStatic.x', getProperty('shaderStatic.x') + elapsed)
@@ -170,6 +191,10 @@ elseif curStep == 160 then
 		doTweenAlpha('fade', 'red', 0, 0.7)
 		doTweenY("bar_upper", "bar_upper", 0, 3, "quintout")
         doTweenY("bar_lower", "bar_lower", 720 - thickness, 3, "quintout")
+	elseif curStep == 1071 then
+		setupVideoSprite('aethospen', 'videoSprite')
+	elseif curStep == 1375 then
+        removeLuaSprite('videoSprite', true)
 	end
 end
 
@@ -183,7 +208,6 @@ function onTweenCompleted(tag)
     end
 end
 
-
 function onUpdate()
         if curStep > 175 then
 	if mustHitSection then
@@ -196,4 +220,3 @@ function onUpdate()
 	end
 	end
 end
-
