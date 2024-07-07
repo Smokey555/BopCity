@@ -1,0 +1,124 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				21,
+				133
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Talk"
+		},
+		{
+			"offsets": [
+				21,
+				132
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Talk"
+		},
+		{
+			"offsets": [
+				21,
+				132
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Talk"
+		},
+		{
+			"offsets": [
+				21,
+				132
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Talk"
+		},
+		{
+			"offsets": [
+				33,
+				172
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "dive"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				27,
+				88
+			],
+			"anim": "singDOWN-alt",
+			"fps": 28,
+			"name": "dig",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				113,
+				72
+			],
+			"anim": "singLEFT-alt",
+			"fps": 30,
+			"name": "eat",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				26,
+				128
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				21,
+				133
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "alt",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/fatty",
+	"position": [
+		-100,
+		250
+	],
+	"healthicon": "fatty",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		0
+	],
+	"camera_position": [
+		-90,
+		-310
+	],
+	"sing_duration": 4,
+	"scale": 1.6,
+	"_editor_isPlayer": false
+}
