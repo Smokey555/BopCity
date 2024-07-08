@@ -75,7 +75,7 @@ class MainMenuState extends MusicBeatState
     var tempBu = ['freeplay','playNow','settings'];
     function generatebuttons() {
 
-        var len:Array<String> = [for (i in 0...20)'$i'];
+        var len:Array<String> = [for (i in 0...5)'$i'];
         for (i in tempBu) {
             var random = FlxG.random.int(0,len.length-1);
             len.remove(len[random]);
