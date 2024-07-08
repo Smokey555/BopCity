@@ -12,7 +12,8 @@ class VideoSprite extends FlxVideoSprite
     public static function init() {
         if (_init) return;
         _init = true;
-        hxvlc.util.Handle.init();
+        trace('handle init? ' + hxvlc.util.Handle.init());
+        hxvlc.util.Handle.initAsync();
     }
 
     public static final looping:String = ':input-repeat=65535';
