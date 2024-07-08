@@ -1,5 +1,6 @@
 package;
 
+import flixel.addons.transition.FlxTransitionableState;
 import objects.VideoSprite;
 import states.TestState;
 #if android
@@ -138,6 +139,9 @@ class Main extends Sprite
 		DiscordClient.prepare();
 		#end
 
+		FlxG.signals.postStateSwitch.add(()->{FlxTransitionableState.skipNextTransIn = FlxTransitionableState.skipNextTransOut = true;});
+
+		
 		VideoSprite.init();
 		// shader coords fix
 		FlxG.signals.gameResized.add(function (w, h) {
