@@ -9,8 +9,8 @@ var thickness = 80;
 
 var directory = 'bg/penthos/';
 
-var newWidth = FlxG.width * 1.5;
-var newHeight = FlxG.height * 1.5;
+var newWidth = FlxG.width * 1.25;
+var newHeight = FlxG.height * 1.25;
 var offsetX = (FlxG.width-newWidth)/2;
 var offsetY = (FlxG.height-newHeight)/2;
 
@@ -189,10 +189,13 @@ function onCreatePost() {
         video.setGraphicSize(0,FlxG.height);
         video.updateHitbox();
         video.cameras = [game.camOther];
+        FlxG.camera.visible = false;
     });
     video.addCallback('onEnd',()->{
         FlxG.camera.flash(FlxColor.BLACK);
         FlxG.camera.zoom -= 0.25;
+        FlxG.camera.visible = true;
+        FlxTween.num(1,1.25,2, {},(f)->penShader.setFloat('contrast',f));
     });
     video.load('aethospen.mp4',[VideoSprite.muted]);
     add(video);
@@ -223,22 +226,14 @@ function onUpdatePost(elapsed) {
 
     penShader.setFloat('offset',FlxG.random.float(0.0015,0.0035));
 
-    if (game.isCameraOnForcedPos) moveCam();
    // setZoom(0.3);
 }
 
-function moveCam() {
-    if (curSection <= 0) return;
 
-    
-        
-    
-
-}
 
 function onMoveCamera(char) {
     var isDad = (char == 'dad');
-    game.defaultCamZoomMult = (isDad ? 1.2 : 1);
+  //  game.defaultCamZoomMult = (isDad ? 1.2 : 1);
     if (allowedRotation) desiredAngle = (isDad ? -2 : 2);
     heStares.animation.play(isDad ? 'L' : 'R');
 }
@@ -267,6 +262,8 @@ function onEvent(ev,v1,v2) {
                 video.play();
 
             case 'headPea':
+                onEvent('hummusZoom','0.5,2.54','cubeInOut');
+
                 FlxTween.tween(heStares, {y:- 300},1.7, {ease: FlxEase.backOut,onComplete:Void->{
                     FlxTween.tween(heStares, {y: -275}, 2,{ease: FlxEase.sineInOut,type: FlxTweenType.PINGPONG});
                 }});
