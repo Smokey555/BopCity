@@ -1655,8 +1655,10 @@ class PlayState extends MusicBeatState
 
 		#if debug
 		if (FlxG.keys.justPressed.SIX) botplayTxt.visible = cpuControlled = !cpuControlled;
-
 		#end
+		if (generatedMusic && !endingSong && !isCameraOnForcedPos) moveCameraSection();
+
+		
 
 		super.update(elapsed);
 
@@ -2270,9 +2272,20 @@ class PlayState extends MusicBeatState
 		callOnScripts('onMoveCamera', [isDad ? 'dad' : 'boyfriend']);
 	}
 
+	public var camOffset:Float = 20;
 	var cameraTwn:FlxTween;
 	public function moveCamera(isDad:Bool)
 	{
+		var char = isDad ? dad : boyfriend;
+
+		var point = FlxPoint.get();
+		switch (char.getAnimationName().substr(4).toLowerCase()) {
+			case 'left': point.x = -camOffset;
+			case 'down':point.y = camOffset;
+			case 'up':point.y = -camOffset;
+			case 'right':point.x = camOffset;
+		}
+		
 		if(isDad)
 		{
 			camFollow.setPosition(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
@@ -2296,6 +2309,11 @@ class PlayState extends MusicBeatState
 				});
 			}
 		}
+
+		camFollow.x += point.x;
+		camFollow.y += point.y;
+
+		point.put();
 	}
 
 	public function tweenCamIn() {
@@ -3176,8 +3194,8 @@ class PlayState extends MusicBeatState
 	{
 		if (SONG.notes[curSection] != null)
 		{
-			if (generatedMusic && !endingSong && !isCameraOnForcedPos)
-				moveCameraSection();
+			// if (generatedMusic && !endingSong && !isCameraOnForcedPos)
+			// 	moveCameraSection();
 
 			// if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
 			// {

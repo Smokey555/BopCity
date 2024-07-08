@@ -91,7 +91,7 @@ class Note extends FlxSprite
 		texture: null,
 		antialiasing: !PlayState.isPixelStage,
 		useGlobalShader: false,
-		useRGBShader: (PlayState.SONG != null) ? !(PlayState.SONG.disableNoteRGB == true) : true,
+		useRGBShader: false,
 		r: -1,
 		g: -1,
 		b: -1,
@@ -233,7 +233,7 @@ class Note extends FlxSprite
 		if(noteData > -1) {
 			texture = '';
 			rgbShader = new RGBShaderReference(this, initializeGlobalRGBShader(noteData));
-			if(PlayState.SONG != null && PlayState.SONG.disableNoteRGB) rgbShader.enabled = false;
+			rgbShader.enabled = false;
 
 			x += swagWidth * (noteData);
 			if(!isSustainNote && noteData < colArray.length) { //Doing this 'if' check to fix the warnings on Senpai songs

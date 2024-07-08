@@ -1,5 +1,5 @@
 function onUpdate(elapsed)
-	if keyJustPressed('q') then
-		loadSong('egghead', 'egghead', true);
+	if keyboardJustPressed('Q') then
+		loadSong('egghead', 1);
 	end
 end

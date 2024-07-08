@@ -24,13 +24,13 @@ class StrumNote extends FlxSprite
 		return value;
 	}
 
-	public var useRGBShader:Bool = true;
+	public var useRGBShader:Bool = false;
 	public function new(x:Float, y:Float, leData:Int, player:Int) {
 		animation = new PsychAnimationController(this);
 
 		rgbShader = new RGBShaderReference(this, Note.initializeGlobalRGBShader(leData));
 		rgbShader.enabled = false;
-		if(PlayState.SONG != null && PlayState.SONG.disableNoteRGB) useRGBShader = false;
+		//if(PlayState.SONG != null && PlayState.SONG.disableNoteRGB) useRGBShader = false;
 		
 		var arr:Array<FlxColor> = ClientPrefs.data.arrowRGB[leData];
 		if(PlayState.isPixelStage) arr = ClientPrefs.data.arrowRGBPixel[leData];
