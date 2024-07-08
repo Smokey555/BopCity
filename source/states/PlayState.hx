@@ -2337,7 +2337,7 @@ class PlayState extends MusicBeatState
 					if (Math.isNaN(time))
 						time = 1;
 
-					crashOutTween = FlxTween.num(crashOutValue,to,time);
+					crashOutTween = FlxTween.tween(this,{crashOutValue:to},time);
 
 							
 			
