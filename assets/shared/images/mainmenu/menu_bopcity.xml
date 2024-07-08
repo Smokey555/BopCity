@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_bopcity.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bopcity basic0000" x="10" y="10" width="552" height="187"/>
+	<SubTexture name="bopcity basic0001" x="10" y="10" width="552" height="187"/>
+	<SubTexture name="bopcity basic0002" x="10" y="10" width="552" height="187"/>
+	<SubTexture name="bopcity basic0003" x="10" y="207" width="552" height="187"/>
+	<SubTexture name="bopcity basic0004" x="10" y="207" width="552" height="187"/>
+	<SubTexture name="bopcity basic0005" x="10" y="207" width="552" height="187"/>
+	<SubTexture name="bopcity white0000" x="10" y="404" width="891" height="264"/>
+	<SubTexture name="bopcity white0001" x="10" y="678" width="891" height="264"/>
+</TextureAtlas>
