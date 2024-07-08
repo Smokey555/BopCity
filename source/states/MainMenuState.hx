@@ -136,7 +136,7 @@ class MainMenuState extends MusicBeatState
             },(o:FlxSprite)->{
                 o.setColorTransform(1,1,1,1);
 
-            },false,true);
+            },false,true,false);
         }
     }
 

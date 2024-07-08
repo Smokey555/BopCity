@@ -212,6 +212,7 @@ class PlayState extends MusicBeatState
 	var scoreTxtTween:FlxTween;
 
 	var cenatShooter:CenatShooter;
+	var disableHealthGain:Bool = false;
 
 	public static var campaignScore:Int = 0;
 	public static var campaignMisses:Int = 0;
@@ -270,6 +271,13 @@ class PlayState extends MusicBeatState
 	public var beatsPerZoom:Int = 4;
 	public var defaultCamZoomMult:Float = 1;
 
+
+	var crashOutMeter:CrashoutMeter;
+	var crashOutTween:FlxTween;
+
+	var crashOutValue:Float = 0;
+
+	var cenatGhoul:FlxSprite;
 	override public function create()
 	{
 		//trace('Playback Rate: ' + playbackRate);
@@ -544,7 +552,7 @@ class PlayState extends MusicBeatState
 		healthBar.alpha = ClientPrefs.data.healthBarAlpha;
 		reloadHealthBarColors();
 		uiGroup.add(healthBar);
-
+		
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
 		iconP1.visible = !ClientPrefs.data.hideHud;
@@ -556,6 +564,25 @@ class PlayState extends MusicBeatState
 		iconP2.visible = !ClientPrefs.data.hideHud;
 		iconP2.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP2);
+
+
+		if (SONG.song.toLowerCase() == "crashout")
+			{
+				//idc
+				uiGroup.remove(healthBar);
+				uiGroup.remove(iconP1);
+				uiGroup.remove(iconP2);
+				
+				crashOutMeter = new CrashoutMeter();
+				uiGroup.add(crashOutMeter);
+				
+				crashOutMeter.screenCenter(X);
+				crashOutMeter.y = FlxG.height - (crashOutMeter.height / 2);
+
+
+
+			}
+
 
 		scoreTxt = new FlxText(0, healthBar.y + 40, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -1429,6 +1456,19 @@ class PlayState extends MusicBeatState
 					//technically behind notesplashes but who cares
 					cenatShooter = new CenatShooter(camHUD);
 					add(cenatShooter);
+				case "Cenat Health Drain":
+					cenatGhoul = new FlxSprite();
+					cenatGhoul.frames = Paths.getSparrowAtlas("something/kaighoul");
+					cenatGhoul.animation.addByPrefix("die","die",24,false);
+					cenatGhoul.animation.addByPrefix("grab","grab",24,false);
+					cenatGhoul.animation.addByPrefix("drag","drag",24,true);
+					cenatGhoul.animation.addByPrefix("spawn","spawn",24,false);
+					cenatGhoul.antialiasing = ClientPrefs.data.antialiasing;
+					cenatGhoul.cameras = [camHUD];
+					add(cenatGhoul);
+					cenatGhoul.scale.set(0.5,0.5);
+					cenatGhoul.updateHitbox();
+					cenatGhoul.visible = false;	
 
 
 			}
@@ -1678,6 +1718,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+
 		if(!endingSong && !inCutscene && allowDebugKeys)
 		{
 			if (controls.justPressed('debug_1'))
@@ -1688,6 +1729,19 @@ class PlayState extends MusicBeatState
 
 		if (healthBar.bounds.max != null && health > healthBar.bounds.max)
 			health = healthBar.bounds.max;
+		
+		//crashoutmeter shit
+		if (crashOutMeter != null)
+			crashOutMeter.bar.value = crashOutValue;
+
+
+		
+		if (cenatDrainTween != null && cenatDrainTween?.active && cenatGhoul != null)
+			{
+				cenatGhoul.x = healthBar.barCenter - 30;
+				
+			}
+
 
 		updateIconsScale(elapsed);
 		updateIconsPosition();
@@ -1986,6 +2040,8 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	var cenatDrainTween:FlxTween;
+
 	public function triggerEvent(eventName:String, value1:String, value2:String, strumTime:Float) {
 		var flValue1:Null<Float> = Std.parseFloat(value1);
 		var flValue2:Null<Float> = Std.parseFloat(value2);
@@ -2197,29 +2253,94 @@ class PlayState extends MusicBeatState
 						});
 				}
 
-				case 'Cenat Shooter':
-					{
-						var amount = Std.parseInt(value1);
-						var time = Std.parseFloat(value2);
+			case 'Cenat Shooter':
+				{
+					var amount = Std.parseInt(value1);
+					var time = Std.parseFloat(value2);
 
-						if (Math.isNaN(amount) || Math.isNaN(time)) return;
-						cenatShooter.finishCallback = function()
+					if (Math.isNaN(amount) || Math.isNaN(time)) return;
+					cenatShooter.finishCallback = function()
+						{
+							if (!ClientPrefs.getGameplaySetting('botplay'))
+							cpuControlled = false;
+						}
+					cenatShooter.failCallback = function()
+						{
+							if (!ClientPrefs.getGameplaySetting('botplay'))
+							cpuControlled = false;
+							
+							health = 0;
+							doDeathCheck();	
+						}
+					cenatShooter.start(amount,time);
+					cpuControlled = true;
+				
+					}
+
+			case "Cenat Health Drain":
+				{
+					//horribly coded blame daniel not me
+					if (cenatGhoul == null || cenatDrainTween?.active) return;
+					cenatGhoul.setPosition(healthBar.x + healthBar.width + 100,healthBar.y - 120);
+					cenatGhoul.visible = true;
+					disableHealthGain = true;
+					healthLoss = 0;
+
+					var drainAmt:Float = Std.parseFloat(value1);
+					var time:Float = Std.parseFloat(value2);
+
+					if (Math.isNaN(drainAmt))
+						drainAmt = 0.5;
+					if (Math.isNaN(time))
+						time = 5;
+
+
+					cenatGhoul.animation.play("spawn");
+					cenatGhoul.animation.finishCallback = function(name)
+					{
+						switch (name)
+						{
+						case "spawn":
+							cenatGhoul.animation.play("grab");
+							FlxTween.tween(cenatGhoul,{x:healthBar.barCenter - 30},0.3);
+						case "grab":	
+							cenatGhoul.animation.play("drag");
+							cenatDrainTween = FlxTween.tween(this,{health:health - drainAmt},time,{onComplete: function(_)
 							{
-								cpuControlled = false;
-							}
-						cenatShooter.failCallback = function()
-							{
-								cpuControlled = false;
-								health = 0;
-								doDeathCheck();	
-							}
-						cenatShooter.start(amount,time);
-						cpuControlled = true;
+								cenatGhoul.animation.play("die");
+								disableHealthGain = false;
+				
+								healthLoss = 1;
+
+
+							}});
+
+						}
+					}
+
+					
+				}
 				
 
+			case "Crashout Meter":
 
-					}
-					
+					if (crashOutMeter == null) return;
+
+					if (crashOutTween != null)
+						crashOutTween.cancel();
+
+					var to:Float = Std.parseFloat(value1);
+					var time:Float = Std.parseFloat(value2);
+
+					if (Math.isNaN(to))
+						to = 1;
+					if (Math.isNaN(time))
+						time = 1;
+
+					crashOutTween = FlxTween.num(crashOutValue,to,time);
+
+							
+			
 
 			case 'Set Property':
 				try
@@ -2904,8 +3025,8 @@ class PlayState extends MusicBeatState
 
 		var lastCombo:Int = combo;
 		combo = 0;
-
 		health -= subtract * healthLoss;
+
 		if(!practiceMode) songScore -= 10;
 		if(!endingSong) songMisses++;
 		totalPlayed++;
@@ -3048,7 +3169,7 @@ class PlayState extends MusicBeatState
 		}
 		var gainHealth:Bool = true; // prevent health gain, *if* sustains are treated as a singular note
 		if (guitarHeroSustains && note.isSustainNote) gainHealth = false;
-		if (gainHealth) health += note.hitHealth * healthGain;
+		if (gainHealth && !disableHealthGain) health += note.hitHealth * healthGain;
 
 		var result:Dynamic = callOnLuas('goodNoteHit', [notes.members.indexOf(note), leData, leType, isSus]);
 		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('goodNoteHit', [note]);
