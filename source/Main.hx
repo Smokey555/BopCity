@@ -1,5 +1,6 @@
 package;
 
+import objects.VideoSprite;
 import states.TestState;
 #if android
 import android.content.Context;
@@ -137,6 +138,7 @@ class Main extends Sprite
 		DiscordClient.prepare();
 		#end
 
+		VideoSprite.init();
 		// shader coords fix
 		FlxG.signals.gameResized.add(function (w, h) {
 		     if (FlxG.cameras != null) {

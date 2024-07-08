@@ -8,6 +8,13 @@ import hxvlc.flixel.FlxVideoSprite;
 
 class VideoSprite extends FlxVideoSprite
 {
+    static var _init:Bool = false;
+    public static function init() {
+        if (_init) return;
+        _init = true;
+        hxvlc.util.Handle.init();
+    }
+
     public static final looping:String = ':input-repeat=65535';
     public static final muted:String = ':no-audio';
     
@@ -134,9 +141,13 @@ class VideoSprite extends FlxVideoSprite
             if (cur.onPauseSignal.has(this.pause)) cur.onPauseSignal.remove(this.pause);
             if (cur.onResumeSignal.has(this.resume)) cur.onResumeSignal.remove(this.resume);
         }
+        if (bitmap != null) {
+            bitmap.stop();
+            
+            if (FlxG.signals.focusGained.has(bitmap.resume)) FlxG.signals.focusGained.remove(bitmap.resume);
+            if (FlxG.signals.focusLost.has(bitmap.pause)) FlxG.signals.focusLost.remove(bitmap.pause);
+        }
 
-        if (FlxG.signals.focusGained.has(bitmap.resume)) FlxG.signals.focusGained.remove(bitmap.resume);
-        if (FlxG.signals.focusLost.has(bitmap.pause)) FlxG.signals.focusLost.remove(bitmap.pause);
         super.destroy();
     }
     

@@ -1,5 +1,7 @@
 package psychlua;
 
+import flixel.util.FlxAxes;
+import openfl.display.BlendMode;
 import flixel.FlxBasic;
 import objects.Character;
 import psychlua.LuaUtils;
@@ -114,6 +116,33 @@ class HScript extends SScript
 		set('FlxAnimate', FlxAnimate);
 		#end
 
+		set('BlendMode',{
+			SUBTRACT: BlendMode.SUBTRACT,
+			ADD: BlendMode.ADD,
+			MULTIPLY: BlendMode.MULTIPLY,
+			ALPHA: BlendMode.ALPHA,
+			DARKEN: BlendMode.DARKEN,
+			DIFFERENCE: BlendMode.DIFFERENCE,
+			INVERT: BlendMode.INVERT,
+			HARDLIGHT: BlendMode.HARDLIGHT,
+			LIGHTEN: BlendMode.LIGHTEN,
+			OVERLAY: BlendMode.OVERLAY,
+			SHADER: BlendMode.SHADER,
+			SCREEN: BlendMode.SCREEN
+		});
+		set('FlxAxes',{
+			X: FlxAxes.X,
+			Y: FlxAxes.Y,
+			XY: FlxAxes.XY
+		});
+		set('FlxTweenType',{
+			PINGPONG: 4,
+			BACKWARD: 16,
+			ONESHOT: 8,
+			PERSIST: 1,
+			LOOPING: 2
+		});
+		
 		set('VideoSprite',objects.VideoSprite);
 
 		// Functions & Variables

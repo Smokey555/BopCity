@@ -268,6 +268,7 @@ class PlayState extends MusicBeatState
 
 
 	public var beatsPerZoom:Int = 4;
+	public var defaultCamZoomMult:Float = 1;
 
 	override public function create()
 	{
@@ -1716,7 +1717,7 @@ class PlayState extends MusicBeatState
 
 		if (camZooming)
 		{
-			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
+			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom* defaultCamZoomMult, FlxG.camera.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
 			camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
 		}
 
