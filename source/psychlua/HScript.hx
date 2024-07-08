@@ -114,6 +114,8 @@ class HScript extends SScript
 		set('FlxAnimate', FlxAnimate);
 		#end
 
+		set('VideoSprite',objects.VideoSprite);
+
 		// Functions & Variables
 		set('setVar', function(name:String, value:Dynamic) {
 			PlayState.instance.variables.set(name, value);

@@ -37,12 +37,7 @@ import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
 #end
 
-#if VIDEOS_ALLOWED
-#if (hxCodec >= "3.0.0") import hxcodec.flixel.FlxVideo as VideoHandler;
-#elseif (hxCodec >= "2.6.1") import hxcodec.VideoHandler as VideoHandler;
-#elseif (hxCodec == "2.6.0") import VideoHandler;
-#else import vlc.MP4Handler as VideoHandler; #end
-#end
+import flixel.util.FlxSignal;
 
 import objects.Note.EventNote;
 import objects.*;
@@ -265,6 +260,14 @@ class PlayState extends MusicBeatState
 	// Callbacks for stages
 	public var startCallback:Void->Void = null;
 	public var endCallback:Void->Void = null;
+
+
+
+	public var onPauseSignal:FlxSignal = new FlxSignal();
+	public var onResumeSignal:FlxSignal = new FlxSignal();
+
+
+	public var beatsPerZoom:Int = 4;
 
 	override public function create()
 	{
@@ -847,26 +850,16 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		var video:VideoHandler = new VideoHandler();
-			#if (hxCodec >= "3.0.0")
-			// Recent versions
-			video.play(filepath);
-			video.onEndReached.add(function()
-			{
-				video.dispose();
-				startAndEnd();
-				return;
-			}, true);
-			#else
-			// Older versions
-			video.playVideo(filepath);
-			video.finishCallback = function()
-			{
-				startAndEnd();
-				return;
-			}
-			#end
-		#else
+		var video = new FlxVideo();
+		video.onEndReached.add(()->{
+			video.dispose();
+			startAndEnd();
+			return;	
+		},true);
+		video.load(filepath);
+		video.play();
+
+
 		FlxG.log.warn('Platform not supported!');
 		startAndEnd();
 		return;
@@ -1276,7 +1269,11 @@ class PlayState extends MusicBeatState
 				vocals.loadEmbedded(playerVocals != null ? playerVocals : Paths.voices(songData.song));
 				
 				var oppVocals = Paths.voices(songData.song, (dad.vocalsFile == null || dad.vocalsFile.length < 1) ? 'Opponent' : dad.vocalsFile);
-				if(oppVocals != null) opponentVocals.loadEmbedded(oppVocals);
+				if(oppVocals != null) {
+					
+					opponentVocals.loadEmbedded(oppVocals);
+					FlxG.sound.list.add(opponentVocals);
+				}
 			}
 		}
 		catch(e:Dynamic) {}
@@ -1286,7 +1283,7 @@ class PlayState extends MusicBeatState
 		opponentVocals.pitch = playbackRate;
 		#end
 		FlxG.sound.list.add(vocals);
-		FlxG.sound.list.add(opponentVocals);
+
 
 		inst = new FlxSound();
 		try {
@@ -1571,6 +1568,7 @@ class PlayState extends MusicBeatState
 			FlxTimer.globalManager.forEach(function(tmr:FlxTimer) if(!tmr.finished) tmr.active = true);
 			FlxTween.globalManager.forEach(function(twn:FlxTween) if(!twn.finished) twn.active = true);
 
+			onResumeSignal.dispatch();
 			paused = false;
 			callOnScripts('onResume');
 			resetRPC(startTimer != null && startTimer.finished);
@@ -1653,6 +1651,11 @@ class PlayState extends MusicBeatState
 		}
 		else FlxG.camera.followLerp = 0;
 		callOnScripts('onUpdate', [elapsed]);
+
+		#if debug
+		if (FlxG.keys.justPressed.SIX) botplayTxt.visible = cpuControlled = !cpuControlled;
+
+		#end
 
 		super.update(elapsed);
 
@@ -1883,6 +1886,8 @@ class PlayState extends MusicBeatState
 					note.resetAnim = 0;
 				}
 		}
+
+		onPauseSignal.dispatch();
 		openSubState(new PauseSubState());
 
 		#if DISCORD_ALLOWED
@@ -3075,6 +3080,9 @@ class PlayState extends MusicBeatState
 			hscriptArray.pop();
 		#end
 
+		onPauseSignal.removeAll();
+		onResumeSignal.removeAll();
+
 		FlxG.stage.removeEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
 		FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
 		FlxG.animationTimeScale = 1;
@@ -3123,6 +3131,14 @@ class PlayState extends MusicBeatState
 		if (generatedMusic)
 			notes.sort(FlxSort.byY, ClientPrefs.data.downScroll ? FlxSort.ASCENDING : FlxSort.DESCENDING);
 
+
+		if (beatsPerZoom <= 0) beatsPerZoom = 4;
+		if (camZooming && ClientPrefs.data.camZooms && curBeat % beatsPerZoom == 0)
+		{
+			FlxG.camera.zoom += 0.015 * camZoomingMult;
+			camHUD.zoom += 0.03 * camZoomingMult;
+		}
+
 		iconP1.scale.set(1.2, 1.2);
 		iconP2.scale.set(1.2, 1.2);
 
@@ -3162,11 +3178,11 @@ class PlayState extends MusicBeatState
 			if (generatedMusic && !endingSong && !isCameraOnForcedPos)
 				moveCameraSection();
 
-			if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
-			{
-				FlxG.camera.zoom += 0.015 * camZoomingMult;
-				camHUD.zoom += 0.03 * camZoomingMult;
-			}
+			// if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
+			// {
+			// 	FlxG.camera.zoom += 0.015 * camZoomingMult;
+			// 	camHUD.zoom += 0.03 * camZoomingMult;
+			// }
 
 			if (SONG.notes[curSection].changeBPM)
 			{

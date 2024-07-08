@@ -5,24 +5,6 @@ local offsetX = (screenWidth-newWidth)/2
 local offsetY = (screenHeight-newHeight)/2
 local FILE_DIR = "bg/penthos/"
 
-function setupVideoSprite(videoPath, spriteName)
-    makeLuaSprite(spriteName, '', 0, 0)
-    addLuaSprite(spriteName, true)
-    setObjectCamera(spriteName, 'camother')
-
-    addHaxeLibrary('MP4Handler', 'vlc')
-    addHaxeLibrary('Event', 'openfl.events')
-
-    runHaxeCode([[
-        var filepath = Paths.video(']] .. videoPath .. [[');
-        var video = new MP4Handler();
-        video.playVideo(filepath);
-        video.visible = false;
-        setVar('video', video);
-        FlxG.stage.removeEventListener('enterFrame', video.update);
-    ]])
-end
-
 function onCreatePost()
 	doTweenAlpha('GUItween1', 'camHUD', 0, 0.01, 'linear');
     setGlobalFromScript('scripts/neocam', 'freeze', true)
@@ -31,23 +13,30 @@ function onCreatePost()
     triggerEvent('Camera Follow Pos', '10100', '-550')
 	setProperty('introart.alpha', tonumber(0))
 	setProperty("camHUD.alpha", 0.0001)
-end
 
-function onResume()
+
 	runHaxeCode([[
-		var video = getVar('video');
-		video.resume();
-	]])
+        var filepath = 'aethospen.mp4';
+        var video = new VideoSprite();
+		video.addCallback('onFormat',()->{
+			video.setGraphicSize(0,FlxG.height);
+			video.updateHitbox();
+			video.cameras = [game.camOther];
+		});
+		video.addCallback('onEnd',()->{
+			FlxG.camera.flash(FlxColor.BLACK);
+			FlxG.camera.zoom -= 0.25;
+		});
+        video.load(filepath);
+		add(video);
+        setVar('video', video);
 
+    ]])
 end
+
 
 function onUpdatePost()
-    runHaxeCode([[
-        var video = getVar('video');
-        game.getLuaObject('videoSprite').loadGraphic(video.bitmapData);
-        video.volume = FlxG.sound.volume + 0.4;
-        if(game.paused) video.pause();
-    ]])
+
 end
 
 function onCreate()
@@ -139,6 +128,13 @@ function onCreate()
 	setBlendMode('fireparticles5', 'screen')
 	setBlendMode('fireparticles6', 'screen')
 
+
+	initShaders()
+
+
+end
+
+function initShaders() 
 	initLuaShader('chromatic')
 	makeLuaSprite('shaderChrom')
 	setSpriteShader('shaderChrom','chromatic')
@@ -147,7 +143,15 @@ function onCreate()
 	makeLuaSprite('shaderStatic')
 	setSpriteShader('shaderStatic','tvStatic')
 
+	initLuaShader('scary')
+	makeLuaSprite('scaryShader')
+	setSpriteShader('scaryShader','scary')
+
 	runHaxeCode([[
+		var shaders = game.getLuaObject("scaryShader").shader;
+		shaders.setFloat('strength',2);
+		shaders.setFloat('darkness',0);
+
 		var shader = game.getLuaObject("shaderChrom").shader;
 		shader.setFloat('offset',0.0025);
 
@@ -157,7 +161,6 @@ function onCreate()
 
 		FlxG.camera.setFilters([new ShaderFilter(shader),new ShaderFilter(staticShader)]);
 	]])
-	
 
 end
 
@@ -192,9 +195,11 @@ elseif curStep == 160 then
 		doTweenY("bar_upper", "bar_upper", 0, 3, "quintout")
         doTweenY("bar_lower", "bar_lower", 720 - thickness, 3, "quintout")
 	elseif curStep == 1071 then
-		setupVideoSprite('aethospen', 'videoSprite')
+		runHaxeCode([[
+			var vid = getVar('video').play();
+		]])
 	elseif curStep == 1375 then
-        removeLuaSprite('videoSprite', true)
+    	-- removeLuaSprite('videoSprite', true)
 	end
 end
 
@@ -218,5 +223,20 @@ function onUpdate()
 		setProperty('defaultCamZoom', 0.53)
 		doTweenAngle('tag', 'camGame', -2, 1, 10)
 	end
+	end
+end
+
+
+function onEvent(eventName, value1, value2)
+	if (eventName =='') then
+		if value1 == 'introfade' then
+			runHaxeCode([[
+				FlxG.camera.fade(FlxColor.BLACK,5.14,true);
+
+			]])
+
+		end
+
+
 	end
 end

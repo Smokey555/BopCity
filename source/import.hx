@@ -21,6 +21,10 @@ import sys.io.*;
 import js.html.*;
 #end
 
+#if VIDEOS_ALLOWED
+import hxvlc.flixel.*;
+#end
+
 import backend.Paths;
 import backend.Controls;
 import backend.CoolUtil;
