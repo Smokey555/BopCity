@@ -75,6 +75,7 @@ class SkibidiGameOver extends MusicBeatSubstate
 		boyfriendRagdoll = new BoyfriendRagdoll(PlayState.instance.boyfriend.x + 10, PlayState.instance.boyfriend.y + 10);
 		add(boyfriendRagdoll);
 		boyfriendRagdoll.torso.body.velocity = new Vec2(FlxG.random.int(8000,12000),FlxG.random.int(2000,4000));
+		boyfriendRagdoll.torso.body.angularVel = 15;
 
 		//@:privateAccess
 		var group1:CbType = new CbType();
