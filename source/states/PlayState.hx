@@ -1,5 +1,6 @@
 package states;
 
+import substates.SkibidiGameOver;
 import backend.Highscore;
 import backend.StageData;
 import backend.WeekData;
@@ -404,6 +405,8 @@ class PlayState extends MusicBeatState
 			case 'schoolEvil': new states.stages.SchoolEvil(); //Week 6 - Thorns
 			case 'tank': new states.stages.Tank(); //Week 7 - Ugh, Guns, Stress
 			case 'rio': new states.stages.Rio(); 
+			//wtf is that name
+			case 'stage_clone': new states.stages.SkibidiStage(); 
 		}
 
 		if(isPixelStage) {
@@ -1710,7 +1713,7 @@ class PlayState extends MusicBeatState
 			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
 		}
 
-		if (controls.PAUSE && startedCountdown && canPause)
+		if (controls.PAUSE && startedCountdown && canPause && !isDead)
 		{
 			var ret:Dynamic = callOnScripts('onPause', null, true);
 			if(ret != LuaUtils.Function_Stop) {
@@ -1996,8 +1999,8 @@ class PlayState extends MusicBeatState
 				opponentVocals.stop();
 				FlxG.sound.music.stop();
 
-				persistentUpdate = false;
-				persistentDraw = false;
+				//persistentUpdate = false;
+				//persistentDraw = false;
 				FlxTimer.globalManager.clear();
 				FlxTween.globalManager.clear();
 				#if LUA_ALLOWED
@@ -2005,7 +2008,16 @@ class PlayState extends MusicBeatState
 				modchartTweens.clear();
 				#end
 
-				openSubState(new GameOverSubstate());
+				switch (SONG.song.toLowerCase())
+				{
+					case "skibidi-toilet" | "camera-man":
+						openSubState(new SkibidiGameOver());
+
+					default:
+						openSubState(new GameOverSubstate());
+
+				}
+				
 
 				// MusicBeatState.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
 

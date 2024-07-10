@@ -47,6 +47,9 @@ class GameOverSubstate extends MusicBeatSubstate
 	{
 		instance = this;
 
+		PlayState.instance.persistentUpdate = false;
+		PlayState.instance.persistentDraw = false;
+
 		Conductor.songPosition = 0;
 
 		boyfriend = new Character(PlayState.instance.boyfriend.getScreenPosition().x, PlayState.instance.boyfriend.getScreenPosition().y, characterName, true);
