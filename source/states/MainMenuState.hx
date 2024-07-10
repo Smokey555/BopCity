@@ -72,7 +72,7 @@ class MainMenuState extends MusicBeatState
 
 	}
 
-    var tempBu = ['freeplay','playNow','settings'];
+    var tempBu = ['freeplay','playNow','credits','options'];
     function generatebuttons() {
 
         var len:Array<String> = [for (i in 0...5)'$i'];
@@ -106,10 +106,11 @@ class MainMenuState extends MusicBeatState
                 var s:MenuSrp = cast o;
                 switch (s.name) {
                     case 'freeplay': MusicBeatState.switchState(new FreeplayState());
+                    case 'credits': MusicBeatState.switchState(new CreditsState());
                     case 'playNow':
 						PlayState.SONG = backend.Song.loadFromJson("bop-city", "bop-city");
 						MusicBeatState.switchState(new PlayState());
-                    case 'settings':MusicBeatState.switchState(new options.OptionsState());
+                    case 'options':MusicBeatState.switchState(new options.OptionsState());
                     case 'die':
                         bg.visible = false;
                         for (i in buttons) {
