@@ -569,23 +569,7 @@ class PlayState extends MusicBeatState
 		uiGroup.add(iconP2);
 
 
-		if (SONG.song.toLowerCase() == "crashout")
-			{
-				//idc
-				uiGroup.remove(healthBar);
-				uiGroup.remove(iconP1);
-				uiGroup.remove(iconP2);
-				
-				crashOutMeter = new CrashoutMeter();
-				uiGroup.add(crashOutMeter);
-				
-				crashOutMeter.screenCenter(X);
-				crashOutMeter.y = FlxG.height - (crashOutMeter.height / 2);
-
-
-
-			}
-
+		
 
 		scoreTxt = new FlxText(0, healthBar.y + 40, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -594,6 +578,28 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.data.hideHud;
 		updateScore(false);
 		uiGroup.add(scoreTxt);
+
+
+		if (SONG.song.toLowerCase() == "crashout")
+			{
+				healthBar.visible = false;
+				iconP1.visible = false;
+				iconP2.visible = false;
+				scoreTxt.visible = false;
+				
+				crashOutMeter = new CrashoutMeter();
+				uiGroup.add(crashOutMeter);
+				
+				crashOutMeter.screenCenter(X);
+				if (ClientPrefs.data.downScroll)
+				crashOutMeter.y = 60;
+				else
+				crashOutMeter.y = FlxG.height - (crashOutMeter.height / 2);
+
+
+
+			}
+
 
 		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOP PLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -2350,6 +2356,17 @@ class PlayState extends MusicBeatState
 						time = 1;
 
 					crashOutTween = FlxTween.tween(this,{crashOutValue:to},time);
+
+			case "Toggle Crashout Meter":
+
+					if (crashOutMeter == null) return;
+
+					crashOutMeter.visible  = !crashOutMeter.visible;					
+					
+					scoreTxt.visible = !scoreTxt.visible;
+					iconP1.visible = !iconP1.visible;
+					iconP2.visible = !iconP2.visible;
+					healthBar.visible = !healthBar.visible;
 
 							
 			
