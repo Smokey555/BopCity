@@ -70,7 +70,7 @@ class SkibidiGameOver extends MusicBeatSubstate
 		toilet.antialiasing = true;
 		add(toilet);
 		toilet.createRectangularBody();
-		toilet.body.velocity = new Vec2(FlxG.random.int(8000,12000),FlxG.random.int(2000,4000));
+		toilet.body.velocity = new Vec2(FlxG.random.int(8000,12000),FlxG.random.int(500,800));
 
 		boyfriendRagdoll = new BoyfriendRagdoll(PlayState.instance.boyfriend.x + 10, PlayState.instance.boyfriend.y + 10);
 		add(boyfriendRagdoll);
