@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "Idle"
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				-50
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "Down_Pose"
+			"fps": 24,
+			"name": "Down_Pose",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				86,
 				4
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "Left_Pose"
+			"fps": 24,
+			"name": "Left_Pose",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-61,
 				25
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Right_Pose"
+			"fps": 24,
+			"name": "Right_Pose",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				72
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
-			"name": "Up_Pose"
+			"fps": 24,
+			"name": "Up_Pose",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -63,12 +63,12 @@
 		0,
 		350
 	],
-	"healthicon": "pico",
+	"healthicon": "orange",
 	"flip_x": false,
 	"healthbar_colors": [
-		183,
-		216,
-		85
+		236,
+		111,
+		49
 	],
 	"camera_position": [
 		0,
