@@ -42,9 +42,20 @@ function onCreatePost()
 
 
 end
+function onStepHit()
+    if curStep == 502 then  
+    doTweenAngle('angle', 'dad', 680, 1.5, 'quadOut')
+    doTweenX('right', 'dad', 400, 1.5, 'linear')
+    doTweenY('up', 'dad', -1, 0.4, 'quadOut')
+    end
+end
+function onTweenCompleted(t)
 
+	if t == 'up' then
+		doTweenY('down', 'dad', 800, 0.8, 'quadIn')
+	end
 
-
+end
 
 
 function onSectionHit()
