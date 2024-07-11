@@ -43,10 +43,29 @@ var penShader;
 
 var heStares;
 
+
+var goodIntro;
+var badIntro;
+
+
+
 function onCreate() {
     init();
 
+    goodIntro = new FlxSprite().loadGraphic(pImage('bop'));
+    add(goodIntro);
+    goodIntro.cameras = [camOther];
+    goodIntro.scale.set(0.5,0.5);
+    goodIntro.alpha = 0;
 
+    badIntro = new FlxSprite().loadGraphic(pImage('evil'));
+    add(badIntro);
+    badIntro.cameras = [camOther];
+    badIntro.scale.set(0.5,0.5);
+    badIntro.alpha = 0;
+
+    camOther.bgColor = FlxColor.BLACK;
+    
 
 
     var red = new FlxSprite(-900,-1550).loadGraphic(pImage('red'));
@@ -229,6 +248,10 @@ function onUpdatePost(elapsed) {
    // setZoom(0.3);
 }
 
+function onSongStart() {
+    FlxTween.tween(goodIntro, {alpha: 1},2, {startDelay: 1});
+}
+
 
 
 function onMoveCamera(char) {
@@ -241,6 +264,9 @@ function onMoveCamera(char) {
 function onEvent(ev,v1,v2) {
     if (ev == '') {
         switch (v1) {
+            case 'badFade':
+                FlxTween.tween(goodIntro, {alpha: 0},1.5);
+                FlxTween.tween(badIntro, {alpha: 1},1.5);
             case 'introfade':
                 game.isCameraOnForcedPos = true;
                 setZoom(1);
@@ -254,6 +280,12 @@ function onEvent(ev,v1,v2) {
                 onEvent('hummusZoom','0.6,5.14','cubeInOut');
                 FlxG.camera.fade(FlxColor.BLACK,5.14,true);
             case 'introApp':
+                FlxTween.cancelTweensOf(badIntro, ['alpha']);
+                FlxTween.cancelTweensOf(goodIntro, ['alpha']);
+                badIntro.alpha = 0;
+                goodIntro.alpha = 0;
+                camOther.bgColor = 0x0;
+
                 game.isCameraOnForcedPos = false;
                 camHUD.alpha = 1;
                 camHUD.zoom = 2;

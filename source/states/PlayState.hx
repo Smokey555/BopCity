@@ -1780,11 +1780,22 @@ class PlayState extends MusicBeatState
 				timeTxt.text = FlxStringUtil.formatTime(secondsTotal, false);
 		}
 
-		if (camZooming)
-		{
-			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom* defaultCamZoomMult, FlxG.camera.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
+		//this sucks alot but for now its wahtever
+		if (SONG.song.toLowerCase() == 'yo') {
+			if (camZooming)
+			{
+				FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom* defaultCamZoomMult, FlxG.camera.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
+			}
 			camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
 		}
+		else {
+			if (camZooming)
+			{
+				FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom* defaultCamZoomMult, FlxG.camera.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
+				camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
+			}
+		}
+
 
 		FlxG.watch.addQuick("secShit", curSection);
 		FlxG.watch.addQuick("beatShit", curBeat);
@@ -3305,6 +3316,14 @@ class PlayState extends MusicBeatState
 
 
 		if (beatsPerZoom <= 0) beatsPerZoom = 4;
+		if (SONG.song.toLowerCase() == 'yo') { //this ass but whatever
+
+			if (ClientPrefs.data.camZooms && curBeat % beatsPerZoom == 0)
+			{
+				if (camZooming) FlxG.camera.zoom += 0.015 * camZoomingMult;
+				camHUD.zoom += 0.03 * camZoomingMult;
+			}
+		}
 		if (camZooming && ClientPrefs.data.camZooms && curBeat % beatsPerZoom == 0)
 		{
 			FlxG.camera.zoom += 0.015 * camZoomingMult;
