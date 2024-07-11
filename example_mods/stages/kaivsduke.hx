@@ -20,7 +20,7 @@ function onCreate() {
     addBehindDad(bg);
     bg.alpha= 0;
 
-    evilmode = new FlxSprite(-200,-50).loadGraphic(Paths.image('bg/jump/evilmode'));
+    evilmode = new FlxSprite(75,500).loadGraphic(Paths.image('bg/jump/evilmode'));
     evilmode.updateHitbox();
     add(evilmode);
     evilmode.alpha= 0;
@@ -140,6 +140,8 @@ function onEvent(ev,v1,v2) {
             case 'evil':
             evilmode.alpha = 1;
             dad.alpha = 0;
+            camHUD.alpha = 0;
+            game.cameraSpeed = 9999;
             case 'unlock':
                 game.clearNotesBefore(time + 10000);
                 lockT = false;
