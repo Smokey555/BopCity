@@ -2021,8 +2021,7 @@ class PlayState extends MusicBeatState
 		DiscordClient.resetClientID();
 		#end
 
-		MusicBeatState.switchState(new ChartingState());
-		return;
+		
 		//#if FINAL_BUILD
 
 		if (!Misc.piratedTheGame) {
