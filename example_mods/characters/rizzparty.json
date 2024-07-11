@@ -1,59 +1,85 @@
 {
 	"animations": [
 		{
+			"offsets": [
+				0,
+				148
+			],
 			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DOWN"
+		},
+		{
+			"offsets": [
+				0,
+				148
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "UP"
+		},
+		{
+			"offsets": [
+				0,
+				148
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "RIGHT"
+		},
+		{
+			"offsets": [
+				0,
+				148
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "LEFT"
+		},
+		{
 			"offsets": [
 				0,
 				0
 			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				12,
+				13,
+				12,
+				13,
+				12,
+				13,
+				12,
+				13,
+				12,
+				13,
+				12
+			],
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "IDLE",
-			"indices": []
-		},
-		{
 			"loop": false,
-			"offsets": [
-				0,
-				148
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "DOWN",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				148
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "UP",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				148
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "RIGHT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				148
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "LEFT",
-			"indices": []
+			"name": "IDLE"
 		}
 	],
 	"vocals_file": "",
@@ -63,12 +89,12 @@
 		-70,
 		500
 	],
-	"healthicon": "idle",
+	"healthicon": "tiktok",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		255,
+		255,
+		255
 	],
 	"camera_position": [
 		-100,

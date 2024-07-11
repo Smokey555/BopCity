@@ -58,7 +58,8 @@ function onStepHit()
         doTweenY('hefloats', 'dad', 900, 1, 'quadInOut')
     elseif curStep == 60 then  
         doTweenY('fart', 'dad', 400, 0.1, '')
-
+    elseif curStep == 592 then  
+        doTweenY('bart', 'dad', 200, 0.01, '')
     elseif curStep >= 719 then
             startUpdate = true
     end 

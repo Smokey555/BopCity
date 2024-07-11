@@ -1,15 +1,15 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "soulsgrab"
+			"fps": 24,
+			"name": "soulsgrab",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -17,7 +17,7 @@
 	"image": "characters/soulkai",
 	"position": [
 		210,
-		500
+		200
 	],
 	"healthicon": "kai",
 	"flip_x": false,

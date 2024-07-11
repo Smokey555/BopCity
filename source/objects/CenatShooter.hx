@@ -35,7 +35,7 @@ class CenatShooter extends FlxSpriteGroup
 		bg.setGraphicSize(1280, 720);
 		bg.updateHitbox();
 		bg.screenCenter();
-		bg.alpha = 0.9;
+		bg.alpha = 0.7;
 		add(bg);
 
 		for (path in FileSystem.readDirectory(Paths.modFolders("images/something/fuckyou/")))
