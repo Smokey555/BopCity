@@ -19,10 +19,15 @@ class BopPlay extends MusicBeatState
     static var curSel:Int = 0;
 
     var penthosChant:FlxSound;
+    var penthosScare:FlxSprite;
 
     //i wanted to test smth
     //because flxtext kinda sucks i thought this could work better and it actually does wow
     var cachedTextGraphics:Map<String,flixel.graphics.FlxGraphic> = new Map();
+
+
+    var controlLock:Bool = false;
+    
     
 
     override function create() {
@@ -73,6 +78,11 @@ class BopPlay extends MusicBeatState
         add(songTextList);
 
         generateList();
+
+        penthosScare = new FlxSprite(120).loadGraphic(Paths.image('menu/fp/penscare'));
+        penthosScare.scale.set(0.7,0.7);
+        add(penthosScare);
+        penthosScare.alpha = 0;
         
 
         super.create();
@@ -84,14 +94,23 @@ class BopPlay extends MusicBeatState
     override function update(elapsed:Float) {
         super.update(elapsed);
 
-        if (controls.BACK) MusicBeatState.switchState(new MainMenuState());
-        if (controls.UI_DOWN_P || controls.UI_UP_P) changeSel(controls.UI_DOWN_P ? 1 : -1);
-        if (controls.ACCEPT) load();
+        if (!controlLock) {
+            if (controls.BACK) MusicBeatState.switchState(new MainMenuState());
+            if (controls.UI_DOWN_P || controls.UI_UP_P) changeSel(controls.UI_DOWN_P ? 1 : -1);
+            if (controls.ACCEPT) {
+                if (songs[curSel].SN == 'yo') penIntro();
+                else load();
+            }
+        }
 
+    }
+    function penIntro() {
+        controlLock = true;
+        penthosScare.alpha = 1;
+        new FlxTimer().start(0.5,Void->load());
 
     }
     function load() {
-
         persistentUpdate = false;
         var songLowercase:String = Paths.formatToSongPath(songs[curSel].SN);
         var formatted:String = Highscore.formatSong(songLowercase, 1);
