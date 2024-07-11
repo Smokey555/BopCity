@@ -102,6 +102,17 @@ class BopPlay extends MusicBeatState
                 if (songs[curSel].SN == 'yo') penIntro();
                 else load();
             }
+            if(controls.RESET)
+            {
+                persistentUpdate = false;
+                openSubState(new substates.ResetScoreSubState(songs[curSel].SN, 1, songs[curSel].icon));
+                FlxG.sound.play(Paths.sound('scrollMenu'));
+            }
+            if(FlxG.keys.justPressed.CONTROL)
+            {
+                persistentUpdate = false;
+                openSubState(new substates.GameplayChangersSubstate());
+            }
         }
 
     }
@@ -186,11 +197,11 @@ class BopPlay extends MusicBeatState
         final thickness = 20;
         for (k=>i in songs) {
             var spr = new FlxSprite().loadGraphic(Paths.image('menu/fp/p/${i.SN}'));
-            if (spr.graphic == null) {
-                spr.frames = Paths.getSparrowAtlas('menu/fp/p/blank');
-                spr.animation.addByPrefix('i','i');
-                spr.animation.play('i');
-            }
+            // if (spr.graphic == null) {
+            //     spr.frames = Paths.getSparrowAtlas('menu/fp/p/blank');
+            //     spr.animation.addByPrefix('i','i');
+            //     spr.animation.play('i');
+            // }
 
             spr.setGraphicSize(baseSize,baseSize);
             spr.updateHitbox();

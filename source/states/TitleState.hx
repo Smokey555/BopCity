@@ -86,11 +86,11 @@ class TitleState extends MusicBeatState
 		}
 
 		FlxG.mouse.visible = false;
-		if(FlxG.save.data.flashing == null && !FlashingState.leftState) {
-			FlxTransitionableState.skipNextTransIn = true;
-			FlxTransitionableState.skipNextTransOut = true;
-			MusicBeatState.switchState(new FlashingState());
-		} else {
+		// if(FlxG.save.data.flashing == null && !FlashingState.leftState) {
+		// 	FlxTransitionableState.skipNextTransIn = true;
+		// 	FlxTransitionableState.skipNextTransOut = true;
+		// 	MusicBeatState.switchState(new FlashingState());
+		// } else {
 			if (initialized)
 				startIntro();
 			else
@@ -100,7 +100,7 @@ class TitleState extends MusicBeatState
 					startIntro();
 				});
 			}
-		}
+		//}
 	}
 
 
