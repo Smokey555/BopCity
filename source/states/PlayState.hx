@@ -1,5 +1,6 @@
 package states;
 
+import flixel.effects.FlxFlicker;
 import substates.SkibidiGameOver;
 import backend.Highscore;
 import backend.StageData;
@@ -279,8 +280,18 @@ class PlayState extends MusicBeatState
 	var crashOutValue:Float = 0;
 
 	var cenatGhoul:FlxSprite;
+
+	var fanumTaxed:Bool = false;
+	
+	var fanumTaxing:Bool = false;
+
+	var fanumWarning:FlxSprite;
+	
+	var taxSound:FlxSound;
 	override public function create()
 	{
+
+		taxSound = new FlxSound();
 		//trace('Playback Rate: ' + playbackRate);
 		Paths.clearStoredMemory();
 
@@ -1465,6 +1476,16 @@ class PlayState extends MusicBeatState
 					//technically behind notesplashes but who cares
 					cenatShooter = new CenatShooter(camHUD);
 					add(cenatShooter);
+				case "Fanum Tax":
+					Paths.sound("fanumtax");
+					Paths.image("tax");
+					Paths.sound("slap");
+					Paths.sound("fanumDead");
+					fanumWarning = new FlxSprite().loadGraphic(Paths.image("tax"));
+					fanumWarning.cameras = [camHUD];
+					fanumWarning.screenCenter(Y);
+					fanumWarning.alpha = 0;
+					add(fanumWarning);
 				case "Cenat Health Drain":
 					cenatGhoul = new FlxSprite();
 					cenatGhoul.frames = Paths.getSparrowAtlas("something/kaighoul");
@@ -1656,7 +1677,7 @@ class PlayState extends MusicBeatState
 
 	function resyncVocals():Void
 	{
-		if(finishTimer != null) return;
+		if(finishTimer != null || fanumTaxed) return;
 
 		vocals.pause();
 		opponentVocals.pause();
@@ -1726,6 +1747,19 @@ class PlayState extends MusicBeatState
 				openPauseMenu();
 			}
 		}
+
+		if (fanumTaxing && FlxG.keys.justPressed.SPACE)
+			{
+				dad.animation.finishCallback = null;
+				dad.animation.stop();
+				dad.playAnim("ouch",true);
+				FlxG.sound.play(Paths.sound("slap"));
+				dad.specialAnim = false;
+				fanumTaxing = false;
+				FlxFlicker.stopFlickering(fanumWarning);
+				fanumWarning.alpha = 0;
+				taxSound.stop();
+			}
 
 
 		if(!endingSong && !inCutscene && allowDebugKeys)
@@ -1986,6 +2020,9 @@ class PlayState extends MusicBeatState
 		DiscordClient.changePresence("Chart Editor", null, null, true);
 		DiscordClient.resetClientID();
 		#end
+
+		MusicBeatState.switchState(new ChartingState());
+		return;
 		//#if FINAL_BUILD
 
 		if (!Misc.piratedTheGame) {
@@ -2402,6 +2439,51 @@ class PlayState extends MusicBeatState
 			case "Die":
 				health = 0;
 				doDeathCheck();
+			case "Fanum Tax":
+				camGame.flash(FlxColor.RED,1);
+				fanumTaxing = true;
+				
+				taxSound = FlxG.sound.play(Paths.sound("fanumtax"));
+
+				dad.playAnim("reach",true);
+				dad.specialAnim = true;
+				fanumWarning.alpha = 1;
+				FlxFlicker.flicker(fanumWarning,6,0.3);
+			
+
+				dad.animation.finishCallback = function(name)
+					{
+						switch(name)
+						{
+							case "reach":
+								taxSound.stop();
+								camHUD.visible = false;
+								trace(Paths.sound("fanumDead"));
+								var fuck = FlxG.sound.play(Paths.sound("fanumDead"),1);
+								FlxFlicker.stopFlickering(fanumWarning);
+								fanumWarning.alpha = 0;
+								dad.playAnim("reach2",true,true);
+								FlxTween.tween(boyfriend,{x:dad.x},1.2);
+								FlxTween.tween(boyfriend.scale,{x:0, y:0},1.2);
+
+							case "reach2":
+								dad.playAnim("eat");
+							
+							case "eat":
+								if(FlxG.sound.music != null) {
+									FlxG.sound.music.pause();
+									vocals.pause();
+									opponentVocals.pause();
+								}
+								healthLoss = 0;
+								paused = true;
+							
+
+
+						}
+
+
+					}
 
 							
 			

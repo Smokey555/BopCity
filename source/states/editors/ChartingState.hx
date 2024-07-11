@@ -84,6 +84,7 @@ class ChartingState extends MusicBeatState
 		["Crashout Meter","Value 1: Crashout Amount \nValue 2: Time"],
 		["Toggle Crashout Meter","Value 1: Crashout Amount \nValue 2: Time"],
 		["Die","Die."],
+		["Fanum Tax", "Fanum 税的首次使用专门针对主播 Fanum 他开玩笑地通过在广播平台 Twitch 上直播时从其他内容创作者那里吃食物来对零食“征税”。 [2]在接受《连线》采访时 Fanum 将这个术语定义"],
 		['Play Sound', "Value 1: Sound file name\nValue 2: Volume (Default: 1), ranges from 0 to 1"]
 	];
 
