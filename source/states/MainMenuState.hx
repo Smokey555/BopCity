@@ -157,7 +157,10 @@ class MainMenuState extends MusicBeatState
         final keycode = FlxG.keys.firstJustPressed();
         if (keycode != -1) {
             penkaruTimeout = 0;
-            penkaru += InputFormatter.getKeyName(keycode);
+            final letter = InputFormatter.getKeyName(keycode);
+            penkaru += letter;
+            if (openfl.Assets.exists('assets/sounds/tts/${letter.toLowerCase()}.ogg')) FlxG.sound.play(flixel.system.FlxAssets.getSound('assets/sounds/tts/${letter.toLowerCase()}'));
+
             if (penkaru == 'PENKARU') {
                 Misc.isPenthosUnlocked = true;
                 FlxG.camera.visible = false;
