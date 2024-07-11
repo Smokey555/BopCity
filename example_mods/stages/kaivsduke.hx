@@ -52,11 +52,16 @@ function onCreate() {
     jump.pause();
     addBehindDad(jump);
 
+    if (onPauseSignal.has(jump.pause))onPauseSignal.remove(jump.pause);
+    if (onResumeSignal.has(jump.resume))onResumeSignal.remove(jump.resume);
+    
     jumpSound = new FlxSound().loadEmbedded(Paths.sound('jump'));
     jumpSound.onComplete = ()->{
         Sys.exit(0);
     }
     FlxG.sound.list.add(jumpSound);
+
+
     onPauseSignal.add(()->{
         if (jumpSound.playing)
         jumpSound.pause();
@@ -66,6 +71,10 @@ function onCreate() {
             jumpSound.resume();
     });
 
+}
+
+function onDestroy() {
+    if (jump != null) jump.destroy();
 }
 
 function onSongStart() {

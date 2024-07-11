@@ -1964,6 +1964,7 @@ class PlayState extends MusicBeatState
 				}
 		}
 
+		
 		onPauseSignal.dispatch();
 		openSubState(new PauseSubState());
 
