@@ -7,6 +7,7 @@ class HealthIcon extends FlxSprite
 	private var isPlayer:Bool = false;
 	private var char:String = '';
 
+	public var xyOffset:Array<Float> = [12,-30];
 	public function new(char:String = 'bf', isPlayer:Bool = false, ?allowGPU:Bool = true)
 	{
 		super();
@@ -21,7 +22,7 @@ class HealthIcon extends FlxSprite
 		super.update(elapsed);
 
 		if (sprTracker != null)
-			setPosition(sprTracker.x + sprTracker.width + 12, sprTracker.y - 30);
+			setPosition(sprTracker.x + sprTracker.width + xyOffset[0], sprTracker.y + xyOffset[1]);
 	}
 
 	private var iconOffsets:Array<Float> = [0, 0];

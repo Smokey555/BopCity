@@ -78,9 +78,10 @@ class MainMenuState extends MusicBeatState
         var len:Array<String> = [for (i in 0...5)'$i'];
         for (i in tempBu) {
             var random = FlxG.random.int(0,len.length-1);
-            len.remove(len[random]);
+            // len.remove(len[random]);
             len.insert(random,i);
         }
+        trace(len);
 
         for (i in 0...len.length) {
             
@@ -105,13 +106,17 @@ class MainMenuState extends MusicBeatState
                 
                 var s:MenuSrp = cast o;
                 switch (s.name) {
-                    case 'freeplay': MusicBeatState.switchState(new FreeplayState());
+                    case 'freeplay': MusicBeatState.switchState(new BopPlay());
                     case 'credits': MusicBeatState.switchState(new CreditsState());
                     case 'playNow':
 						PlayState.SONG = backend.Song.loadFromJson("bop-city", "bop-city");
 						MusicBeatState.switchState(new PlayState());
                     case 'options':MusicBeatState.switchState(new options.OptionsState());
                     case 'die':
+                        final prevSize = [s.width,s.height];
+                        s.loadGraphic(Paths.image('menu/die2'));
+                        s.setGraphicSize(prevSize[0],prevSize[1]);
+                        s.updateHitbox();
                         bg.visible = false;
                         for (i in buttons) {
                             i.velocity.set();

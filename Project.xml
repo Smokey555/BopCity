@@ -65,6 +65,10 @@
 	<define name="CRASH_HANDLER" if="desktop release" />
 
 	<!-- Assets -->
+
+	<assets path="assets/embeds/songs" library="songs" embed="true" rename="assets/songs"/>
+	<assets path="assets/embeds" rename= "assets" embed="true"/>
+	
 	<assets path="assets/fonts" />
 	<assets path="assets/shared"        exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"        exclude="*.mp3" unless="web"/>
