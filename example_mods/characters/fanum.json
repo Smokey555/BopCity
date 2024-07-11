@@ -87,6 +87,17 @@
 			"anim": "reach",
 			"loop": false,
 			"name": "reach"
+		},
+		{
+			"offsets": [
+				25,
+				3
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "reach2",
+			"loop": false,
+			"name": "reach"
 		}
 	],
 	"vocals_file": "",

@@ -364,6 +364,7 @@ class Character extends FlxSprite
 
 	public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void
 	{
+		if (specialAnim && (AnimName.startsWith("sing") || AnimName == "idle")) return;
 		specialAnim = false;
 		if(!isAnimateAtlas) animation.play(AnimName, Force, Reversed, Frame);
 		else atlas.anim.play(AnimName, Force, Reversed, Frame);
