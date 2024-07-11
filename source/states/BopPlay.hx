@@ -51,6 +51,7 @@ class BopPlay extends MusicBeatState
 			for (song in curWeek.songs)
 			{
                 if (song[0] == 'yo' && !Misc.isPenthosUnlocked) continue;
+                if (song[0] == 'piracy' && !Misc.piratedTheGame) continue;
                 songs.push({
                     SN: song[0],
                     icon: song[1],
