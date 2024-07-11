@@ -162,7 +162,19 @@ class MainMenuState extends MusicBeatState
 
             if (penkaru == 'PENKARU') {
                 Misc.isPenthosUnlocked = true;
-                FlxG.sound.play(flixel.system.FlxAssets.getSound('assets/sounds/ding'));
+                final ding = flixel.system.FlxAssets.getSound('assets/sounds/ding');
+                (FlxG.sound.play(ding)).onComplete = ()->{
+                    final sound = Paths.sound('flashbang');
+                    FlxG.sound.play(sound);
+                    FlxG.camera.flash(FlxColor.WHITE,sound.length/1000);
+                    for (i in buttons) {
+                        var s:MenuSrp = cast i;
+                        if (s.name != 'freeplay')  {
+                            s.alpha = 0;
+                            s.visible = false;
+                        }
+                    }
+                }
 
                 // FlxG.camera.visible = false;
                 // FlxG.sound.music.volume = 0;

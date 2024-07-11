@@ -6,6 +6,7 @@ import haxe.io.Bytes;
 import hxvlc.util.Location;
 import hxvlc.flixel.FlxVideoSprite;
 
+//add a static method to cache a vid 
 class VideoSprite extends FlxVideoSprite
 {
     static var _init:Bool = false;
