@@ -2365,7 +2365,7 @@ class PlayState extends MusicBeatState
 					
 					scoreTxt.visible = !scoreTxt.visible;
 					iconP1.visible = !iconP1.visible;
-					iconP2.visible = !iconP2.visible;
+					//iconP2.visible = !iconP2.visible;
 					healthBar.visible = !healthBar.visible;
 			case "Die":
 				health = 0;
