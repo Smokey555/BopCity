@@ -2456,6 +2456,7 @@ class PlayState extends MusicBeatState
 						switch(name)
 						{
 							case "reach":
+								fanumTaxing = false;
 								taxSound.stop();
 								camHUD.visible = false;
 								trace(Paths.sound("fanumDead"));
@@ -2463,13 +2464,16 @@ class PlayState extends MusicBeatState
 								FlxFlicker.stopFlickering(fanumWarning);
 								fanumWarning.alpha = 0;
 								dad.playAnim("reach2",true,true);
+								dad.specialAnim = true;
 								FlxTween.tween(boyfriend,{x:dad.x},1.2);
 								FlxTween.tween(boyfriend.scale,{x:0, y:0},1.2);
 
 							case "reach2":
-								dad.playAnim("eat");
+								dad.playAnim("eat",true);
+								
 							
 							case "eat":
+								fanumTaxed = true;
 								if(FlxG.sound.music != null) {
 									FlxG.sound.music.pause();
 									vocals.pause();
@@ -2477,6 +2481,7 @@ class PlayState extends MusicBeatState
 								}
 								healthLoss = 0;
 								paused = true;
+								
 							
 
 
