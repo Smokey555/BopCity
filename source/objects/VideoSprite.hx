@@ -3,7 +3,6 @@ package objects;
 
 import openfl.Assets;
 import haxe.io.Bytes;
-import hxvlc.util.Location;
 import hxvlc.flixel.FlxVideoSprite;
 
 //add a static method to cache a vid 
@@ -14,18 +13,18 @@ class VideoSprite extends FlxVideoSprite
         if (_init) return;
         _init = true;
         trace('handle init? ' + hxvlc.util.Handle.init());
-        hxvlc.util.Handle.initAsync();
     }
 
     public static final looping:String = ':input-repeat=65535';
     public static final muted:String = ':no-audio';
     
-    public function new(x:Float = 0,y:Float = 0,destroyOnUse:Bool = true) {
+    public function new(x:Float = 0,y:Float = 0,destroyOnUse:Bool = true,dontAdd:Bool = false) {
         super(x,y);
 
         if (destroyOnUse) bitmap.onEndReached.add(()->{this.destroy();},true);
 
-        tryAddingToPlayState();
+        if (!dontAdd)
+            tryAddingToPlayState();
     }
 
     function tryAddingToPlayState() {
@@ -137,6 +136,14 @@ class VideoSprite extends FlxVideoSprite
         return video;
     }
 
+    public static function cacheVid(path:String) {
+        var video = new VideoSprite(0,0,false,true);
+        video.load(path, [muted]);
+        video.addCallback(ONFORMAT,()->{video.destroy();});
+        video.play();
+
+    }
+
     override function destroy() {
         if (Std.isOfType(FlxG.state,PlayState) && PlayState.instance != null) {
             var cur:PlayState = cast FlxG.state;
@@ -163,3 +170,5 @@ enum abstract VidCallbacks(String) to String from String {
     public var ONSTART:String = 'onStart';
     public var ONFORMAT:String = 'onFormat';
 }
+
+typedef Location = #if (hxvlc <= "1.5.5") hxvlc.util.OneOfThree<String, Int, Bytes>; #else hxvlc.util.Location; #end

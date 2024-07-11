@@ -217,12 +217,9 @@ function onCreatePost() {
         FlxTween.num(1,1.25,2, {},(f)->penShader.setFloat('contrast',f));
     });
     video.load('aethospen.mp4',[VideoSprite.muted]);
-    video.play();
-    video.pause();
-    if (onPauseSignal.has(video.pause))onPauseSignal.remove(video.pause);
-    if (onResumeSignal.has(video.resume))onResumeSignal.remove(video.resume);
-
     add(video);
+    VideoSprite.cacheVid('aethospen.mp4');
+
 
 
     camHUD.alpha = 0;
@@ -296,10 +293,7 @@ function onEvent(ev,v1,v2) {
                 camHUD.zoom = 2;
                 setRotation(true);
             case 'video':
-                if (!onPauseSignal.has(video.pause))onPauseSignal.add(video.pause);
-                if (!onResumeSignal.has(video.resume))onResumeSignal.add(video.resume);
-                video.resume();
-
+                video.play();
             case 'headPea':
                 onEvent('hummusZoom','0.5,2.54','cubeInOut');
 

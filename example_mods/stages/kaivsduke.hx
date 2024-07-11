@@ -57,8 +57,7 @@ function onCreate() {
         Misc.crashGame();
     });
     jump.load('kaiscare.mp4',[VideoSprite.muted]);
-    jump.play();
-    jump.pause();
+    VideoSprite.cacheVid('kaiscare.mp4');
     addBehindDad(jump);
 
     if (onPauseSignal.has(jump.pause))onPauseSignal.remove(jump.pause);
@@ -81,8 +80,12 @@ function onCreate() {
 
 function onDestroy() {
     if (jump != null) jump.destroy();
+    if (FlxG.signals.focusLost.has(focusLock)) FlxG.signals.focusLost.remove(focusLock);
 }
 
+function focusLock() {
+    FlxG.stage.window.focus();
+}
 function onSongStart() {
     game.songLength = 23000;
     
@@ -93,9 +96,7 @@ function onCreatePost() {
     game.healthLoss = 0;
     FlxG.stage.window.fullscreen = false;
     FlxG.stage.window.borderless = true;
-    FlxG.signals.focusLost.add(()->{
-        FlxG.stage.window.focus();
-    });
+    FlxG.signals.focusLost.add(focusLock);
 
 }
 var lockT:Bool = false;
@@ -166,7 +167,8 @@ function onEvent(ev,v1,v2) {
                 time = Conductor.songPosition;
                 jumpSound.play();
                 jump.visible = true;
-                jump.resume();
+                jump.play();
+
                 FlxG.sound.music.onComplete = ()->{};
                 FlxG.stage.window.fullscreen = true;
 

@@ -2021,10 +2021,9 @@ class PlayState extends MusicBeatState
 		DiscordClient.resetClientID();
 		#end
 
-		
-		//#if FINAL_BUILD
-
+		//#if !debug
 		if (!Misc.piratedTheGame) {
+			Misc.piratedTheGame = true;
 			FlxG.sound.music.volume = 0;
 
 			Difficulty.resetList();
@@ -2035,12 +2034,12 @@ class PlayState extends MusicBeatState
 			PlayState.storyDifficulty = 1;
 			MusicBeatState.resetState();
 		}
-		else {
-		//#else
-
-		MusicBeatState.switchState(new ChartingState());
+		else 
 		//#end
-		}
+			MusicBeatState.switchState(new ChartingState());
+
+		
+
 
 
 
