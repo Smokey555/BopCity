@@ -83,6 +83,7 @@ class ChartingState extends MusicBeatState
 		['Cenat Health Drain', "Value 1: Amount\nValue 2: Time"],
 		["Crashout Meter","Value 1: Crashout Amount \nValue 2: Time"],
 		["Toggle Crashout Meter","Value 1: Crashout Amount \nValue 2: Time"],
+		["Die","Die."],
 		['Play Sound', "Value 1: Sound file name\nValue 2: Volume (Default: 1), ranges from 0 to 1"]
 	];
 

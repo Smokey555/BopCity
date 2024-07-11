@@ -47,25 +47,27 @@ class FPSCounter extends TextField
 	private override function __enterFrame(deltaTime:Float):Void
 	{
 		// prevents the overlay from updating every frame, why would you need to anyways
-		if (deltaTimeout > 1000) {
+		if (deltaTimeout > 1000)
+		{
 			deltaTimeout = 0.0;
 			return;
 		}
 
 		final now:Float = haxe.Timer.stamp() * 1000;
 		times.push(now);
-		while (times[0] < now - 1000) times.shift();
+		while (times[0] < now - 1000)
+			times.shift();
 
-		currentFPS = times.length < FlxG.updateFramerate ? times.length : FlxG.updateFramerate;		
+		currentFPS = times.length < FlxG.updateFramerate ? times.length : FlxG.updateFramerate;
 		updateText();
 		deltaTimeout += deltaTime;
 	}
 
-	public dynamic function updateText():Void { // so people can override it in hscript
-		text = 'FPS: ${currentFPS}'
-		+ '\nMemory: ${flixel.util.FlxStringUtil.formatBytes(memoryMegas)}';
+	public dynamic function updateText():Void
+	{ // so people can override it in hscript
+		text = 'MOD BY DANIEL HUMMUS\nFPS: ${currentFPS}' + '\nMemory: ${flixel.util.FlxStringUtil.formatBytes(memoryMegas)}\nHUMMUS ENGINE v1.2';
 
-		textColor = 0xFFFFFFFF;
+		textColor = 0xFF4BD8;
 		if (currentFPS < FlxG.drawFramerate * 0.5)
 			textColor = 0xFFFF0000;
 	}
