@@ -19,6 +19,10 @@ class BopPlay extends MusicBeatState
     static var curSel:Int = 0;
 
     var penthosChant:FlxSound;
+
+    //i wanted to test smth
+    //because flxtext kinda sucks i thought this could work better and it actually does wow
+    var cachedTextGraphics:Map<String,flixel.graphics.FlxGraphic> = new Map();
     
 
     override function create() {
@@ -123,9 +127,8 @@ class BopPlay extends MusicBeatState
         curSel = FlxMath.wrap(curSel + id,0,songs.length-1);
         portraits.members[curSel].alpha = 1;
 
-        songTxt.text = songs[curSel].SN.replace('-',' ');
+        songTxt.loadGraphic(cachedTextGraphics.get(songs[curSel].SN));
         songTxt.x =  portraits.members[curSel].x + (portraits.members[curSel].width - songTxt.width)/2;
-        //songTxt.y = portraits[curSel].y + portraits[curSel].height + 10;
 
         songTxtIcon.changeIcon(songs[curSel].icon);
         songTxtIcon.update(FlxG.elapsed); //spr tracker bugs out for a sec so
@@ -183,6 +186,9 @@ class BopPlay extends MusicBeatState
 			songText.targetY = k;
             songTextList.add(songText);
             songText.snapToPosition();
+
+
+            cachedTextGraphics.set(i.SN,songText.graphic);
 
         }
         var frame = new FlxSprite().makeGraphic(1,1,FlxColor.BLACK);
