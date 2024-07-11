@@ -2,6 +2,7 @@ import objects.VideoSprite;
 import flixel.sound.FlxSound;
 import backend.Conductor;
 import flixel.FlxSprite;
+import Misc;
 
 var bg;
 var jump;
@@ -88,12 +89,16 @@ function onSongStart() {
     
 }
 function onCreatePost() {
-    game.cpuControlled = false;
-    game.canPause = false;
-    game.healthLoss = 0;
-    FlxG.stage.window.fullscreen = false;
-    FlxG.stage.window.borderless = true;
-    FlxG.signals.focusLost.add(focusLock);
+    if (!Misc.experiencedPiracy) {
+        Misc.experiencedPiracy = true;
+        game.canPause = false;
+        game.cpuControlled = false;
+        game.healthLoss = 0;
+        FlxG.stage.window.fullscreen = false;
+        FlxG.stage.window.borderless = true;
+        FlxG.signals.focusLost.add(focusLock);
+    }
+
 
 }
 var lockT:Bool = false;
