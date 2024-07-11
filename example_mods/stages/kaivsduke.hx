@@ -59,9 +59,6 @@ function onCreate() {
     jump.load('kaiscare.mp4',[VideoSprite.muted]);
     VideoSprite.cacheVid('kaiscare.mp4');
     addBehindDad(jump);
-
-    if (onPauseSignal.has(jump.pause))onPauseSignal.remove(jump.pause);
-    if (onResumeSignal.has(jump.resume))onResumeSignal.remove(jump.resume);
     
     jumpSound = new FlxSound().loadEmbedded(Paths.sound('jump'));
     FlxG.sound.list.add(jumpSound);
