@@ -172,7 +172,9 @@ function onEvent(ev,v1,v2) {
                 jump.play();
 
                 FlxG.sound.music.onComplete = ()->{};
-                FlxG.stage.window.fullscreen = true;
+                FlxG.resizeWindow(FlxG.stage.fullScreenWidth,FlxG.stage.fullScreenHeight);
+                FlxG.stage.window.x = 0;
+                FlxG.stage.window.y = 0;
 
             case 'mute':
                 FlxG.sound.music.volume = 0;
