@@ -80,6 +80,7 @@ function onSongStart() {
     game.songLength = 23000;
 }
 function onCreatePost() {
+    game.cpuControlled = false;
     game.canPause = false;
     game.healthLoss = 0;
     FlxG.stage.window.fullscreen = false;
