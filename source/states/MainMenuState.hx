@@ -1,5 +1,6 @@
 package states;
 
+import backend.InputFormatter;
 import flixel.input.mouse.FlxMouseEvent;
 import flixel.FlxObject;
 import flixel.addons.transition.FlxTransitionableState;
@@ -146,8 +147,38 @@ class MainMenuState extends MusicBeatState
         }
     }
 
+    var penkaruTimeout:Float = 0;
+    var penkaru = '';
 	override function update(elapsed:Float)
 	{
+        penkaruTimeout+=elapsed;
+        if (penkaruTimeout >= 1) penkaru = '';
+
+        final keycode = FlxG.keys.firstJustPressed();
+        if (keycode != -1) {
+            penkaruTimeout = 0;
+            penkaru += InputFormatter.getKeyName(keycode);
+            if (penkaru == 'PENKARU') {
+                Misc.isPenthosUnlocked = true;
+                FlxG.camera.visible = false;
+                FlxG.sound.music.volume = 0;
+
+                Difficulty.resetList();
+                var songLowercase:String = Paths.formatToSongPath('yo');
+                var formatted:String = backend.Highscore.formatSong(songLowercase, 1);
+     
+                PlayState.SONG = backend.Song.loadFromJson(formatted, songLowercase);
+                PlayState.isStoryMode = false;
+                PlayState.storyDifficulty = 1;
+
+
+                LoadingState.loadAndSwitchState(new PlayState());
+
+            }
+
+
+
+        }
 
 	
 		super.update(elapsed);

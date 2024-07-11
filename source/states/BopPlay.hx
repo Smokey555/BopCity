@@ -41,6 +41,7 @@ class BopPlay extends MusicBeatState
 			WeekData.setDirectoryFromWeek(curWeek);
 			for (song in curWeek.songs)
 			{
+                if (song[0] == 'yo' && !Misc.isPenthosUnlocked) continue;
                 songs.push({
                     SN: song[0],
                     icon: song[1],
@@ -56,7 +57,7 @@ class BopPlay extends MusicBeatState
         FlxG.sound.list.add(penthosChant);
         penthosChant.play();
         penthosChant.volume = 0;
-        FlxG.signals.preStateSwitch.addOnce(()->penthosChant.fadeTween?.cancel());
+        FlxG.signals.preStateSwitch.addOnce(()->{if (FlxG.sound.music != null && !FlxG.sound.music.playing) FlxG.sound.music.resume();penthosChant.fadeTween?.cancel();});
 
 
 
