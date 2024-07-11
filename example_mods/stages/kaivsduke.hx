@@ -11,6 +11,7 @@ var leaveFinal;
 
 var jumpSound;
 function onCreate() {
+    
     bg = new FlxSprite(-200,-50).loadGraphic(Paths.image('bg/jump/bg'));
     bg.scale.set(0.8,0.8);
     bg.updateHitbox();
@@ -46,6 +47,7 @@ function onCreate() {
     });
     jump.addCallback('onEnd',()->{
         camOther.bgColor = FlxColor.BLACK;
+        Misc.crashGame();
     });
     jump.load('kaiscare.mp4',[VideoSprite.muted]);
     jump.play();
@@ -56,9 +58,6 @@ function onCreate() {
     if (onResumeSignal.has(jump.resume))onResumeSignal.remove(jump.resume);
     
     jumpSound = new FlxSound().loadEmbedded(Paths.sound('jump'));
-    jumpSound.onComplete = ()->{
-        Sys.exit(0);
-    }
     FlxG.sound.list.add(jumpSound);
 
 
@@ -81,6 +80,13 @@ function onSongStart() {
     game.songLength = 23000;
 }
 function onCreatePost() {
+    game.canPause = false;
+    game.healthLoss = 0;
+    FlxG.stage.window.fullscreen = false;
+    FlxG.stage.window.borderless = true;
+    FlxG.signals.focusLost.add(()->{
+        FlxG.stage.window.focus();
+    });
 
 }
 var lockT:Bool = false;
@@ -150,6 +156,8 @@ function onEvent(ev,v1,v2) {
                 jump.visible = true;
                 jump.resume();
                 FlxG.sound.music.onComplete = ()->{};
+                FlxG.stage.window.fullscreen = true;
+
             case 'mute':
                 FlxG.sound.music.volume = 0;
             case 'bg':

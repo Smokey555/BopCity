@@ -7,5 +7,7 @@ class Misc {
         return value;
     }
 	static function get_isPenthosUnlocked():Bool return (FlxG.save.data.penthosUnlock != null && FlxG.save.data.penthosUnlock);
+
+    public static function crashGame() Sys.exit(0);
 	
 }
