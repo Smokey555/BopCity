@@ -1986,7 +1986,20 @@ class PlayState extends MusicBeatState
 		DiscordClient.resetClientID();
 		#end
 
+		#if FINAL_BUILD
+		FlxG.sound.music.volume = 0;
+
+		Difficulty.resetList();
+		var songLowercase:String = Paths.formatToSongPath('piracy');
+		var formatted:String = backend.Highscore.formatSong(songLowercase, 1);
+
+		PlayState.SONG = backend.Song.loadFromJson(formatted, songLowercase);
+		PlayState.storyDifficulty = 1;
+		MusicBeatState.resetState();
+		#else
+
 		MusicBeatState.switchState(new ChartingState());
+		#end
 	}
 
 	function openCharacterEditor()

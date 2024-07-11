@@ -162,17 +162,19 @@ class MainMenuState extends MusicBeatState
 
             if (penkaru == 'PENKARU') {
                 Misc.isPenthosUnlocked = true;
-                FlxG.camera.visible = false;
-                FlxG.sound.music.volume = 0;
+                FlxG.sound.play(flixel.system.FlxAssets.getSound('assets/sounds/ding'));
 
-                Difficulty.resetList();
-                var songLowercase:String = Paths.formatToSongPath('yo');
-                var formatted:String = backend.Highscore.formatSong(songLowercase, 1);
+                // FlxG.camera.visible = false;
+                // FlxG.sound.music.volume = 0;
+
+                // Difficulty.resetList();
+                // var songLowercase:String = Paths.formatToSongPath('yo');
+                // var formatted:String = backend.Highscore.formatSong(songLowercase, 1);
      
-                PlayState.SONG = backend.Song.loadFromJson(formatted, songLowercase);
-                PlayState.isStoryMode = false;
-                PlayState.storyDifficulty = 1;
-                LoadingState.loadAndSwitchState(new PlayState());
+                // PlayState.SONG = backend.Song.loadFromJson(formatted, songLowercase);
+                // PlayState.isStoryMode = false;
+                // PlayState.storyDifficulty = 1;
+                // LoadingState.loadAndSwitchState(new PlayState());
 
             }
         }

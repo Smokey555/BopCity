@@ -1,8 +1,15 @@
+import objects.VideoSprite;
+import flixel.sound.FlxSound;
+import backend.Conductor;
 import flixel.FlxSprite;
 
 var bg;
 var jump;
 var leavenow;
+var leaveJ;
+var leaveFinal;
+
+var jumpSound;
 function onCreate() {
     bg = new FlxSprite(-200,-50).loadGraphic(Paths.image('bg/jump/bg'));
     bg.scale.set(0.8,0.8);
@@ -16,36 +23,142 @@ function onCreate() {
    leavenow.updateHitbox();
    leavenow.alpha = 0;
 
-    jump = new FlxSprite();
-    jump.frames = Paths.getSparrowAtlas('bg/jump/jumpscare');
-    jump.animation.addByPrefix('i','scare',24,false);
+
+   leaveFinal = new FlxSprite().loadGraphic(Paths.image('bg/jump/leaveFinalChace'));
+   add(leaveFinal);
+   leaveFinal.setGraphicSize(FlxG.width,FlxG.height);
+   leaveFinal.updateHitbox();
+   leaveFinal.alpha = 0;
+   leaveFinal.cameras = [camOther];
+
+   leaveJ = new FlxSprite().loadGraphic(Paths.image('bg/jump/leave'));
+   add(leaveJ);
+   leaveJ.setGraphicSize(FlxG.width,FlxG.height);
+   leaveJ.updateHitbox();
+   leaveJ.alpha = 0;
+   leaveJ.cameras = [camOther];
+
+    jump = new VideoSprite();
+    jump.addCallback('onFormat',()->{
+        jump.setGraphicSize(FlxG.with,FlxG.height);
+        jump.updateHitbox();
+        jump.cameras = [camOther];
+    });
+    jump.addCallback('onEnd',()->{
+        camOther.bgColor = FlxColor.BLACK;
+    });
+    jump.load('kaiscare.mp4',[VideoSprite.muted]);
+    jump.play();
+    jump.pause();
     addBehindDad(jump);
-    jump.setGraphicSize(FlxG.with,FlxG.height);
-    jump.updateHitbox();
-    jump.cameras = [camHUD];
-    jump.animation.play('i');
-    jump.visible = false;
-    jump.animation.finishCallback = (s)->{
-        jump.visible = false;
+
+    jumpSound = new FlxSound().loadEmbedded(Paths.sound('jump'));
+    jumpSound.onComplete = ()->{
+        Sys.exit(0);
     }
+    FlxG.sound.list.add(jumpSound);
+    onPauseSignal.add(()->{
+        if (jumpSound.playing)
+        jumpSound.pause();
+    });
+    onResumeSignal.add(()->{
+        if (!jumpSound.playing)
+            jumpSound.resume();
+    });
+
 }
 
-
+function onSongStart() {
+    game.songLength = 23000;
+}
 function onCreatePost() {
 
+}
+var lockT:Bool = false;
+var time:Float = 0;
+var fakeTime;
+function onUpdatePost(elapsed) {
+    if (lockT) {
+        var tempTime = time;
+        tempTime+=FlxG.random.int(-3,3);
+        Conductor.songPosition = tempTime;
+        checkEventNote();
+    }
+    fakeTime = FlxG.sound.music.time;
+}
+
+function checkEventNote() {
+    while(game.eventNotes.length > 0) {
+        var leStrumTime:Float = game.eventNotes[0].strumTime;
+        if(fakeTime < leStrumTime) {
+            return;
+        }
+
+        var value1:String = '';
+        if(game.eventNotes[0].value1 != null)
+            value1 = game.eventNotes[0].value1;
+
+        var value2:String = '';
+        if(game.eventNotes[0].value2 != null)
+            value2 = game.eventNotes[0].value2;
+
+        game.triggerEvent(eventNotes[0].event, value1, value2, leStrumTime);
+        game.eventNotes.shift();
+    }
 }
 
 function onEvent(ev,v1,v2) {
     if (ev == '') {
         switch (v1) {
-            case 'bg':
-                FlxTween.tween(bg, {alpha: 0.5},1, {onComplete:Void->{
-                    leavenow.alpha = 1;
-                }});
-            case 'jump':
-                jump.visible = true;
+            case 'unlock':
+                game.clearNotesBefore(time + 10000);
+                lockT = false;
+                for (i in game.opponentStrums) i.x = -1000;
 
-                jump.animation.play('i');
+            case 'lockConductor': 
+                lockT = true;
+                time = Conductor.songPosition;
+            case 'cut':
+                    camOther.bgColor = camOther.bgColor == FlxColor.BLACK ? 0x0 : FlxColor.BLACK;
+            case 'pirate':
+                FlxTween.tween(leaveJ, {alpha: 1},27.69 - 25.85);
+                game.timeBar.visible = game.timeTxt.visible = false;
+            case 'pirateL':
+                leaveJ.alpha = 0;
+            case 'pirateClose':
+                leaveJ.scale.set(3.5,2);
+                leaveJ.x = 1300;
+                leaveJ.y = 50;
+            case 'lastWarn':
+                FlxTween.tween(leaveFinal, {alpha: 1},27.69 - 25.85);
+            case 'finalLas':
+                camOther.bgColor = 0x0;
+                leaveFinal.alpha = 0;
+            case 'gameOver':
+                lockT = true;
+                time = Conductor.songPosition;
+                jumpSound.play();
+                jump.visible = true;
+                jump.resume();
+                FlxG.sound.music.onComplete = ()->{};
+            case 'mute':
+                FlxG.sound.music.volume = 0;
+            case 'bg':
+
+                game.iconP1.visible = false;
+                game.iconP2.visible = false;
+                game.healthBar.visible = false;
+                camOther.bgColor = 0x0;
+   
+
+                leavenow.alpha = 0.5;
+                bg.alpha = 0.5;
+
+                // FlxTween.tween(bg, {alpha: 0.5},27.69 - 25.85);
+                 //camOther.fade(FlxColor.BLACK,27.69 - 25.85,true);
+            case 'jump':
+
+                //jump.animation.play('i');
  
         }
     }
