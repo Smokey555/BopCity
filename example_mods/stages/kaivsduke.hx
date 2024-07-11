@@ -7,6 +7,7 @@ var bg;
 var jump;
 var leavenow;
 var leaveJ;
+var evilmode;
 var leaveFinal;
 
 var jumpSound;
@@ -17,6 +18,12 @@ function onCreate() {
     bg.updateHitbox();
     addBehindDad(bg);
     bg.alpha= 0;
+
+    evilmode = new FlxSprite(-200,-50).loadGraphic(Paths.image('bg/jump/evilmode'));
+    evilmode.updateHitbox();
+    add(evilmode);
+    evilmode.alpha= 0;
+
 
    leavenow = new FlxSprite(bg.x,bg.y).loadGraphic(Paths.image('bg/jump/leave2'));
    addBehindDad(leavenow);
@@ -78,6 +85,7 @@ function onDestroy() {
 
 function onSongStart() {
     game.songLength = 23000;
+    
 }
 function onCreatePost() {
     game.cpuControlled = false;
@@ -126,6 +134,9 @@ function checkEventNote() {
 function onEvent(ev,v1,v2) {
     if (ev == '') {
         switch (v1) {
+            case 'evil':
+            evilmode.alpha = 1;
+            dad.alpha = 0;
             case 'unlock':
                 game.clearNotesBefore(time + 10000);
                 lockT = false;

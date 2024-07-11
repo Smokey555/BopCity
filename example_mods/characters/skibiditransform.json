@@ -1,0 +1,36 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/skibiditransform",
+	"position": [
+		80,
+		380
+	],
+	"healthicon": "skibidi",
+	"flip_x": true,
+	"healthbar_colors": [
+		168,
+		162,
+		152
+	],
+	"camera_position": [
+		90,
+		20
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
