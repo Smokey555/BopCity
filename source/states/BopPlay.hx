@@ -140,7 +140,7 @@ class BopPlay extends MusicBeatState
         FlxTween.cancelTweensOf(songTxt);
         penthosChant.fadeTween?.cancel();
 
-        var isPenthos = songs[curSel].SN == 'penthos';
+        var isPenthos = songs[curSel].SN == 'yo';
         if (isPenthos) {
             FlxTween.shake(songTxt,0.005,0.5,{type: PINGPONG});
             penthosChant.fadeIn(5,0,0.4);

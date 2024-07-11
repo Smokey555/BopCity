@@ -153,7 +153,6 @@ class MainMenuState extends MusicBeatState
 	{
         penkaruTimeout+=elapsed;
         if (penkaruTimeout >= 1) penkaru = '';
-
         final keycode = FlxG.keys.firstJustPressed();
         if (keycode != -1) {
             penkaruTimeout = 0;
@@ -173,15 +172,12 @@ class MainMenuState extends MusicBeatState
                 PlayState.SONG = backend.Song.loadFromJson(formatted, songLowercase);
                 PlayState.isStoryMode = false;
                 PlayState.storyDifficulty = 1;
-
-
                 LoadingState.loadAndSwitchState(new PlayState());
 
             }
-
-
-
         }
+
+        if (controls.BACK) MusicBeatState.switchState(new TitleState());
 
 	
 		super.update(elapsed);
