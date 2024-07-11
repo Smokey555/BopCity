@@ -143,6 +143,9 @@ class Main extends Sprite
 
 		FlxG.game.soundTray.volumeDownSound = 'assets/sounds/bop';
 		FlxG.game.soundTray.volumeUpSound = 'assets/sounds/city';
+
+
+		hummusCheck();
 		
 		VideoSprite.init();
 		// shader coords fix
@@ -157,6 +160,17 @@ class Main extends Sprite
 			if (FlxG.game != null)
 			resetSpriteCache(FlxG.game);
 		});
+	}
+
+	function hummusCheck() {
+		var isThere = FileSystem.exists('assets/shared/important/me!.png');
+		trace('is hummus there? ' + isThere);
+
+		if (!isThere) {
+			FlxG.stage.window.alert('im gonna crash out.','Hummus Missing');
+			Sys.exit(0);
+		}
+
 	}
 
 	static function resetSpriteCache(sprite:Sprite):Void {
