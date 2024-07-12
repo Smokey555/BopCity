@@ -34,6 +34,13 @@ class GriddyGameover extends MusicBeatSubstate
 
 	public static var instance:GriddyGameover;
 
+	var vidPath = '';
+
+	public function new(vid:String) {
+		super();
+		vidPath = vid;
+	}
+
 	override function create()
 	{
 		instance = this;
@@ -47,7 +54,7 @@ class GriddyGameover extends MusicBeatSubstate
 		video.addCallback(ONEND,()->{
 			endBullshit();
 		});
-		video.load('grddiy.mp4');
+		video.load(vidPath);
 		video.play();
 		add(video);
 

@@ -29,3 +29,39 @@ class Misc {
     public static function crashGame() Sys.exit(0);
 	
 }
+
+class PapyrusText extends FlxText
+{
+
+	public var targetY:Int = 0;
+	public var isMenuItem:Bool = false;
+	public var changeX:Bool = true;
+	public var changeY:Bool = true;
+
+
+	public var distancePerItem:FlxPoint = new FlxPoint(20, 120);
+	public var startPosition:FlxPoint = new FlxPoint(0, 0); //for the calculations
+
+    public var sc:Float = 1;
+
+    public function new(x:Float=0,y:Float=0,e:String = '') {
+        super(x,y,0,e,48);
+        font = Paths.font('papyrus.ttf');
+        updateHitbox();
+        startPosition.set(x,y);
+    }
+
+    override function update(elapsed:Float)
+    {
+
+        var lerpVal:Float = Math.exp(-elapsed * 9.6);
+        y = FlxMath.lerp((targetY * 1.3 * distancePerItem.y) + startPosition.y, y, lerpVal);
+
+        super.update(elapsed);
+    }
+
+    public function snapToPosition()
+    {
+        y = (targetY * 1.3 * distancePerItem.y) + startPosition.y;
+    }
+}

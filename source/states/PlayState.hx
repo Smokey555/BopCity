@@ -2089,8 +2089,11 @@ class PlayState extends MusicBeatState
 
 				switch (SONG.song.toLowerCase())
 				{
+					//griddy game over att his point is just a video game over 
+					case 'finale':
+						openSubState(new substates.GriddyGameover('kaicenatyoufailedok.mp4'));
 					case 'yo':
-						openSubState(new substates.GriddyGameover());
+						openSubState(new substates.GriddyGameover('grddiy.mp4'));
 
 					case "skibidi-toilet" | "camera-man":
 						openSubState(new SkibidiGameOver());
@@ -2399,6 +2402,7 @@ class PlayState extends MusicBeatState
 							FlxTween.tween(cenatGhoul,{x:healthBar.barCenter - 30},0.3);
 						case "grab":	
 							cenatGhoul.animation.play("drag");
+							#if !debug
 							cenatDrainTween = FlxTween.tween(this,{health:health - drainAmt},time,{onComplete: function(_)
 							{
 								cenatGhoul.animation.play("die");
@@ -2408,6 +2412,7 @@ class PlayState extends MusicBeatState
 
 
 							}});
+							#end
 
 						}
 					}

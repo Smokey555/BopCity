@@ -27,9 +27,9 @@ function setRotation(v) {
 
 function init() {
     game.skipCountdown = true;
-    FlxG.camera.setSize(newWidth,newHeight);
-    FlxG.camera.x += offsetX;
-    FlxG.camera.y += offsetY;
+    // FlxG.camera.setSize(newWidth,newHeight);
+    // FlxG.camera.x += offsetX;
+    // FlxG.camera.y += offsetY;
 }
 
 

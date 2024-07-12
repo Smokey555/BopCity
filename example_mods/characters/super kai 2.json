@@ -1,15 +1,15 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				2,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "soulsgrab",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "soulsgrab"
 		}
 	],
 	"vocals_file": "",
@@ -27,8 +27,8 @@
 		64
 	],
 	"camera_position": [
-		-50,
-		100
+		220,
+		370
 	],
 	"sing_duration": 6.1,
 	"scale": 1,
