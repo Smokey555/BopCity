@@ -2089,6 +2089,9 @@ class PlayState extends MusicBeatState
 
 				switch (SONG.song.toLowerCase())
 				{
+					case 'yo':
+						openSubState(new substates.GriddyGameover());
+
 					case "skibidi-toilet" | "camera-man":
 						openSubState(new SkibidiGameOver());
 
