@@ -25,6 +25,8 @@ import js.html.*;
 import hxvlc.flixel.*;
 #end
 
+import Misc.PapyrusText;
+
 import backend.Paths;
 import backend.Controls;
 import backend.CoolUtil;

@@ -1,5 +1,6 @@
 package substates;
 
+import states.editors.ChartingState.AttachedFlxText;
 import objects.AttachedText;
 import objects.CheckboxThingie;
 
@@ -9,9 +10,9 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 	private var curSelected:Int = 0;
 	private var optionsArray:Array<Dynamic> = [];
 
-	private var grpOptions:FlxTypedGroup<Alphabet>;
+	private var grpOptions:FlxTypedGroup<PapyrusText>;
 	private var checkboxGroup:FlxTypedGroup<CheckboxThingie>;
-	private var grpTexts:FlxTypedGroup<AttachedText>;
+	private var grpTexts:FlxTypedGroup<AttachedFlxText>;
 
 	function getOptions()
 	{
@@ -87,10 +88,10 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		add(bg);
 
 		// avoids lagspikes while scrolling through menus!
-		grpOptions = new FlxTypedGroup<Alphabet>();
+		grpOptions = new FlxTypedGroup<PapyrusText>();
 		add(grpOptions);
 
-		grpTexts = new FlxTypedGroup<AttachedText>();
+		grpTexts = new FlxTypedGroup<AttachedFlxText>();
 		add(grpTexts);
 
 		checkboxGroup = new FlxTypedGroup<CheckboxThingie>();
@@ -100,9 +101,9 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 		for (i in 0...optionsArray.length)
 		{
-			var optionText:Alphabet = new Alphabet(200, 360, optionsArray[i].name, true);
+			var optionText:PapyrusText = new PapyrusText(200, 360, optionsArray[i].name);
 			optionText.isMenuItem = true;
-			optionText.setScale(0.8);
+			//optionText.scale.set(0.8);
 			optionText.targetY = i;
 			grpOptions.add(optionText);
 
@@ -118,7 +119,10 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 				checkboxGroup.add(checkbox);
 			} else {
 				optionText.snapToPosition();
-				var valueText:AttachedText = new AttachedText(Std.string(optionsArray[i].getValue()), optionText.width + 40, 0, true, 0.8);
+				var valueText = new AttachedFlxText(0,0,0,Std.string(optionsArray[i].getValue()));
+				valueText.font = optionText.font;
+				valueText.size = optionText.size;
+				valueText.xAdd = optionText.width + 40;
 				valueText.sprTracker = optionText;
 				valueText.copyAlpha = true;
 				valueText.ID = i;
@@ -352,7 +356,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 class GameplayOption
 {
-	private var child:Alphabet;
+	private var child:AttachedFlxText;
 	public var text(get, set):String;
 	public var onChange:Void->Void = null; //Pressed enter (on Bool type options) or pressed/held left/right (on other types)
 
@@ -441,7 +445,7 @@ class GameplayOption
 		ClientPrefs.data.gameplaySettings.set(variable, value);
 	}
 
-	public function setChild(child:Alphabet)
+	public function setChild(child:AttachedFlxText)
 	{
 		this.child = child;
 	}

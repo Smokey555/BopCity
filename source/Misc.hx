@@ -42,8 +42,6 @@ class PapyrusText extends FlxText
 	public var distancePerItem:FlxPoint = new FlxPoint(20, 120);
 	public var startPosition:FlxPoint = new FlxPoint(0, 0); //for the calculations
 
-    public var sc:Float = 1;
-
     public function new(x:Float=0,y:Float=0,e:String = '') {
         super(x,y,0,e,48);
         font = Paths.font('papyrus.ttf');
@@ -54,14 +52,26 @@ class PapyrusText extends FlxText
     override function update(elapsed:Float)
     {
 
-        var lerpVal:Float = Math.exp(-elapsed * 9.6);
-        y = FlxMath.lerp((targetY * 1.3 * distancePerItem.y) + startPosition.y, y, lerpVal);
+        if (isMenuItem) {
+            var lerpVal:Float = Math.exp(-elapsed * 9.6);
+            if (changeX)
+            x = FlxMath.lerp((targetY * distancePerItem.x) + startPosition.x, x, lerpVal);
+            if (changeY)
+            y = FlxMath.lerp((targetY * 1.3 * distancePerItem.y) + startPosition.y, y, lerpVal);
+        }
+
 
         super.update(elapsed);
     }
 
     public function snapToPosition()
     {
-        y = (targetY * 1.3 * distancePerItem.y) + startPosition.y;
+        if (isMenuItem) {
+            if (changeX)
+                x = (targetY * distancePerItem.x) + startPosition.x;
+            if (changeY)
+                y = (targetY * 1.3 * distancePerItem.y) + startPosition.y;
+        }
+
     }
 }
