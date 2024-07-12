@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="hoodironyFunk.png">
-	<!-- Created using the Spritesheet and XML generator -->
-	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
-	<SubTexture name="idle0000" x="0" y="0" width="469" height="715" frameX="-105" frameY="-286" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="up0000" x="971" y="0" width="339" height="878" frameX="-187" frameY="-141" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="up0001" x="0" y="715" width="362" height="839" frameX="-166" frameY="-180" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="left0000" x="1310" y="0" width="448" height="630" frameX="-109" frameY="-378" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="left0001" x="362" y="715" width="460" height="655" frameX="-93" frameY="-353" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="down0000" x="1310" y="630" width="421" height="602" frameX="-162" frameY="-410" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="down0001" x="1758" y="0" width="416" height="590" frameX="-162" frameY="-420" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="right0000" x="469" y="0" width="502" height="620" frameX="-307" frameY="-384" frameWidth="1920" frameHeight="1080"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="hoodironyFunk.png" width="1429" height="1836">
+	<SubTexture name="idle0000" x="0" y="0" width="465" height="711" frameX="-107" frameY="-288" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0000" x="0" y="1079" width="874" height="335" rotated="true" frameX="-189" frameY="-143" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="up0001" x="0" y="716" width="835" height="358" rotated="true" frameX="-168" frameY="-182" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0000" x="879" y="656" width="444" height="626" frameX="-111" frameY="-380" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="left0001" x="973" y="0" width="456" height="651" frameX="-95" frameY="-355" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0000" x="0" y="1419" width="598" height="417" rotated="true" frameX="-164" frameY="-412" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="down0001" x="603" y="1419" width="586" height="412" rotated="true" frameX="-164" frameY="-422" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="right0000" x="470" y="0" width="498" height="616" frameX="-309" frameY="-386" frameWidth="1920" frameHeight="1080"/>
 </TextureAtlas>

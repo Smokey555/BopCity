@@ -1,121 +1,122 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="crabs.png">
-	<!-- Created with Adobe Animate version 20.5.1.31044 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="crabs0000" x="5730" y="4144" width="1373" height="1371" frameX="-138" frameY="-71" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0001" x="7" y="2873" width="1372" height="1371" frameX="-134" frameY="-70" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0002" x="5760" y="7" width="1373" height="1372" frameX="-129" frameY="-68" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0003" x="1494" y="1485" width="1372" height="1372" frameX="-125" frameY="-67" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0004" x="5760" y="1386" width="1373" height="1372" frameX="-120" frameY="-66" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0005" x="7" y="1494" width="1372" height="1372" frameX="-116" frameY="-65" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0006" x="4372" y="1396" width="1373" height="1372" frameX="-111" frameY="-64" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0007" x="2971" y="1407" width="1373" height="1372" frameX="-107" frameY="-63" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0008" x="4252" y="4154" width="1372" height="1371" frameX="-103" frameY="-62" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0009" x="2765" y="4165" width="1372" height="1371" frameX="-99" frameY="-61" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0010" x="2765" y="5543" width="1371" height="1371" frameX="-95" frameY="-60" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0011" x="5752" y="2765" width="1372" height="1372" frameX="-90" frameY="-58" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0012" x="5631" y="5522" width="1371" height="1372" frameX="-86" frameY="-57" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0013" x="4351" y="2775" width="1372" height="1372" frameX="-81" frameY="-56" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0014" x="4144" y="5532" width="1371" height="1372" frameX="-77" frameY="-55" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0015" x="2873" y="2786" width="1372" height="1372" frameX="-72" frameY="-54" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0016" x="1386" y="2864" width="1372" height="1372" frameX="-68" frameY="-53" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0017" x="1386" y="4243" width="1372" height="1371" frameX="-63" frameY="-52" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0018" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0019" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0020" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0021" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0022" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0023" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0024" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0025" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0026" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0027" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0028" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0029" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0030" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0031" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0032" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0033" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0034" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0035" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-51" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0036" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0037" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0038" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0039" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0040" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0041" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0042" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0043" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0044" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0045" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0046" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0047" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0048" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0049" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0050" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0051" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0052" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0053" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0054" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0055" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0056" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0057" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0058" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0059" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0060" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0061" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0062" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0063" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0064" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0065" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0066" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0067" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0068" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0069" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0070" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0071" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0072" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-19" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0073" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0074" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0075" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0076" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0077" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0078" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0079" x="7" y="4251" width="1372" height="1371" frameX="-59" frameY="-43" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0080" x="4372" y="7" width="1381" height="1382" frameX="-48" frameY="-35" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0081" x="4372" y="7" width="1381" height="1382" frameX="-48" frameY="-35" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0082" x="2971" y="7" width="1394" height="1393" frameX="0" frameY="-28" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0083" x="2971" y="7" width="1394" height="1393" frameX="0" frameY="-28" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0084" x="2971" y="7" width="1394" height="1393" frameX="-4" frameY="-32" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0085" x="2971" y="7" width="1394" height="1393" frameX="-4" frameY="-32" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0086" x="2971" y="7" width="1394" height="1393" frameX="-4" frameY="-32" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0087" x="2971" y="7" width="1394" height="1393" frameX="-4" frameY="-32" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0088" x="2971" y="7" width="1394" height="1393" frameX="-24" frameY="-100" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0089" x="2971" y="7" width="1394" height="1393" frameX="-24" frameY="-100" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0090" x="2971" y="7" width="1394" height="1393" frameX="-24" frameY="-96" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0091" x="2971" y="7" width="1394" height="1393" frameX="-24" frameY="-96" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0092" x="2971" y="7" width="1394" height="1393" frameX="-24" frameY="-96" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0093" x="2971" y="7" width="1394" height="1393" frameX="-24" frameY="-96" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0094" x="7" y="7" width="1480" height="1480" frameX="-15" frameY="0" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0095" x="7" y="7" width="1480" height="1480" frameX="-15" frameY="0" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0096" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0097" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0098" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0099" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0100" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0101" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0102" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0103" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0104" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0105" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0106" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0107" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0108" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0109" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0110" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0111" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0112" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0113" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0114" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
-	<SubTexture name="crabs0115" x="1494" y="7" width="1470" height="1471" frameX="-20" frameY="-15" frameWidth="1511" frameHeight="1493"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="crabs.png" width="7401" height="4652">
+	<SubTexture name="crabs0000" x="0" y="0" width="1225" height="1151" rotated="true" frameX="-261" frameY="-134" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0001" x="1230" y="0" width="1225" height="1153" rotated="true" frameX="-255" frameY="-133" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0002" x="2460" y="0" width="1225" height="1153" rotated="true" frameX="-251" frameY="-132" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0003" x="3690" y="0" width="1225" height="1154" rotated="true" frameX="-247" frameY="-131" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0004" x="4920" y="0" width="1225" height="1156" rotated="true" frameX="-241" frameY="-130" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0005" x="6150" y="0" width="1226" height="1156" rotated="true" frameX="-236" frameY="-128" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0006" x="0" y="1158" width="1228" height="1157" rotated="true" frameX="-231" frameY="-126" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0007" x="1233" y="1158" width="1228" height="1157" rotated="true" frameX="-227" frameY="-125" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0008" x="2466" y="1159" width="1227" height="1157" rotated="true" frameX="-222" frameY="-124" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0009" x="3698" y="1161" width="1229" height="1157" rotated="true" frameX="-218" frameY="-122" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0010" x="4932" y="1161" width="1229" height="1157" rotated="true" frameX="-213" frameY="-121" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0011" x="6166" y="1161" width="1229" height="1157" rotated="true" frameX="-209" frameY="-120" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0012" x="6172" y="2323" width="1229" height="1158" rotated="true" frameX="-204" frameY="-119" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0013" x="0" y="2320" width="1229" height="1157" rotated="true" frameX="-200" frameY="-118" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0014" x="0" y="3482" width="1229" height="1158" rotated="true" frameX="-195" frameY="-117" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0015" x="1234" y="2321" width="1230" height="1157" rotated="true" frameX="-191" frameY="-115" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0016" x="2469" y="2323" width="1230" height="1157" rotated="true" frameX="-187" frameY="-114" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0017" x="3704" y="2323" width="1229" height="1157" rotated="true" frameX="-182" frameY="-113" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0018" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0019" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0020" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0021" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0022" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0023" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0024" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0025" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0026" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0027" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0028" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0029" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0030" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0031" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0032" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0033" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0034" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0035" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0036" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0037" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0038" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0039" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0040" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0041" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0042" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0043" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0044" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0045" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0046" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0047" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0048" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0049" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0050" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0051" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0052" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0053" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0054" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0055" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0056" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0057" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0058" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0059" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0060" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0061" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0062" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0063" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0064" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0065" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0066" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0067" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0068" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0069" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0070" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0071" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0072" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-80" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0073" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0074" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0075" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0076" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0077" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0078" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0079" x="4938" y="2323" width="1229" height="1157" rotated="true" frameX="-178" frameY="-104" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0080" x="1234" y="3483" width="1229" height="1158" rotated="true" frameX="-173" frameY="-100" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0081" x="1234" y="3483" width="1229" height="1158" rotated="true" frameX="-173" frameY="-100" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0082" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-133" frameY="-97" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0083" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-133" frameY="-97" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0084" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-137" frameY="-101" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0085" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-137" frameY="-101" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0086" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-137" frameY="-101" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0087" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-137" frameY="-101" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0088" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-157" frameY="-169" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0089" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-157" frameY="-169" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0090" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-157" frameY="-165" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0091" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-157" frameY="-165" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0092" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-157" frameY="-165" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0093" x="2468" y="3485" width="1229" height="1160" rotated="true" frameX="-157" frameY="-165" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0094" x="3702" y="3485" width="1225" height="1167" rotated="true" frameX="-207" frameY="-100" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0095" x="3702" y="3485" width="1225" height="1167" rotated="true" frameX="-207" frameY="-100" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0096" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0097" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0098" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0099" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0100" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0101" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0102" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0103" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0104" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0105" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0106" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0107" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0108" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0109" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0110" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0111" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0112" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0113" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0114" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
+	<SubTexture name="crabs0115" x="4932" y="3485" width="1225" height="1167" rotated="true" frameX="-205" frameY="-112" frameWidth="1511" frameHeight="1493"/>
 </TextureAtlas>

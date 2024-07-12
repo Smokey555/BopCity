@@ -1,67 +1,68 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="adin pibby.png">
-	<!-- Created with Adobe Animate version 22.0.4.185 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="adin down0000" x="0" y="0" width="854" height="352"/>
-	<SubTexture name="adin down0001" x="0" y="0" width="854" height="352"/>
-	<SubTexture name="adin down0002" x="854" y="0" width="854" height="352"/>
-	<SubTexture name="adin down0003" x="854" y="0" width="854" height="352"/>
-	<SubTexture name="adin idle0000" x="1708" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0001" x="2239" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0002" x="2770" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0003" x="3301" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0004" x="3832" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0005" x="4363" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0006" x="4894" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0007" x="5425" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0008" x="5956" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0009" x="6487" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0010" x="7018" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0011" x="7549" y="0" width="531" height="916"/>
-	<SubTexture name="adin idle0012" x="0" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0013" x="531" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0014" x="1062" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0015" x="1593" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0016" x="2124" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0017" x="2655" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0018" x="3186" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0019" x="3186" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0020" x="3186" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0021" x="3186" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0022" x="3717" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0023" x="4248" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0024" x="4779" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0025" x="5310" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0026" x="5841" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0027" x="6372" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0028" x="6903" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0029" x="7434" y="916" width="531" height="916"/>
-	<SubTexture name="adin idle0030" x="0" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0031" x="531" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0032" x="1062" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0033" x="1593" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0034" x="2124" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0035" x="2655" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0036" x="3186" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0037" x="3717" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0038" x="4248" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0039" x="4779" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0040" x="5310" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0041" x="5841" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0042" x="6372" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0043" x="6372" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0044" x="6372" y="1832" width="531" height="916"/>
-	<SubTexture name="adin idle0045" x="6372" y="1832" width="531" height="916"/>
-	<SubTexture name="adin left0000" x="6903" y="1832" width="888" height="867"/>
-	<SubTexture name="adin left0001" x="6903" y="1832" width="888" height="867"/>
-	<SubTexture name="adin left0002" x="0" y="2748" width="888" height="867"/>
-	<SubTexture name="adin left0003" x="0" y="2748" width="888" height="867"/>
-	<SubTexture name="adin right0000" x="888" y="2748" width="565" height="838"/>
-	<SubTexture name="adin right0001" x="888" y="2748" width="565" height="838"/>
-	<SubTexture name="adin right0002" x="1453" y="2748" width="565" height="838"/>
-	<SubTexture name="adin right0003" x="1453" y="2748" width="565" height="838"/>
-	<SubTexture name="adin up0000" x="2018" y="2748" width="738" height="949"/>
-	<SubTexture name="adin up0001" x="2018" y="2748" width="738" height="949"/>
-	<SubTexture name="adin up0002" x="2756" y="2748" width="738" height="949"/>
-	<SubTexture name="adin up0003" x="2756" y="2748" width="738" height="949"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="adin_pibby.png" width="4659" height="4821">
+	<SubTexture name="adin down0000" x="1265" y="4376" width="854" height="343" frameX="-0" frameY="-0" frameWidth="854" frameHeight="352"/>
+	<SubTexture name="adin down0001" x="1265" y="4376" width="854" height="343" frameX="-0" frameY="-0" frameWidth="854" frameHeight="352"/>
+	<SubTexture name="adin down0002" x="0" y="4522" width="799" height="299" frameX="-15" frameY="-53" frameWidth="854" frameHeight="352"/>
+	<SubTexture name="adin down0003" x="0" y="4522" width="799" height="299" frameX="-15" frameY="-53" frameWidth="854" frameHeight="352"/>
+	<SubTexture name="adin idle0000" x="839" y="2691" width="474" height="856" frameX="-40" frameY="-59" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0001" x="0" y="1727" width="493" height="882" frameX="-30" frameY="-33" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0002" x="1656" y="894" width="499" height="883" frameX="-24" frameY="-33" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0003" x="1419" y="2597" width="870" height="478" rotated="true" frameX="-19" frameY="-46" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0004" x="2215" y="1722" width="481" height="870" frameX="-16" frameY="-46" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0005" x="2294" y="2597" width="857" height="484" rotated="true" frameX="-13" frameY="-59" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0006" x="2701" y="873" width="487" height="857" frameX="-10" frameY="-59" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0007" x="794" y="1688" width="857" height="523" rotated="true" frameX="-8" frameY="-59" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0008" x="790" y="3571" width="853" height="470" rotated="true" frameX="-7" frameY="-63" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0009" x="3669" y="833" width="471" height="826" frameX="-5" frameY="-90" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0010" x="3713" y="1664" width="471" height="826" frameX="-4" frameY="-90" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0011" x="2124" y="4038" width="789" height="471" rotated="true" frameX="-3" frameY="-127" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0012" x="2918" y="4264" width="789" height="471" rotated="true" frameX="-2" frameY="-127" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0013" x="498" y="2216" width="916" height="470" rotated="true" frameX="-2" frameY="-0" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0014" x="3712" y="4264" width="782" height="471" rotated="true" frameX="-1" frameY="-134" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0015" x="4118" y="0" width="471" height="782" frameX="-0" frameY="-134" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0016" x="1648" y="3571" width="471" height="800" frameX="-0" frameY="-116" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0017" x="0" y="3712" width="471" height="784" frameX="-0" frameY="-131" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0018" x="2701" y="1735" width="531" height="785" frameX="-0" frameY="-131" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0019" x="2701" y="1735" width="531" height="785" frameX="-0" frameY="-131" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0020" x="2701" y="1735" width="531" height="785" frameX="-0" frameY="-131" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0021" x="2701" y="1735" width="531" height="785" frameX="-0" frameY="-131" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0022" x="0" y="3191" width="785" height="516" rotated="true" frameX="-0" frameY="-131" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0023" x="476" y="4046" width="784" height="471" rotated="true" frameX="-5" frameY="-131" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0024" x="2099" y="0" width="499" height="856" frameX="-10" frameY="-60" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0025" x="2160" y="861" width="495" height="856" frameX="-14" frameY="-60" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0026" x="4189" y="1535" width="470" height="743" frameX="-18" frameY="-173" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0027" x="4145" y="787" width="471" height="743" frameX="-21" frameY="-173" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0028" x="3974" y="3417" width="471" height="743" frameX="-24" frameY="-173" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0029" x="4122" y="2495" width="471" height="743" frameX="-26" frameY="-173" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0030" x="3193" y="842" width="471" height="866" frameX="-28" frameY="-50" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0031" x="3237" y="1713" width="471" height="866" frameX="-30" frameY="-50" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0032" x="1572" y="0" width="522" height="889" frameX="-6" frameY="-27" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0033" x="2660" y="0" width="481" height="868" frameX="-26" frameY="-48" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0034" x="2154" y="3086" width="855" height="471" rotated="true" frameX="-34" frameY="-61" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0035" x="2154" y="3562" width="855" height="471" rotated="true" frameX="-34" frameY="-61" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0036" x="3014" y="3421" width="479" height="838" frameX="-35" frameY="-78" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0037" x="3498" y="3421" width="471" height="838" frameX="-36" frameY="-78" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0038" x="3646" y="2584" width="471" height="828" frameX="-36" frameY="-88" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0039" x="3642" y="0" width="471" height="828" frameX="-36" frameY="-88" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0040" x="3156" y="2584" width="485" height="832" frameX="-37" frameY="-84" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0041" x="1318" y="3080" width="831" height="486" rotated="true" frameX="-36" frameY="-84" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0042" x="0" y="2691" width="834" height="495" rotated="true" frameX="-36" frameY="-82" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0043" x="0" y="2691" width="834" height="495" rotated="true" frameX="-36" frameY="-82" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0044" x="0" y="2691" width="834" height="495" rotated="true" frameX="-36" frameY="-82" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin idle0045" x="0" y="2691" width="834" height="495" rotated="true" frameX="-36" frameY="-82" frameWidth="531" frameHeight="916"/>
+	<SubTexture name="adin left0000" x="0" y="0" width="844" height="866" frameX="-0" frameY="-0" frameWidth="888" frameHeight="867"/>
+	<SubTexture name="adin left0001" x="0" y="0" width="844" height="866" frameX="-0" frameY="-0" frameWidth="888" frameHeight="867"/>
+	<SubTexture name="adin left0002" x="0" y="871" width="789" height="851" frameX="-99" frameY="-16" frameWidth="888" frameHeight="867"/>
+	<SubTexture name="adin left0003" x="0" y="871" width="789" height="851" frameX="-99" frameY="-16" frameWidth="888" frameHeight="867"/>
+	<SubTexture name="adin right0000" x="1656" y="1782" width="554" height="792" frameX="-10" frameY="-46" frameWidth="565" frameHeight="838"/>
+	<SubTexture name="adin right0001" x="1656" y="1782" width="554" height="792" frameX="-10" frameY="-46" frameWidth="565" frameHeight="838"/>
+	<SubTexture name="adin right0002" x="3146" y="0" width="491" height="837" frameX="-0" frameY="-0" frameWidth="565" frameHeight="838"/>
+	<SubTexture name="adin right0003" x="3146" y="0" width="491" height="837" frameX="-0" frameY="-0" frameWidth="565" frameHeight="838"/>
+	<SubTexture name="adin up0000" x="849" y="0" width="718" height="940" frameX="-20" frameY="-0" frameWidth="738" frameHeight="949"/>
+	<SubTexture name="adin up0001" x="849" y="0" width="718" height="940" frameX="-20" frameY="-0" frameWidth="738" frameHeight="949"/>
+	<SubTexture name="adin up0002" x="794" y="945" width="814" height="738" rotated="true" frameX="-0" frameY="-135" frameWidth="738" frameHeight="949"/>
+	<SubTexture name="adin up0003" x="794" y="945" width="814" height="738" rotated="true" frameX="-0" frameY="-135" frameWidth="738" frameHeight="949"/>
 </TextureAtlas>
