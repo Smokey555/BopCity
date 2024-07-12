@@ -48,6 +48,9 @@ var goodIntro;
 var badIntro;
 
 
+var penthosDance;
+
+
 
 function onCreate() {
     init();
@@ -190,6 +193,10 @@ function onCreate() {
     add(staticFilter);
     staticFilter.blend = BlendMode.DIFFERENCE;
 
+    
+
+
+
 
     b_up = new FlxSprite().makeGraphic(FlxG.width,thickness,FlxColor.BLACK);
     b_up.cameras = [game.camHUD];
@@ -202,6 +209,17 @@ function onCreate() {
 }
 
 function onCreatePost() {
+
+    penthosDance = new FlxSprite();
+    penthosDance.frames = pFrames('IShowIndie');
+    penthosDance.animation.addByPrefix('i','bounce',54);
+    penthosDance.animation.play('i');
+    penthosDance.scale.set(2.8,2.8);
+    penthosDance.updateHitbox();
+    addBehindDad(penthosDance);
+    penthosDance.setPosition(dad.x + 85,dad.y + 25);
+    penthosDance.alpha = 0;
+    //dad.alpha = 0;
 
     video = new VideoSprite();
     video.addCallback('onFormat',()->{
@@ -255,6 +273,9 @@ function onSongStart() {
 }
 
 
+function onBeatHit() {
+    if (penthosDance.alpha == 1) penthosDance.animation.play('i',true);
+}
 
 function onMoveCamera(char) {
     var isDad = (char == 'dad');
@@ -266,6 +287,9 @@ function onMoveCamera(char) {
 function onEvent(ev,v1,v2) {
     if (ev == '') {
         switch (v1) {
+            case 'chat':
+                penthosDance.alpha = penthosDance.alpha == 0 ? 1 : 0;
+                dad.alpha = dad.alpha == 0 ? 1 : 0;
             case 'badFade':
                 FlxTween.tween(goodIntro, {alpha: 0},1.5);
                 FlxTween.tween(badIntro, {alpha: 1},1.5);
