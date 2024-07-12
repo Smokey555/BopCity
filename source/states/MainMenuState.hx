@@ -1,5 +1,6 @@
 package states;
 
+import flixel.group.FlxSpriteContainer.FlxTypedSpriteContainer;
 import objects.VideoSprite;
 import backend.InputFormatter;
 import flixel.input.mouse.FlxMouseEvent;
@@ -50,6 +51,9 @@ class MainMenuState extends MusicBeatState
 
         buttons = new FlxSpriteGroup();
         add(buttons);
+
+        fatVids = new FlxTypedGroup<VideoSprite>();
+        add(fatVids);
 
 		final thick = 30;
         var l = new FlxSprite(-thick).makeGraphic(thick,FlxG.height);
@@ -148,6 +152,10 @@ class MainMenuState extends MusicBeatState
         }
     }
 
+    var fatMode:Bool =false;
+
+    var fatVids:FlxTypedGroup<VideoSprite>;
+
     var penkaruTimeout:Float = 0;
     var penkaru = '';
 	override function update(elapsed:Float)
@@ -161,7 +169,25 @@ class MainMenuState extends MusicBeatState
             penkaru += letter;
             if (openfl.Assets.exists('assets/sounds/tts/${letter.toLowerCase()}.ogg')) FlxG.sound.play(flixel.system.FlxAssets.getSound('assets/sounds/tts/${letter.toLowerCase()}'));
 
-            if (penkaru == 'FAT') {
+            if (penkaru == 'FAT' && !fatMode) {
+                for (i in 0...buttons.length) {
+                    var og = buttons.members[i];
+            
+                    var video = new VideoSprite();
+                    video.alpha = 0;
+                    video.addCallback(ONFORMAT,()->{
+                        video.alpha = 0;
+                        video.setGraphicSize(og.width,og.height);
+                        video.updateHitbox();
+                        FlxTween.tween(video, {alpha: 1},1);
+            
+                    });
+                    fatVids.add(video);
+                    video.load('fat.mp4');
+                    FlxTimer.wait(0.1 * i,()->video.play());
+                    
+                }
+                fatMode = true;
             }
             if (penkaru == 'PENKARU') {
                 Misc.isPenthosUnlocked = true;
@@ -178,21 +204,16 @@ class MainMenuState extends MusicBeatState
                         }
                     }
                 }
-
-                // FlxG.camera.visible = false;
-                // FlxG.sound.music.volume = 0;
-
-                // Difficulty.resetList();
-                // var songLowercase:String = Paths.formatToSongPath('yo');
-                // var formatted:String = backend.Highscore.formatSong(songLowercase, 1);
-     
-                // PlayState.SONG = backend.Song.loadFromJson(formatted, songLowercase);
-                // PlayState.isStoryMode = false;
-                // PlayState.storyDifficulty = 1;
-                // LoadingState.loadAndSwitchState(new PlayState());
-
             }
         }
+
+        for (k=> i in fatVids) {
+            var button = buttons.members[k];
+            i.setPosition(button.x,button.y);
+
+        }
+
+
 
         if (controls.BACK) MusicBeatState.switchState(new TitleState());
 
@@ -208,4 +229,22 @@ class MainMenuState extends MusicBeatState
 }
 
 
-class MenuSrp extends FlxSprite {public var name:String = '';}
+class MenuSrp extends FlxSprite {
+    public var name:String = '';
+
+    public function initFatVideo(delay:Float = 0) {
+
+        var video = new VideoSprite();
+        video.addCallback(ONFORMAT,()->{
+            video.alpha = 0;
+            video.setGraphicSize(width,height);
+            video.updateHitbox();
+            FlxTween.tween(video, {alpha: 1},1);
+
+        });
+        //add(video);
+        video.load('fat.mp4');
+        FlxTimer.wait(delay,()->video.play());
+
+    }
+}
