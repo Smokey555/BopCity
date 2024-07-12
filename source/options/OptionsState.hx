@@ -6,7 +6,7 @@ import backend.StageData;
 class OptionsState extends MusicBeatState
 {
 	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
-	private var grpOptions:FlxTypedGroup<Alphabet>;
+	private var grpOptions:FlxTypedGroup<PapyrusText>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
 	public static var onPlayState:Bool = false;
@@ -28,8 +28,8 @@ class OptionsState extends MusicBeatState
 		}
 	}
 
-	var selectorLeft:Alphabet;
-	var selectorRight:Alphabet;
+	var selectorLeft:PapyrusText;
+	var selectorRight:PapyrusText;
 
 	override function create() {
 		#if DISCORD_ALLOWED
@@ -40,24 +40,28 @@ class OptionsState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		bg.color = 0xFFea71fd;
 		bg.updateHitbox();
-
 		bg.screenCenter();
+		bg.alpha = 0.6;
+
+		if (FlxG.random.bool(50)) bg.flipY = true;
+		if (FlxG.random.bool(20)) bg.angle = 90;
+
 		add(bg);
 
-		grpOptions = new FlxTypedGroup<Alphabet>();
+		grpOptions = new FlxTypedGroup<PapyrusText>();
 		add(grpOptions);
 
 		for (i in 0...options.length)
 		{
-			var optionText:Alphabet = new Alphabet(0, 0, options[i], true);
+			var optionText:PapyrusText = new PapyrusText(0, 0, options[i]);
 			optionText.screenCenter();
 			optionText.y += (100 * (i - (options.length / 2))) + 50;
 			grpOptions.add(optionText);
 		}
 
-		selectorLeft = new Alphabet(0, 0, '>', true);
+		selectorLeft = new PapyrusText(0, 0, '>');
 		add(selectorLeft);
-		selectorRight = new Alphabet(0, 0, '<', true);
+		selectorRight = new PapyrusText(0, 0, '<');
 		add(selectorRight);
 
 		changeSelection();
@@ -111,6 +115,7 @@ class OptionsState extends MusicBeatState
 			bullShit++;
 
 			item.alpha = 0.6;
+			item.sc = item.targetY == 0 ? 1.3 : 1;
 			if (item.targetY == 0) {
 				item.alpha = 1;
 				selectorLeft.x = item.x - 63;

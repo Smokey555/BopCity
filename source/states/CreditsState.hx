@@ -6,7 +6,7 @@ class CreditsState extends MusicBeatState
 {
 	var curSelected:Int = -1;
 
-	private var grpOptions:FlxTypedGroup<Alphabet>;
+	private var grpOptions:FlxTypedGroup<PapyrusText>;
 	private var iconArray:Array<AttachedSprite> = [];
 	private var creditsStuff:Array<Array<String>> = [];
 
@@ -30,8 +30,12 @@ class CreditsState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
 		bg.screenCenter();
+		bg.alpha = 0.6;
+
+		if (FlxG.random.bool(50)) bg.flipY = true;
+		if (FlxG.random.bool(20)) bg.angle = 90;
 		
-		grpOptions = new FlxTypedGroup<Alphabet>();
+		grpOptions = new FlxTypedGroup<PapyrusText>();
 		add(grpOptions);
 
 		#if MODS_ALLOWED
@@ -50,10 +54,11 @@ class CreditsState extends MusicBeatState
 		for (i in 0...creditsStuff.length)
 		{
 			var isSelectable:Bool = !unselectableCheck(i);
-			var optionText:Alphabet = new Alphabet(FlxG.width / 2, 300, creditsStuff[i][0], !isSelectable);
+			var optionText:PapyrusText = new PapyrusText(FlxG.width / 2, 300, creditsStuff[i][0]);
 			optionText.isMenuItem = true;
 			optionText.targetY = i;
 			optionText.changeX = false;
+			
 			optionText.snapToPosition();
 			grpOptions.add(optionText);
 
@@ -83,7 +88,11 @@ class CreditsState extends MusicBeatState
 
 				if(curSelected == -1) curSelected = i;
 			}
-			else optionText.alignment = CENTERED;
+			else{
+				optionText.x = 0;
+				optionText.alignment = CENTER;
+				optionText.fieldWidth = FlxG.width;
+			} 
 		}
 		
 		descBox = new AttachedSprite();
@@ -94,8 +103,9 @@ class CreditsState extends MusicBeatState
 		descBox.alpha = 0.6;
 		add(descBox);
 
-		descText = new FlxText(50, FlxG.height + offsetThing - 25, 1180, "", 32);
-		descText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER/*, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK*/);
+		descText = new PapyrusText(50, FlxG.height + offsetThing - 25, "");
+		descText.fieldWidth = 1180;
+		descText.alignment = CENTER;
 		descText.scrollFactor.set();
 		//descText.borderSize = 2.4;
 		descBox.sprTracker = descText;
