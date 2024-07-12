@@ -1,12 +1,15 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="brendon.png">
-<SubTexture name="i0000" x="103" y="0" width="103" height="130" frameX="-29" frameY="-83" frameWidth="154" frameHeight="217" />
-<SubTexture name="d0000" x="0" y="191" width="104" height="55" frameX="-26" frameY="-160" frameWidth="154" frameHeight="217" />
-<SubTexture name="d0001" x="103" y="130" width="100" height="59" frameX="-28" frameY="-156" frameWidth="154" frameHeight="217" />
-<SubTexture name="u0000" x="0" y="0" width="46" height="191" frameX="-53" frameY="-26" frameWidth="154" frameHeight="217" />
-<SubTexture name="u0001" x="46" y="0" width="57" height="181" frameX="-43" frameY="-37" frameWidth="154" frameHeight="217" />
-<SubTexture name="l0000" x="206" y="0" width="94" height="127" frameX="-1" frameY="-87" frameWidth="154" frameHeight="217" />
-<SubTexture name="l0001" x="300" y="0" width="89" height="125" frameX="-7" frameY="-89" frameWidth="154" frameHeight="217" />
-<SubTexture name="r0000" x="300" y="125" width="42" height="66" frameX="-113" frameY="-113" frameWidth="154" frameHeight="217" />
-<SubTexture name="r0001" x="342" y="125" width="42" height="61" frameX="-107" frameY="-114" frameWidth="154" frameHeight="217" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="brendon.png" width="316" height="269">
+	<SubTexture name="i0000" x="0" y="0" width="101" height="128" frameX="-29" frameY="-83" frameWidth="154" frameHeight="217"/>
+	<SubTexture name="d0000" x="263" y="0" width="53" height="102" rotated="true" frameX="-26" frameY="-160" frameWidth="154" frameHeight="217"/>
+	<SubTexture name="d0001" x="194" y="184" width="98" height="57" frameX="-28" frameY="-156" frameWidth="154" frameHeight="217"/>
+	<SubTexture name="u0000" x="0" y="225" width="189" height="44" rotated="true" frameX="-53" frameY="-26" frameWidth="154" frameHeight="218"/>
+	<SubTexture name="u0001" x="203" y="0" width="55" height="179" frameX="-43" frameY="-37" frameWidth="154" frameHeight="218"/>
+	<SubTexture name="l0000" x="106" y="0" width="92" height="125" frameX="-1" frameY="-87" frameWidth="154" frameHeight="217"/>
+	<SubTexture name="l0001" x="0" y="133" width="123" height="87" rotated="true" frameX="-7" frameY="-89" frameWidth="154" frameHeight="217"/>
+	<SubTexture name="r0000" x="128" y="130" width="64" height="40" rotated="true" frameX="-113" frameY="-113" frameWidth="155" frameHeight="217"/>
+	<SubTexture name="r0001" x="128" y="175" width="59" height="40" rotated="true" frameX="-107" frameY="-114" frameWidth="155" frameHeight="217"/>
 </TextureAtlas>

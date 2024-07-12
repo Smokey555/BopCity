@@ -1,27 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="kai pibby.png">
-	<!-- Created with Adobe Animate version 22.0.4.185 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="kai down0000" x="0" y="0" width="461" height="755"/>
-	<SubTexture name="kai down0001" x="0" y="0" width="461" height="755"/>
-	<SubTexture name="kai down0002" x="461" y="0" width="461" height="755"/>
-	<SubTexture name="kai down0003" x="461" y="0" width="461" height="755"/>
-	<SubTexture name="kai idle0000" x="922" y="0" width="648" height="820"/>
-	<SubTexture name="kai idle0001" x="922" y="0" width="648" height="820"/>
-	<SubTexture name="kai idle0002" x="1570" y="0" width="648" height="820"/>
-	<SubTexture name="kai idle0003" x="1570" y="0" width="648" height="820"/>
-	<SubTexture name="kai idle0004" x="2218" y="0" width="648" height="820"/>
-	<SubTexture name="kai idle0005" x="2218" y="0" width="648" height="820"/>
-	<SubTexture name="kai left0000" x="2866" y="0" width="722" height="642"/>
-	<SubTexture name="kai left0001" x="2866" y="0" width="722" height="642"/>
-	<SubTexture name="kai left0002" x="0" y="820" width="722" height="642"/>
-	<SubTexture name="kai left0003" x="0" y="820" width="722" height="642"/>
-	<SubTexture name="kai right0000" x="722" y="820" width="744" height="910"/>
-	<SubTexture name="kai right0001" x="722" y="820" width="744" height="910"/>
-	<SubTexture name="kai right0002" x="1466" y="820" width="744" height="910"/>
-	<SubTexture name="kai right0003" x="1466" y="820" width="744" height="910"/>
-	<SubTexture name="kai up0000" x="2210" y="820" width="684" height="898"/>
-	<SubTexture name="kai up0001" x="2210" y="820" width="684" height="898"/>
-	<SubTexture name="kai up0002" x="2894" y="820" width="684" height="898"/>
-	<SubTexture name="kai up0003" x="2894" y="820" width="684" height="898"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="kai_pibby.png" width="6751" height="910">
+	<SubTexture name="kai down0000" x="1140" y="0" width="425" height="669" frameX="-0" frameY="-85" frameWidth="461" frameHeight="755"/>
+	<SubTexture name="kai down0001" x="1140" y="0" width="425" height="669" frameX="-0" frameY="-85" frameWidth="461" frameHeight="755"/>
+	<SubTexture name="kai down0002" x="1570" y="0" width="431" height="750" frameX="-30" frameY="-0" frameWidth="461" frameHeight="755"/>
+	<SubTexture name="kai down0003" x="1570" y="0" width="431" height="750" frameX="-30" frameY="-0" frameWidth="461" frameHeight="755"/>
+	<SubTexture name="kai idle0000" x="2006" y="0" width="648" height="765" frameX="-0" frameY="-55" frameWidth="648" frameHeight="820"/>
+	<SubTexture name="kai idle0001" x="2006" y="0" width="648" height="765" frameX="-0" frameY="-55" frameWidth="648" frameHeight="820"/>
+	<SubTexture name="kai idle0002" x="2659" y="0" width="648" height="807" frameX="-0" frameY="-13" frameWidth="648" frameHeight="820"/>
+	<SubTexture name="kai idle0003" x="2659" y="0" width="648" height="807" frameX="-0" frameY="-13" frameWidth="648" frameHeight="820"/>
+	<SubTexture name="kai idle0004" x="3312" y="0" width="648" height="820" frameX="-0" frameY="-0" frameWidth="648" frameHeight="820"/>
+	<SubTexture name="kai idle0005" x="3312" y="0" width="648" height="820" frameX="-0" frameY="-0" frameWidth="648" frameHeight="820"/>
+	<SubTexture name="kai left0000" x="413" y="0" width="722" height="642" frameX="-0" frameY="-0" frameWidth="722" frameHeight="642"/>
+	<SubTexture name="kai left0001" x="413" y="0" width="722" height="642" frameX="-0" frameY="-0" frameWidth="722" frameHeight="642"/>
+	<SubTexture name="kai left0002" x="0" y="0" width="408" height="641" frameX="-40" frameY="-0" frameWidth="722" frameHeight="642"/>
+	<SubTexture name="kai left0003" x="0" y="0" width="408" height="641" frameX="-40" frameY="-0" frameWidth="722" frameHeight="642"/>
+	<SubTexture name="kai right0000" x="4654" y="0" width="743" height="888" frameX="-1" frameY="-14" frameWidth="744" frameHeight="910"/>
+	<SubTexture name="kai right0001" x="4654" y="0" width="743" height="888" frameX="-1" frameY="-14" frameWidth="744" frameHeight="910"/>
+	<SubTexture name="kai right0002" x="6084" y="0" width="667" height="910" frameX="-0" frameY="-0" frameWidth="744" frameHeight="910"/>
+	<SubTexture name="kai right0003" x="6084" y="0" width="667" height="910" frameX="-0" frameY="-0" frameWidth="744" frameHeight="910"/>
+	<SubTexture name="kai up0000" x="5402" y="0" width="677" height="898" frameX="-7" frameY="-0" frameWidth="684" frameHeight="898"/>
+	<SubTexture name="kai up0001" x="5402" y="0" width="677" height="898" frameX="-7" frameY="-0" frameWidth="684" frameHeight="898"/>
+	<SubTexture name="kai up0002" x="3965" y="0" width="684" height="838" frameX="-0" frameY="-54" frameWidth="684" frameHeight="898"/>
+	<SubTexture name="kai up0003" x="3965" y="0" width="684" height="838" frameX="-0" frameY="-54" frameWidth="684" frameHeight="898"/>
 </TextureAtlas>

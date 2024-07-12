@@ -1,36 +1,39 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="fireparticles.png">
-<SubTexture name="burn0000" x="0" y="1124" width="306" height="280" frameX="-17" frameY="-1" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0001" x="1065" y="1404" width="336" height="277" frameX="-13" frameY="-4" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0002" x="0" y="0" width="342" height="281" frameX="-12" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0003" x="342" y="0" width="346" height="281" frameX="-10" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0004" x="1774" y="0" width="349" height="276" frameX="-7" frameY="-5" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0005" x="0" y="281" width="352" height="281" frameX="-3" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0006" x="306" y="1124" width="355" height="280" frameX="0" frameY="-1" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0007" x="688" y="0" width="346" height="281" frameX="-11" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0008" x="0" y="562" width="350" height="281" frameX="-9" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0009" x="1299" y="1124" width="347" height="279" frameX="-8" frameY="-2" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0010" x="350" y="562" width="348" height="281" frameX="-6" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0011" x="346" y="1404" width="333" height="278" frameX="-4" frameY="-3" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0012" x="688" y="281" width="344" height="281" frameX="-3" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0013" x="0" y="1404" width="346" height="279" frameX="-3" frameY="-2" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0014" x="1401" y="1404" width="346" height="277" frameX="-3" frameY="-4" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0015" x="661" y="1124" width="348" height="280" frameX="-3" frameY="-1" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0016" x="1034" y="0" width="351" height="281" frameX="-3" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0017" x="0" y="843" width="374" height="281" frameX="-3" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0018" x="374" y="843" width="379" height="281" frameX="-3" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0019" x="385" y="1683" width="383" height="271" frameX="-3" frameY="-10" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0020" x="0" y="1683" width="385" height="273" frameX="-3" frameY="-8" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0021" x="679" y="1404" width="386" height="278" frameX="-3" frameY="-3" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0022" x="753" y="843" width="386" height="281" frameX="-3" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0023" x="1385" y="0" width="389" height="281" frameX="0" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0024" x="1009" y="1124" width="290" height="280" frameX="-55" frameY="-1" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0025" x="1385" y="281" width="283" height="281" frameX="-57" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0026" x="1385" y="562" width="328" height="281" frameX="-12" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0027" x="1774" y="276" width="333" height="273" frameX="-10" frameY="-8" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0028" x="1385" y="843" width="336" height="281" frameX="-8" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0029" x="1034" y="281" width="317" height="281" frameX="-22" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0030" x="1034" y="562" width="331" height="281" frameX="-3" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0031" x="352" y="281" width="316" height="281" frameX="-11" frameY="0" frameWidth="500" frameHeight="281" />
-<SubTexture name="burn0032" x="698" y="562" width="325" height="281" frameX="-19" frameY="0" frameWidth="500" frameHeight="281" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="fireparticles.png" width="1811" height="1989">
+	<SubTexture name="burn0000" x="979" y="1659" width="306" height="280" frameX="-17" frameY="-1" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0001" x="638" y="1413" width="336" height="277" frameX="-13" frameY="-4" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0002" x="1027" y="1373" width="342" height="281" frameX="-12" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0003" x="676" y="1127" width="346" height="281" frameX="-10" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0004" x="1247" y="705" width="276" height="349" rotated="true" frameX="-7" frameY="-5" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0005" x="390" y="775" width="281" height="352" rotated="true" frameX="-3" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0006" x="677" y="767" width="280" height="355" rotated="true" frameX="-0" frameY="-1" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0007" x="0" y="1136" width="346" height="281" frameX="-11" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0008" x="953" y="379" width="281" height="350" rotated="true" frameX="-9" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0009" x="1239" y="353" width="279" height="347" rotated="true" frameX="-8" frameY="-2" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0010" x="963" y="0" width="281" height="348" rotated="true" frameX="-6" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0011" x="1533" y="0" width="278" height="333" rotated="true" frameX="-4" frameY="-3" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0012" x="1027" y="1087" width="344" height="281" frameX="-3" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0013" x="1249" y="0" width="279" height="346" rotated="true" frameX="-3" frameY="-2" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0014" x="356" y="1132" width="277" height="346" rotated="true" frameX="-3" frameY="-4" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0015" x="962" y="734" width="280" height="348" rotated="true" frameX="-3" frameY="-1" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0016" x="0" y="850" width="351" height="281" frameX="-3" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0017" x="677" y="0" width="281" height="374" rotated="true" frameX="-3" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0018" x="391" y="391" width="281" height="379" rotated="true" frameX="-3" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0019" x="677" y="379" width="271" height="383" rotated="true" frameX="-3" frameY="-10" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0020" x="0" y="572" width="385" height="273" frameX="-3" frameY="-8" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0021" x="394" y="0" width="278" height="386" rotated="true" frameX="-3" frameY="-3" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0022" x="0" y="286" width="386" height="281" frameX="-3" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0023" x="0" y="0" width="389" height="281" frameX="-0" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0024" x="627" y="1695" width="290" height="280" frameX="-55" frameY="-1" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0025" x="1290" y="1659" width="283" height="281" frameX="-57" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0026" x="1374" y="1373" width="328" height="281" frameX="-12" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0027" x="1528" y="687" width="273" height="333" rotated="true" frameX="-10" frameY="-8" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0028" x="0" y="1422" width="336" height="281" frameX="-8" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0029" x="341" y="1483" width="281" height="317" rotated="true" frameX="-22" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0030" x="1523" y="351" width="281" height="331" rotated="true" frameX="-3" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0031" x="0" y="1708" width="316" height="281" frameX="-11" frameY="-0" frameWidth="500" frameHeight="281"/>
+	<SubTexture name="burn0032" x="1376" y="1059" width="325" height="281" frameX="-19" frameY="-0" frameWidth="500" frameHeight="281"/>
 </TextureAtlas>
