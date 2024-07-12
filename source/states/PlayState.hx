@@ -1753,6 +1753,12 @@ class PlayState extends MusicBeatState
 				dad.animation.finishCallback = null;
 				dad.animation.stop();
 				dad.playAnim("ouch",true);
+			
+				boyfriend.animation.stop();
+				boyfriend.playAnim("smack",true);
+				boyfriend.specialAnim = true;
+				boyfriend.animation.finishCallback = (s:String)->{if (s == 'smack') {boyfriend.specialAnim=false;}}
+
 				FlxG.sound.play(Paths.sound("slap"));
 				dad.specialAnim = false;
 				fanumTaxing = false;
