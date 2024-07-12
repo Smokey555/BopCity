@@ -1,5 +1,6 @@
 package states;
 
+import objects.VideoSprite;
 import backend.InputFormatter;
 import flixel.input.mouse.FlxMouseEvent;
 import flixel.FlxObject;
@@ -160,6 +161,8 @@ class MainMenuState extends MusicBeatState
             penkaru += letter;
             if (openfl.Assets.exists('assets/sounds/tts/${letter.toLowerCase()}.ogg')) FlxG.sound.play(flixel.system.FlxAssets.getSound('assets/sounds/tts/${letter.toLowerCase()}'));
 
+            if (penkaru == 'FAT') {
+            }
             if (penkaru == 'PENKARU') {
                 Misc.isPenthosUnlocked = true;
                 final ding = flixel.system.FlxAssets.getSound('assets/sounds/ding');

@@ -2575,7 +2575,7 @@
 				"gfSection": false,
 				"bpm": 150,
 				"changeBPM": false,
-				"mustHitSection": true
+				"mustHitSection": false
 			},
 			{
 				"typeOfSection": 0,
@@ -2585,7 +2585,7 @@
 				"gfSection": false,
 				"bpm": 150,
 				"changeBPM": false,
-				"mustHitSection": true
+				"mustHitSection": false
 			},
 			{
 				"typeOfSection": 0,
@@ -6373,6 +6373,16 @@
 						"Cenat Health Drain",
 						"1.8",
 						"5"
+					]
+				]
+			],
+			[
+				129230.769230769,
+				[
+					[
+						"",
+						"endeee",
+						""
 					]
 				]
 			]

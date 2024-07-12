@@ -16,15 +16,19 @@ function onCreate()
 	{
 		video.setGraphicSize(FlxG.width, FlxG.height);
 		video.updateHitbox();
-		video.cameras = [camOther];
+		video.cameras = [camHUD];
 		camOther.stopFade();
 		camOther.fade(FlxColor.WHITE,0.5,true);
+		game.showCombo = false;
+		game.showComboNum = false;
+		game.showRating = false;
+	
 	});
 	video.addCallback('onEnd', () ->
 	{
 	});
 	video.load('kaisupercutscene.mp4', [VideoSprite.muted]);
-	add(video);
+	addBehindDad(video);
 	VideoSprite.cacheVid('kaisupercutscene.mp4');
 
 
@@ -67,6 +71,10 @@ function onUpdatePost(elapsed) {
 function onEvent(ev,v1,v2) {
     if (ev == '') {
         switch (v1) {
+			case 'endeee':
+				game.uiGroup.visible = false;
+				for (i in game.playerStrums) i.x = -1000;
+
 			case 'headpp':initHead();
 		
 			case 'headCharge': head.animation.play('chargeup');
