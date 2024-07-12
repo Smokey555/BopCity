@@ -1,0 +1,69 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				45,
+				130
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "dance"
+		},
+		{
+			"offsets": [
+				-60,
+				100
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "ladies",
+			"loop": true,
+			"name": "ladies"
+		},
+		{
+			"offsets": [
+				-60,
+				100
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "ladies2",
+			"loop": false,
+			"name": "ladies"
+		},
+		{
+			"offsets": [
+				189,
+				260
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "flip",
+			"loop": false,
+			"name": "flip"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/grimace2",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "grimace",
+	"flip_x": false,
+	"healthbar_colors": [
+		95,
+		0,
+		235
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

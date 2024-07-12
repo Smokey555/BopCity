@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="zeebs.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="zeebs0000" x="0" y="0" width="247" height="160" frameX="0" frameY="-38" frameWidth="247" frameHeight="198"/>
+	<SubTexture name="zeebs0001" x="257" y="0" width="247" height="160" frameX="0" frameY="-38" frameWidth="247" frameHeight="198"/>
+	<SubTexture name="zeebs0002" x="514" y="0" width="235" height="198" frameX="0" frameY="0" frameWidth="247" frameHeight="198"/>
+	<SubTexture name="zeebs0003" x="759" y="0" width="235" height="198" frameX="0" frameY="0" frameWidth="247" frameHeight="198"/>
+	<SubTexture name="zeebs0004" x="0" y="208" width="235" height="198" frameX="0" frameY="0" frameWidth="247" frameHeight="198"/>
+	<SubTexture name="zeebs0005" x="245" y="208" width="235" height="198" frameX="0" frameY="0" frameWidth="247" frameHeight="198"/>
+	<SubTexture name="zeebs0006" x="490" y="208" width="235" height="198" frameX="0" frameY="0" frameWidth="247" frameHeight="198"/>
+	<SubTexture name="zeebs0007" x="735" y="208" width="235" height="198" frameX="0" frameY="0" frameWidth="247" frameHeight="198"/>
+</TextureAtlas>

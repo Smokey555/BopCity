@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="shark.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="shark0000" x="0" y="0" width="433" height="502" frameX="-27" frameY="-20" frameWidth="460" frameHeight="522"/>
+	<SubTexture name="shark0001" x="443" y="0" width="433" height="502" frameX="-27" frameY="-20" frameWidth="460" frameHeight="522"/>
+	<SubTexture name="shark0002" x="886" y="0" width="421" height="488" frameX="-38" frameY="-32" frameWidth="460" frameHeight="522"/>
+	<SubTexture name="shark0003" x="1317" y="0" width="421" height="488" frameX="-38" frameY="-32" frameWidth="460" frameHeight="522"/>
+	<SubTexture name="shark0004" x="0" y="512" width="460" height="522"/>
+	<SubTexture name="shark0005" x="470" y="512" width="460" height="522"/>
+	<SubTexture name="shark0006" x="940" y="512" width="432" height="500" frameX="-27" frameY="-20" frameWidth="460" frameHeight="522"/>
+	<SubTexture name="shark0007" x="1382" y="512" width="432" height="500" frameX="-27" frameY="-20" frameWidth="460" frameHeight="522"/>
+</TextureAtlas>

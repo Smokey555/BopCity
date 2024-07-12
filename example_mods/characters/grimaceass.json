@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				0,
+				160
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "slide",
+			"loop": false,
+			"name": "slide in"
+		},
+		{
+			"offsets": [
+				316,
+				194
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "shake",
+			"loop": true,
+			"name": "shake"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/grimaceass",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "grimace",
+	"flip_x": false,
+	"healthbar_colors": [
+		95,
+		0,
+		235
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1.5,
+	"_editor_isPlayer": false
+}

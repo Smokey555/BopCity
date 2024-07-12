@@ -1,0 +1,551 @@
+{
+	"song": {
+		"events": [
+			[
+				13989.5833333333,
+				[
+					[
+						"Set Property",
+						"camHUD.alpha",
+						"0"
+					]
+				]
+			],
+			[
+				13994.7916666667,
+				[
+					[
+						"Camera Follow Pos",
+						"900",
+						"900"
+					],
+					[
+						"Set Property",
+						"camgame.zoom",
+						"1"
+					],
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1"
+					]
+				]
+			],
+			[
+				14000,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				15000,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				15989.5833333333,
+				[
+					[
+						"Set Property",
+						"camHUD.alpha",
+						"1"
+					]
+				]
+			],
+			[
+				15994.7916666667,
+				[
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"0.65"
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				16000,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				16375,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				16750,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				17375,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				17625,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				18250,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				18500,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				18750,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				19375,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				19625,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				20125,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				20500,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				20875,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				21125,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				21500,
+				[
+					[
+						"Play Animation",
+						"drink",
+						"Dad"
+					]
+				]
+			],
+			[
+				21750,
+				[
+					[
+						"Play Animation",
+						"belly",
+						"Dad"
+					]
+				]
+			],
+			[
+				21989.5833333333,
+				[
+					[
+						"Set Property",
+						"camHUD.alpha",
+						"0"
+					]
+				]
+			],
+			[
+				21994.7916666667,
+				[
+					[
+						"Camera Follow Pos",
+						"900",
+						"900"
+					],
+					[
+						"Set Property",
+						"camgame.zoom",
+						"1"
+					],
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"1"
+					]
+				]
+			],
+			[
+				22375,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"grimace2"
+					],
+					[
+						"Play Animation",
+						"ladies",
+						"Dad"
+					]
+				]
+			],
+			[
+				23375,
+				[
+					[
+						"Play Animation",
+						"ladies2",
+						"Dad"
+					]
+				]
+			],
+			[
+				23989.5833333333,
+				[
+					[
+						"Set Property",
+						"camHUD.alpha",
+						"1"
+					]
+				]
+			],
+			[
+				23994.7916666667,
+				[
+					[
+						"Set Property",
+						"defaultCamZoom",
+						"0.65"
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				24000,
+				[
+					[
+						"Play Animation",
+						"idle",
+						"Dad"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				24500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				25000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				25500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				26000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				26500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				27000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				27500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				28000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				29625,
+				[
+					[
+						"Play Animation",
+						"flip",
+						"Dad"
+					]
+				]
+			],
+			[
+				31000,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"grimace"
+					]
+				]
+			],
+			[
+				32000,
+				[
+					[
+						"Set Property",
+						"gwim.alpha",
+						"1"
+					]
+				]
+			],
+			[
+				40000,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"grimace2"
+					],
+					[
+						"Play Animation",
+						"idle",
+						"Dad"
+					],
+					[
+						"Set Property",
+						"gwim.alpha",
+						"0"
+					]
+				]
+			],
+			[
+				44000,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"grimace"
+					]
+				]
+			],
+			[
+				62000,
+				[
+					[
+						"Play Animation",
+						"idle",
+						"Dad"
+					]
+				]
+			],
+			[
+				64000,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"grimace"
+					]
+				]
+			],
+			[
+				87697.9166666667,
+				[
+					[
+						"Set Property",
+						"camHUD.alpha",
+						"0"
+					],
+					[
+						"Camera Follow Pos",
+						"1300",
+						"800"
+					]
+				]
+			],
+			[
+				88000,
+				[
+					[
+						"Play Animation",
+						"fall",
+						"Dad"
+					]
+				]
+			],
+			[
+				88625,
+				[
+					[
+						"Play Animation",
+						"invis",
+						"Dad"
+					]
+				]
+			],
+			[
+				89458.3333333333,
+				[
+					[
+						"Play Animation",
+						"slide in",
+						"GF"
+					]
+				]
+			],
+			[
+				89875,
+				[
+					[
+						"Play Animation",
+						"shake",
+						"GF"
+					]
+				]
+			]
+		]
+	}
+}
