@@ -110,6 +110,31 @@
 						"5"
 					]
 				]
+			],
+			[
+				98601.3986013986,
+				[
+					[
+						"Change Character",
+						"bf",
+						"skibiditransform"
+					],
+					[
+						"Play Animation",
+						"transform",
+						"bf"
+					]
+				]
+			],
+			[
+				102272.727272727,
+				[
+					[
+						"",
+						"cutscene",
+						""
+					]
+				]
 			]
 		]
 	}

@@ -1,23 +1,23 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/skibiditransform",
 	"position": [
-		80,
-		380
+		170,
+		680
 	],
 	"healthicon": "skibidi",
 	"flip_x": true,
